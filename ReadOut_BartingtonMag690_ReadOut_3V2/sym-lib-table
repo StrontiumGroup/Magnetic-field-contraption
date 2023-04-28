@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ReadOut_BartingtonMag690_ReadOut_3V1-rescue)(type Legacy)(uri ${KIPRJMOD}/ReadOut_BartingtonMag690_ReadOut_3V1-rescue.lib)(options "")(descr ""))
+  (lib (name AD71772BRUZ)(type Legacy)(uri C:/UltraLibrarian/Library/Exported/KiCad/AD71772BRUZ/KiCAD/2020-04-17_11-46-34/AD71772BRUZ.lib)(options "")(descr ""))
+)

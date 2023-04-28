@@ -1,0 +1,1220 @@
+EESchema Schematic File Version 4
+LIBS:ReadOut_BartingtonMag690_ReadOut_3V1-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 12
+Title "High Precision Magnetic-field stabilization"
+Date "2020-04-25"
+Rev "3"
+Comp "RbSr"
+Comment1 "To be used together with precision Analog Front end v2"
+Comment2 "Software by M.Borkowski"
+Comment3 "Add-on to current B-field control"
+Comment4 "Author: L. Reichsöllner"
+$EndDescr
+$Comp
+L ReadOut_BartingtonMag690_ReadOut_3V1-rescue:Mounting_Hole_PAD-Mechanical MK3
+U 1 1 5A6CFFFA
+P 650 7300
+F 0 "MK3" H 750 7351 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 750 7260 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 650 7300 50  0001 C CNN
+F 3 "" H 650 7300 50  0001 C CNN
+	1    650  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReadOut_BartingtonMag690_ReadOut_3V1-rescue:Mounting_Hole_PAD-Mechanical MK4
+U 1 1 5A6D003F
+P 650 7600
+F 0 "MK4" H 750 7651 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 750 7560 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 650 7600 50  0001 C CNN
+F 3 "" H 650 7600 50  0001 C CNN
+	1    650  7600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 650  6800
+NoConn ~ 650  7100
+NoConn ~ 650  7400
+NoConn ~ 650  7700
+$Sheet
+S 4950 750  1700 675 
+U 5E999D5B
+F0 "ADC32bit_1" 50
+F1 "ADC32bit_2CH.sch" 50
+F2 "PWR+3.3V_IOVDD" I L 4950 950 50 
+F3 "PWR+5V_AVDD1" I L 4950 875 50 
+F4 "SCLK_ADC32" I R 6650 1175 50 
+F5 "CS_ADC32" I R 6650 1250 50 
+F6 "MISO_ADC32" O R 6650 1025 50 
+F7 "MOSI_ADC32" I R 6650 1100 50 
+F8 "REFOUT_ADC32" O R 6650 800 50 
+F9 "REF+5V" I L 4950 1225 50 
+F10 "MLCK_ADC32" I L 4950 1375 50 
+F11 "~SYNC~_ADC32" I R 6650 1350 50 
+$EndSheet
+$Sheet
+S 1775 800  1150 250 
+U 5E99A9DE
+F0 "POWER_AD717x" 50
+F1 "Power_ADC.sch" 50
+F2 "PWR+16V" I L 1775 900 50 
+F3 "PWR+5AVDD1" O R 2925 875 50 
+F4 "PWR+3.3IOVDD" O R 2925 950 50 
+$EndSheet
+$Sheet
+S 4575 7100 1225 375 
+U 5E99AACD
+F0 "VoltageRefs" 50
+F1 "VoltRef.sch" 50
+F2 "PWR+12V" I L 4575 7175 50 
+F3 "PWR-12V" I L 4575 7250 50 
+F4 "REF-10V" O R 5800 7375 50 
+F5 "REF+10V" O R 5800 7300 50 
+F6 "REF+2.5V" I L 4575 7400 50 
+F7 "REF+2.5V_buff" O R 5800 7425 50 
+F8 "REF+5.0V_buff" O R 5800 7225 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5E9A63E5
+P 10700 1100
+F 0 "J1" H 10780 1142 50  0000 L CNN
+F 1 "INpower" H 10780 1051 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 10700 1100 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/038006293_sd.pdf" H 10700 1100 50  0001 C CNN
+F 4 "WM19538-ND" H 10700 1100 50  0001 C CNN "DigiKey"
+	1    10700 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 11150 2325 1    50   ~ 0
+Power (ADP5070?)\nadjustments (Labbook #5,p4)\nVin+ >=15.5V\nVin- <= -15.5V
+$Comp
+L Device:CP_Small C1
+U 1 1 5E9A71EE
+P 10100 900
+F 0 "C1" H 10008 854 50  0000 R CNN
+F 1 "330uF" H 10008 945 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10100 900 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860010474012.pdf" H 10100 900 50  0001 C CNN
+F 4 "732-8635-1-ND" H 10100 900 50  0001 C CNN "DigiKey"
+	1    10100 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 5E9A8218
+P 10000 1300
+F 0 "C2" H 9908 1254 50  0000 R CNN
+F 1 "330uF" H 9908 1345 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10000 1300 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860010474012.pdf" H 10000 1300 50  0001 C CNN
+F 4 "732-8635-1-ND" H 10000 1300 50  0001 C CNN "DigiKey"
+	1    10000 1300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10500 1200 10475 1200
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5E9A9D3B
+P 10475 1200
+F 0 "#FLG03" H 10475 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 10475 1373 50  0000 C CNN
+F 2 "" H 10475 1200 50  0001 C CNN
+F 3 "~" H 10475 1200 50  0001 C CNN
+	1    10475 1200
+	-1   0    0    1   
+$EndComp
+Connection ~ 10475 1200
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E9AA543
+P 10500 1000
+F 0 "#FLG01" H 10500 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 10500 1173 50  0000 C CNN
+F 2 "" H 10500 1000 50  0001 C CNN
+F 3 "~" H 10500 1000 50  0001 C CNN
+	1    10500 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 10500 1000
+$Comp
+L power:GND #PWR02
+U 1 1 5E9AAD24
+P 9700 1100
+F 0 "#PWR02" H 9700 850 50  0001 C CNN
+F 1 "GND" V 9705 972 50  0000 R CNN
+F 2 "" H 9700 1100 50  0001 C CNN
+F 3 "" H 9700 1100 50  0001 C CNN
+	1    9700 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E9AB49F
+P 9775 1100
+F 0 "#FLG02" H 9775 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 9775 1273 50  0000 C CNN
+F 2 "" H 9775 1100 50  0001 C CNN
+F 3 "~" H 9775 1100 50  0001 C CNN
+	1    9775 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1100 9775 1100
+Connection ~ 9775 1100
+Wire Wire Line
+	9775 1100 10500 1100
+$Comp
+L power:GND #PWR03
+U 1 1 5E9AD681
+P 10000 1400
+F 0 "#PWR03" H 10000 1150 50  0001 C CNN
+F 1 "GND" H 10005 1227 50  0000 C CNN
+F 2 "" H 10000 1400 50  0001 C CNN
+F 3 "" H 10000 1400 50  0001 C CNN
+	1    10000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E9ADFD4
+P 10100 800
+F 0 "#PWR01" H 10100 550 50  0001 C CNN
+F 1 "GND" H 10105 627 50  0000 C CNN
+F 2 "" H 10100 800 50  0001 C CNN
+F 3 "" H 10100 800 50  0001 C CNN
+	1    10100 800 
+	-1   0    0    1   
+$EndComp
+Text Label 9925 1200 3    50   ~ 0
+PWR-16V
+Text Label 9575 1000 1    50   ~ 0
+PWR+16V
+Text Label 1450 900  2    50   ~ 0
+PWR+16V
+Wire Wire Line
+	1450 900  1775 900 
+Wire Wire Line
+	4400 7250 4575 7250
+Wire Wire Line
+	4400 7175 4575 7175
+$Sheet
+S 3475 7100 925  225 
+U 5EA40C3E
+F0 "POWER_OpAmp1" 50
+F1 "POWER_OpAmp.sch" 50
+F2 "PWR+16V" I L 3475 7200 50 
+F3 "PWR+12V" O R 4400 7175 50 
+F4 "PWR-12V" O R 4400 7250 50 
+F5 "PWR-16V" I L 3475 7275 50 
+$EndSheet
+Text Label 3150 7275 1    50   ~ 0
+PWR-16V
+Wire Wire Line
+	3150 7275 3475 7275
+Text Label 3350 7200 1    50   ~ 0
+PWR+16V
+Wire Wire Line
+	3350 7200 3475 7200
+Text Label 5875 7225 0    50   ~ 0
+REF+5.0V_buf
+Wire Wire Line
+	5800 7225 5875 7225
+Text Label 2900 1225 2    50   ~ 0
+REF+5.0V_buf
+Wire Wire Line
+	2900 1225 4950 1225
+Wire Wire Line
+	2925 875  3625 875 
+Wire Wire Line
+	2925 950  3575 950 
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F0904F4
+P 4200 1375
+AR Path="/5E999D5B/5F0904F4" Ref="J?"  Part="1" 
+AR Path="/5F0904F4" Ref="J2"  Part="1" 
+F 0 "J2" H 4300 1257 50  0000 L CNN
+F 1 "MCLK_ADC32" H 4300 1348 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 4200 1375 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 4200 1375 50  0001 C CNN
+F 4 "A102025-ND" H 4200 1375 50  0001 C CNN "DigiKey"
+	1    4200 1375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1375 4425 1375
+Wire Wire Line
+	4200 1575 4425 1575
+Wire Wire Line
+	4400 2450 4425 2450
+Wire Wire Line
+	4200 2650 4425 2650
+Text Notes 3425 2375 0    50   ~ 0
+Do NOT daisy chain clocks.\navoid clock jitter and noise!\nExternal clock distribution.
+$Comp
+L Device:R_Small R1
+U 1 1 5F237E17
+P 4425 1475
+F 0 "R1" H 4484 1521 50  0000 L CNN
+F 1 "50R" H 4484 1430 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4425 1475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31098/rcp.pdf" H 4425 1475 50  0001 C CNN
+F 4 "541-2655-1-ND" H 4425 1475 50  0001 C CNN "DigiKey"
+	1    4425 1475
+	1    0    0    -1  
+$EndComp
+Connection ~ 4425 1375
+Wire Wire Line
+	4425 1375 4950 1375
+Connection ~ 4425 1575
+Wire Wire Line
+	4425 1575 4625 1575
+$Comp
+L Device:R_Small R2
+U 1 1 5F2383DA
+P 4425 2550
+F 0 "R2" H 4484 2596 50  0000 L CNN
+F 1 "50R" H 4484 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4425 2550 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31098/rcp.pdf" H 4425 2550 50  0001 C CNN
+F 4 "541-2655-1-ND" H 4425 2550 50  0001 C CNN "DigiKey"
+	1    4425 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4425 2450
+Connection ~ 4425 2650
+Wire Wire Line
+	4425 2650 4475 2650
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F23A5F8
+P 4200 2450
+AR Path="/5E999D5B/5F23A5F8" Ref="J?"  Part="1" 
+AR Path="/5F23A5F8" Ref="J4"  Part="1" 
+F 0 "J4" H 4300 2332 50  0000 L CNN
+F 1 "MCLK_ADC24" H 4300 2423 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 4200 2450 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 4200 2450 50  0001 C CNN
+F 4 "A102025-ND" H 4200 2450 50  0001 C CNN "DigiKey"
+	1    4200 2450
+	-1   0    0    -1  
+$EndComp
+Text Label 4825 2100 2    50   ~ 0
+REF+5.0V_buf
+Wire Wire Line
+	3625 875  3625 1900
+Connection ~ 3625 875 
+Wire Wire Line
+	3625 875  4950 875 
+Wire Wire Line
+	3575 950  3575 1975
+Connection ~ 3575 950 
+Wire Wire Line
+	3575 950  4950 950 
+$Sheet
+S 1325 3100 1075 325 
+U 5EA634F5
+F0 "PowerDAC1" 50
+F1 "Power_DAC.sch" 50
+F2 "PWR+16V" I L 1325 3150 50 
+F3 "PWR-16V" I L 1325 3225 50 
+F4 "PWR+3.3" O R 2400 3350 50 
+F5 "PWR-15V" O R 2400 3250 50 
+F6 "PWR+15V" O R 2400 3175 50 
+$EndSheet
+Text Label 1000 3225 2    50   ~ 0
+PWR-16V
+Wire Wire Line
+	1000 3225 1325 3225
+Text Label 1200 3150 2    50   ~ 0
+PWR+16V
+Wire Wire Line
+	1200 3150 1325 3150
+$Sheet
+S 2875 3100 1500 1050
+U 5EA8F848
+F0 "DAC20bit_1" 50
+F1 "DAC20bit_1CH.sch" 50
+F2 "PWR+3.3VCC" I L 2875 3350 50 
+F3 "REF+10V" I L 2875 3550 50 
+F4 "REF-10V" I L 2875 3625 50 
+F5 "Vout_DAC20" O R 4375 4100 50 
+F6 "SCLK_DAC20" I R 4375 3175 50 
+F7 "MOSI_DAC20" I R 4375 3250 50 
+F8 "MISO_DAC20" O R 4375 3325 50 
+F9 "CS_DAC20" I R 4375 3400 50 
+F10 "PWR+15VDD" I L 2875 3175 50 
+F11 "PWR-15VSS" I L 2875 3250 50 
+F12 "LDAC_DAC20" I R 4375 3925 50 
+F13 "RESET_DAC20" I R 4375 3650 50 
+F14 "CLR_DAC20" I R 4375 3825 50 
+$EndSheet
+Wire Wire Line
+	4975 3650 4375 3650
+Wire Wire Line
+	2400 3350 2825 3350
+Wire Wire Line
+	2400 3250 2800 3250
+Wire Wire Line
+	2400 3175 2775 3175
+Wire Wire Line
+	4375 3175 4400 3175
+Wire Wire Line
+	4375 3250 4425 3250
+Wire Wire Line
+	4975 3325 4450 3325
+Wire Wire Line
+	4375 3400 4975 3400
+Wire Wire Line
+	4975 3925 4650 3925
+Wire Wire Line
+	4650 3925 4650 3825
+Wire Wire Line
+	4650 3825 4500 3825
+Wire Wire Line
+	4375 3925 4550 3925
+Wire Wire Line
+	4600 3925 4600 4000
+Wire Wire Line
+	4600 4000 4975 4000
+Wire Wire Line
+	2825 3350 2825 4300
+Wire Wire Line
+	2825 4300 4575 4300
+Wire Wire Line
+	4575 4300 4575 4175
+Wire Wire Line
+	4575 4175 4975 4175
+Connection ~ 2825 3350
+Wire Wire Line
+	2825 3350 2875 3350
+Text Label 5875 7300 0    50   ~ 0
+REF+10.0V
+Text Label 5875 7375 0    50   ~ 0
+REF-10.0V
+Wire Wire Line
+	5800 7300 5875 7300
+Wire Wire Line
+	5800 7375 5875 7375
+Text Label 2675 3550 2    50   ~ 0
+REF+10.0V
+Wire Wire Line
+	2675 3550 2875 3550
+Text Label 2675 3625 2    50   ~ 0
+REF-10.0V
+Wire Wire Line
+	2675 3625 2875 3625
+Text Label 9625 4625 0    50   ~ 0
+GND_MCU
+Wire Wire Line
+	6575 3200 7750 3200
+Wire Wire Line
+	6575 3350 7700 3350
+Wire Wire Line
+	6575 3450 7675 3450
+Wire Wire Line
+	6575 3525 7650 3525
+Wire Wire Line
+	6575 3600 7625 3600
+Wire Wire Line
+	6575 3775 7600 3775
+Wire Wire Line
+	6575 3850 7575 3850
+Wire Wire Line
+	6575 3925 7550 3925
+Wire Wire Line
+	6775 4100 6575 4100
+Wire Wire Line
+	7750 3200 7750 3650
+Wire Wire Line
+	6575 3275 7725 3275
+Wire Wire Line
+	7725 3275 7725 3750
+Wire Wire Line
+	7700 3350 7700 3850
+Wire Wire Line
+	6575 4175 6750 4175
+$Sheet
+S 7700 775  1075 950 
+U 5EAA2237
+F0 "Isolation_ADC_1" 50
+F1 "ISO_ADC.sch" 50
+F2 "PWR+3.3V" I L 7700 1500 50 
+F3 "MISO" I L 7700 1025 50 
+F4 "MOSI" O L 7700 1100 50 
+F5 "SCLK" O L 7700 1175 50 
+F6 "GND_MCU" I R 8775 1575 50 
+F7 "PWR3.3_MCU" I R 8775 1500 50 
+F8 "MOSI_MCU" I R 8775 950 50 
+F9 "SCLK_MCU" I R 8775 1025 50 
+F10 "MISO_MCU" I R 8775 1250 50 
+F11 "CS0_MCU" I R 8775 1100 50 
+F12 "CS1_MCU" I R 8775 1150 50 
+F13 "CS0" O L 7700 1275 50 
+F14 "CS1" O L 7700 1350 50 
+F15 "SYNC_MCU" I R 8775 875 50 
+F16 "SYNC_ADC" O L 7700 1625 50 
+$EndSheet
+Connection ~ 9625 3950
+Wire Wire Line
+	9625 3850 9625 3950
+Connection ~ 9625 3850
+Wire Wire Line
+	9625 3750 9625 3850
+Connection ~ 9625 3750
+Connection ~ 9625 4550
+Wire Wire Line
+	9625 4625 9625 4550
+Connection ~ 9625 3650
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5EC5101B
+P 9625 3650
+F 0 "#FLG05" H 9625 3725 50  0001 C CNN
+F 1 "PWR_FLAG" V 9625 3778 50  0000 L CNN
+F 2 "" H 9625 3650 50  0001 C CNN
+F 3 "~" H 9625 3650 50  0001 C CNN
+	1    9625 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9625 3650 9625 3750
+Wire Wire Line
+	9625 4450 9625 4550
+Connection ~ 9625 4450
+Wire Wire Line
+	9625 4350 9625 4450
+Connection ~ 9625 4350
+Wire Wire Line
+	9625 4250 9625 4350
+Connection ~ 9625 4250
+Wire Wire Line
+	9625 4150 9625 4250
+Connection ~ 9625 4150
+Wire Wire Line
+	9625 4050 9625 4150
+Connection ~ 9625 4050
+Wire Wire Line
+	9625 3950 9625 4050
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J5
+U 1 1 5EA30D36
+P 9325 4050
+F 0 "J5" H 9375 4667 50  0000 C CNN
+F 1 "SPI1" H 9375 4576 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 9325 4050 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/Box%20Header_IDC%20Conn%20WR-BHD.pdf" H 9325 4050 50  0001 C CNN
+F 4 "732-2096-ND" H 9325 4050 50  0001 C CNN "DigiKey"
+	1    9325 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3850 9125 3850
+Wire Wire Line
+	7725 3750 9125 3750
+Wire Wire Line
+	7750 3650 9125 3650
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J3
+U 1 1 5EAF718B
+P 9700 2300
+F 0 "J3" H 9750 2817 50  0000 C CNN
+F 1 "SPI0" H 9750 2726 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 9700 2300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/Box%20Header_IDC%20Conn%20WR-BHD.pdf" H 9700 2300 50  0001 C CNN
+F 4 "732-2095-ND" H 9700 2300 50  0001 C CNN "DigiKey"
+	1    9700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2100 10000 2200
+Connection ~ 10000 2200
+Wire Wire Line
+	10000 2200 10000 2300
+Connection ~ 10000 2300
+Wire Wire Line
+	10000 2300 10000 2400
+Connection ~ 10000 2400
+Wire Wire Line
+	10000 2400 10000 2500
+Connection ~ 10000 2500
+Wire Wire Line
+	10000 2500 10000 2600
+Connection ~ 10000 2600
+Wire Wire Line
+	10000 2600 10000 2700
+Wire Wire Line
+	9500 2100 9325 2100
+Wire Wire Line
+	9300 2200 9500 2200
+Wire Wire Line
+	9250 2400 9500 2400
+Wire Wire Line
+	6650 1100 7075 1100
+Wire Wire Line
+	7075 1100 7075 2000
+Wire Wire Line
+	6650 1175 7050 1175
+Wire Wire Line
+	7050 1175 7050 2075
+Text Label 6875 800  0    50   ~ 0
+REF+2.5V_ADC32
+Wire Wire Line
+	6650 800  6875 800 
+Text Label 6850 1800 1    50   ~ 0
+REF+2.5V_ADC24
+Text Label 4125 6850 2    50   ~ 0
+REF+2.5V_ADC32
+Wire Wire Line
+	4125 6850 4175 6850
+Wire Wire Line
+	4775 6850 4675 6850
+Wire Wire Line
+	4425 6950 4425 7400
+Wire Wire Line
+	4425 7400 4575 7400
+$Sheet
+S 4975 3100 1600 1300
+U 5EA2EFEB
+F0 "ISO_DAC20_1" 50
+F1 "Isolation_DAC20.sch" 50
+F2 "PWR+3.3V" I L 4975 4175 50 
+F3 "MISO" I L 4975 3325 50 
+F4 "MOSI" O L 4975 3250 50 
+F5 "SCLK" O L 4975 3175 50 
+F6 "GND_MCU" I R 6575 4175 50 
+F7 "PWR3.3[3]_MCU" I R 6575 4100 50 
+F8 "MOSI_MCU" I R 6575 3200 50 
+F9 "SCLK_MCU" I R 6575 3275 50 
+F10 "MISO_MCU" O R 6575 3350 50 
+F11 "CS0_MCU" I R 6575 3450 50 
+F12 "CS1_MCU" I R 6575 3525 50 
+F13 "CS2_MCU" I R 6575 3600 50 
+F14 "RESET_MCU" I R 6575 3775 50 
+F15 "CLR_MCU" I R 6575 3850 50 
+F16 "LDAC_MCU" I R 6575 3925 50 
+F17 "CS0_DAC20" O L 4975 3400 50 
+F18 "CS1_DAC20" O L 4975 3475 50 
+F19 "CS2_DAC20" O L 4975 3550 50 
+F20 "RESET0__DAC20" O L 4975 3650 50 
+F21 "LDAC_DAC20" O L 4975 4000 50 
+F22 "CLR_DAC20" O L 4975 3925 50 
+F23 "RESET1__DAC20" O L 4975 3725 50 
+F24 "RESET2__DAC20" O L 4975 3800 50 
+F25 "PWR3.3[2]_MCU" I R 6575 4025 50 
+$EndSheet
+$Sheet
+S 2875 4450 1500 825 
+U 5EBBF9B6
+F0 "DAC20bit_2" 50
+F1 "DAC20bit_1CH.sch" 50
+F2 "PWR+3.3VCC" I L 2875 4750 50 
+F3 "REF+10V" I L 2875 4900 50 
+F4 "REF-10V" I L 2875 4975 50 
+F5 "Vout_DAC20" I R 4375 5225 50 
+F6 "SCLK_DAC20" I R 4375 4525 50 
+F7 "MOSI_DAC20" I R 4375 4600 50 
+F8 "MISO_DAC20" O R 4375 4675 50 
+F9 "CS_DAC20" I R 4375 4750 50 
+F10 "RESET_DAC20" I R 4375 4950 50 
+F11 "LDAC_DAC20" I R 4375 5025 50 
+F12 "CLR_DAC20" I R 4375 5100 50 
+F13 "PWR+15VDD" I L 2875 4550 50 
+F14 "PWR-15VSS" I L 2875 4625 50 
+$EndSheet
+Wire Wire Line
+	4975 3475 4675 3475
+Wire Wire Line
+	4675 3475 4675 4750
+Wire Wire Line
+	4675 4750 4375 4750
+Wire Wire Line
+	4400 3175 4400 4525
+Wire Wire Line
+	4400 4525 4375 4525
+Connection ~ 4400 3175
+Wire Wire Line
+	4400 3175 4975 3175
+$Sheet
+S 2875 5450 1500 925 
+U 5EBD5398
+F0 "DAC20bit_3" 50
+F1 "DAC20bit_1CH.sch" 50
+F2 "PWR+3.3VCC" I L 2875 5775 50 
+F3 "REF+10V" I L 2875 5925 50 
+F4 "REF-10V" I L 2875 6000 50 
+F5 "Vout_DAC20" I R 4375 6275 50 
+F6 "SCLK_DAC20" I R 4375 5525 50 
+F7 "MOSI_DAC20" I R 4375 5600 50 
+F8 "MISO_DAC20" O R 4375 5675 50 
+F9 "CS_DAC20" I R 4375 5750 50 
+F10 "RESET_DAC20" I R 4375 5875 50 
+F11 "LDAC_DAC20" I R 4375 6075 50 
+F12 "CLR_DAC20" I R 4375 6000 50 
+F13 "PWR+15VDD" I L 2875 5550 50 
+F14 "PWR-15VSS" I L 2875 5625 50 
+$EndSheet
+Wire Wire Line
+	4400 4525 4400 5525
+Wire Wire Line
+	4400 5525 4375 5525
+Connection ~ 4400 4525
+Wire Wire Line
+	4425 4600 4375 4600
+Connection ~ 4425 3250
+Wire Wire Line
+	4425 3250 4975 3250
+Wire Wire Line
+	4425 5600 4375 5600
+Wire Wire Line
+	4425 3250 4425 4600
+Connection ~ 4425 4600
+Wire Wire Line
+	4425 4600 4425 5600
+Wire Wire Line
+	4450 3325 4450 4675
+Wire Wire Line
+	4450 4675 4375 4675
+Connection ~ 4450 3325
+Wire Wire Line
+	4450 3325 4375 3325
+Wire Wire Line
+	4450 4675 4450 5675
+Wire Wire Line
+	4450 5675 4375 5675
+Connection ~ 4450 4675
+Wire Wire Line
+	4375 5750 4700 5750
+Wire Wire Line
+	4700 5750 4700 3550
+Wire Wire Line
+	4700 3550 4975 3550
+Wire Wire Line
+	4975 3725 4725 3725
+Wire Wire Line
+	4725 3725 4725 4950
+Wire Wire Line
+	4725 4950 4375 4950
+Wire Wire Line
+	4975 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 5875
+Wire Wire Line
+	4750 5875 4375 5875
+Wire Wire Line
+	4500 3825 4500 5100
+Wire Wire Line
+	4500 5100 4375 5100
+Connection ~ 4500 3825
+Wire Wire Line
+	4500 3825 4375 3825
+Wire Wire Line
+	4500 5100 4500 6000
+Wire Wire Line
+	4500 6000 4375 6000
+Connection ~ 4500 5100
+Wire Wire Line
+	4550 3925 4550 5025
+Wire Wire Line
+	4550 5025 4375 5025
+Connection ~ 4550 3925
+Wire Wire Line
+	4550 3925 4600 3925
+Wire Wire Line
+	4550 5025 4550 6075
+Wire Wire Line
+	4550 6075 4375 6075
+Connection ~ 4550 5025
+Text Notes 4500 6050 0    50   ~ 0
+separate LDAC/CLRs?
+Text Label 2675 4900 2    50   ~ 0
+REF+10.0V
+Wire Wire Line
+	2675 4900 2875 4900
+Text Label 2675 4975 2    50   ~ 0
+REF-10.0V
+Wire Wire Line
+	2675 4975 2875 4975
+Text Label 2675 5925 2    50   ~ 0
+REF+10.0V
+Wire Wire Line
+	2675 5925 2875 5925
+Text Label 2675 6000 2    50   ~ 0
+REF-10.0V
+Wire Wire Line
+	2675 6000 2875 6000
+Wire Wire Line
+	2825 4300 2825 4750
+Wire Wire Line
+	2825 4750 2875 4750
+Connection ~ 2825 4300
+Wire Wire Line
+	2825 4750 2825 5775
+Wire Wire Line
+	2825 5775 2875 5775
+Connection ~ 2825 4750
+Wire Wire Line
+	2800 3250 2800 4625
+Wire Wire Line
+	2800 4625 2875 4625
+Connection ~ 2800 3250
+Wire Wire Line
+	2800 3250 2875 3250
+Wire Wire Line
+	2800 4625 2800 5625
+Wire Wire Line
+	2800 5625 2875 5625
+Connection ~ 2800 4625
+Wire Wire Line
+	2775 3175 2775 4550
+Wire Wire Line
+	2775 4550 2875 4550
+Connection ~ 2775 3175
+Wire Wire Line
+	2775 3175 2875 3175
+Wire Wire Line
+	2775 4550 2775 5550
+Wire Wire Line
+	2775 5550 2875 5550
+Connection ~ 2775 4550
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5EAC1A04
+P 6525 4975
+AR Path="/5E999D5B/5EAC1A04" Ref="J?"  Part="1" 
+AR Path="/5EAC1A04" Ref="J6"  Part="1" 
+F 0 "J6" H 6625 4857 50  0000 L CNN
+F 1 "AnalogOut_DAC1" H 6625 4948 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMA_RightAngle_5-1814400-1" H 6525 4975 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/733910080_sd.pdf" H 6525 4975 50  0001 C CNN
+F 4 "WM4088-ND" H 6525 4975 50  0001 C CNN "DigiKey"
+	1    6525 4975
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4375 4100 4925 4100
+Wire Wire Line
+	4925 4100 4925 4975
+$Comp
+L power:GND #PWR06
+U 1 1 5EAB4D5D
+P 6450 4675
+F 0 "#PWR06" H 6450 4425 50  0001 C CNN
+F 1 "GND" V 6455 4547 50  0000 R CNN
+F 2 "" H 6450 4675 50  0001 C CNN
+F 3 "" H 6450 4675 50  0001 C CNN
+	1    6450 4675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 4675 6525 4675
+Wire Wire Line
+	6525 4675 6525 4775
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5EAC6907
+P 6575 5575
+AR Path="/5E999D5B/5EAC6907" Ref="J?"  Part="1" 
+AR Path="/5EAC6907" Ref="J7"  Part="1" 
+F 0 "J7" H 6675 5457 50  0000 L CNN
+F 1 "AnalogOut_DAC2" H 6675 5548 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMA_RightAngle_5-1814400-1" H 6575 5575 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/733910080_sd.pdf" H 6575 5575 50  0001 C CNN
+F 4 "WM4088-ND" H 6575 5575 50  0001 C CNN "DigiKey"
+	1    6575 5575
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5EAC6939
+P 6500 5275
+F 0 "#PWR07" H 6500 5025 50  0001 C CNN
+F 1 "GND" V 6505 5147 50  0000 R CNN
+F 2 "" H 6500 5275 50  0001 C CNN
+F 3 "" H 6500 5275 50  0001 C CNN
+	1    6500 5275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5275 6575 5275
+Wire Wire Line
+	6575 5275 6575 5375
+$Comp
+L power:GND #PWR08
+U 1 1 5EADB758
+P 6575 5950
+F 0 "#PWR08" H 6575 5700 50  0001 C CNN
+F 1 "GND" V 6580 5822 50  0000 R CNN
+F 2 "" H 6575 5950 50  0001 C CNN
+F 3 "" H 6575 5950 50  0001 C CNN
+	1    6575 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6575 5950 6650 5950
+Wire Wire Line
+	6650 5950 6650 6050
+Wire Wire Line
+	4375 6275 5075 6275
+Wire Wire Line
+	5075 6275 5075 6250
+Wire Wire Line
+	4375 5225 4975 5225
+Wire Wire Line
+	4975 5225 4975 5575
+Text Notes 4575 6775 0    50   ~ 0
+Sel (1!) Vref of ADC24/ADC32\nfor buffering and use (V_ocm)
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5EAB0C4B
+P 4425 6850
+F 0 "JP1" H 4425 7089 50  0000 C CNN
+F 1 "Sel Vref" H 4425 6998 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4425 6850 50  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf" H 4425 6850 50  0001 C CNN
+F 4 "732-5316-ND" H 4425 6850 50  0001 C CNN "DigiKey"
+	1    4425 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9325 2100 9325 875 
+Wire Wire Line
+	9325 875  8775 875 
+Wire Wire Line
+	9300 2200 9300 950 
+Wire Wire Line
+	9300 950  8775 950 
+Wire Wire Line
+	9275 2300 9500 2300
+Wire Wire Line
+	9275 2300 9275 1025
+Wire Wire Line
+	9275 1025 8775 1025
+Wire Wire Line
+	8775 1100 9250 1100
+Wire Wire Line
+	9250 1100 9250 2400
+Wire Wire Line
+	7100 1025 7700 1025
+Connection ~ 7075 1100
+Connection ~ 7050 1175
+Wire Wire Line
+	7175 1250 7175 1275
+Wire Wire Line
+	7175 1275 7700 1275
+Wire Wire Line
+	6650 1250 7175 1250
+Wire Wire Line
+	7175 2150 7175 1350
+Wire Wire Line
+	7175 1350 7700 1350
+Text Label 3575 1075 2    50   ~ 0
+PWR+3.3VIOVDD
+Text Label 7650 1500 2    50   ~ 0
+PWR+3.3VIOVDD
+Wire Wire Line
+	7650 1500 7700 1500
+Wire Wire Line
+	9225 2500 9500 2500
+Wire Wire Line
+	9225 2500 9225 1150
+Wire Wire Line
+	9225 1150 8775 1150
+Wire Wire Line
+	4825 2100 4950 2100
+Wire Wire Line
+	3625 1900 4950 1900
+Wire Wire Line
+	3575 1975 4950 1975
+Wire Wire Line
+	4425 2450 4950 2450
+Wire Wire Line
+	6650 1800 6850 1800
+Wire Wire Line
+	6650 2000 7075 2000
+Wire Wire Line
+	6650 1925 7100 1925
+Wire Wire Line
+	6650 2150 7175 2150
+$Sheet
+S 4950 1750 1700 750 
+U 5E99E45E
+F0 "ADC24bit_1" 50
+F1 "ADC24bit_8CH.sch" 50
+F2 "CS_ADC24" I R 6650 2150 50 
+F3 "MISO_ADC24" O R 6650 1925 50 
+F4 "MOSI_ADC24" I R 6650 2000 50 
+F5 "REFOUT_ADC24" O R 6650 1800 50 
+F6 "SCLK_ADC24" O R 6650 2075 50 
+F7 "MLCK_ADC24" I L 4950 2450 50 
+F8 "PWR+3.3V_IOVDD" I L 4950 1975 50 
+F9 "PWR+5V_AVDD1" I L 4950 1900 50 
+F10 "REF+5V" I L 4950 2100 50 
+F11 "~SYNC~_ADC24" I R 6650 2275 50 
+$EndSheet
+Wire Wire Line
+	6650 2075 7050 2075
+Connection ~ 7100 1025
+Wire Wire Line
+	7100 1925 7100 1025
+Wire Wire Line
+	7100 1025 6650 1025
+Wire Wire Line
+	7075 1100 7700 1100
+Wire Wire Line
+	7050 1175 7700 1175
+Wire Wire Line
+	9075 1500 8775 1500
+Text Label 8900 1575 3    50   ~ 0
+GND_MCU
+Wire Wire Line
+	8900 1575 8775 1575
+Wire Wire Line
+	9500 2600 9200 2600
+Wire Wire Line
+	9200 2600 9200 1250
+Wire Wire Line
+	9200 1250 8775 1250
+Wire Wire Line
+	7700 1625 7200 1625
+Wire Wire Line
+	7200 1625 7200 2275
+Wire Wire Line
+	7200 2275 6650 2275
+Wire Wire Line
+	6950 1625 6950 1350
+Wire Wire Line
+	6950 1350 6650 1350
+Wire Wire Line
+	6950 1625 7200 1625
+Connection ~ 7200 1625
+Wire Wire Line
+	6450 7650 6350 7650
+Wire Wire Line
+	6450 7650 6450 7625
+Wire Wire Line
+	5800 7425 6250 7425
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5EC5D1F4
+P 6450 7425
+AR Path="/5E999D5B/5EC5D1F4" Ref="J?"  Part="1" 
+AR Path="/5E99E45E/5EC5D1F4" Ref="J?"  Part="1" 
+AR Path="/5EC5D1F4" Ref="J9"  Part="1" 
+F 0 "J9" H 6550 7400 50  0000 L CNN
+F 1 "REFbuf_ADC" H 6550 7309 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 6450 7425 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 6450 7425 50  0001 C CNN
+F 4 "A102025-ND" H 6450 7425 50  0001 C CNN "DigiKey"
+	1    6450 7425
+	1    0    0    -1  
+$EndComp
+Text Label 10000 2100 0    50   ~ 0
+GND_MCU
+Text Label 9275 2700 2    50   ~ 0
+PWR+3.3V[2]_MCU
+Wire Wire Line
+	9275 2700 9425 2700
+Text Label 6750 4175 0    50   ~ 0
+GND_MCU
+Text Label 6775 4100 0    50   ~ 0
+PWR+3.3V[3]_MCU
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5EAD3D76
+P 9425 2700
+F 0 "#FLG04" H 9425 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 9425 2873 50  0000 C CNN
+F 2 "" H 9425 2700 50  0001 C CNN
+F 3 "~" H 9425 2700 50  0001 C CNN
+	1    9425 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 9425 2700
+Wire Wire Line
+	9425 2700 9500 2700
+$Comp
+L power:GND #PWR04
+U 1 1 5EB11416
+P 4625 1575
+F 0 "#PWR04" H 4625 1325 50  0001 C CNN
+F 1 "GND" H 4630 1402 50  0000 C CNN
+F 2 "" H 4625 1575 50  0001 C CNN
+F 3 "" H 4625 1575 50  0001 C CNN
+	1    4625 1575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5EB23017
+P 4475 2650
+F 0 "#PWR05" H 4475 2400 50  0001 C CNN
+F 1 "GND" H 4480 2477 50  0000 C CNN
+F 2 "" H 4475 2650 50  0001 C CNN
+F 3 "" H 4475 2650 50  0001 C CNN
+	1    4475 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5EDCD886
+P 6350 7650
+F 0 "#PWR09" H 6350 7400 50  0001 C CNN
+F 1 "GND" V 6355 7522 50  0000 R CNN
+F 2 "" H 6350 7650 50  0001 C CNN
+F 3 "" H 6350 7650 50  0001 C CNN
+	1    6350 7650
+	0    1    1    0   
+$EndComp
+Text Notes 1950 2650 0    89   ~ 0
+CLK level 3.3V (ADC digital!!!!!)
+Wire Wire Line
+	9575 1000 10100 1000
+Connection ~ 10100 1000
+Wire Wire Line
+	10100 1000 10500 1000
+Wire Wire Line
+	10000 2000 10000 2100
+Connection ~ 10000 2100
+Wire Wire Line
+	9050 3950 9075 3950
+Wire Wire Line
+	7550 4550 9125 4550
+Wire Wire Line
+	7550 3925 7550 4550
+Wire Wire Line
+	7575 4450 9125 4450
+Wire Wire Line
+	7575 3850 7575 4450
+Wire Wire Line
+	7600 4350 9125 4350
+Wire Wire Line
+	7600 3775 7600 4350
+Wire Wire Line
+	7625 4250 9125 4250
+Wire Wire Line
+	7625 3600 7625 4250
+Wire Wire Line
+	7650 4150 9125 4150
+Wire Wire Line
+	7650 3525 7650 4150
+Wire Wire Line
+	7675 4050 9125 4050
+Wire Wire Line
+	7675 3450 7675 4050
+Text Notes 3750 1800 0    50   ~ 0
+change 50R terminators to\ndigikey RNCP1206FTD49R9CT-ND\n(SMD 1206)
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5EADB726
+P 6650 6250
+AR Path="/5E999D5B/5EADB726" Ref="J?"  Part="1" 
+AR Path="/5EADB726" Ref="J8"  Part="1" 
+F 0 "J8" H 6750 6132 50  0000 L CNN
+F 1 "AnalogOut_DAC3" H 6750 6223 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMA_RightAngle_5-1814400-1" H 6650 6250 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/733910080_sd.pdf" H 6650 6250 50  0001 C CNN
+F 4 "WM4088-ND" H 6650 6250 50  0001 C CNN "DigiKey"
+	1    6650 6250
+	1    0    0    1   
+$EndComp
+Text Label 4775 6850 0    50   ~ 0
+REF+2.5V_ADC24
+$Comp
+L ReadOut_BartingtonMag690_ReadOut_3V1-rescue:Mounting_Hole_PAD-Mechanical MK2
+U 1 1 5A6CFF98
+P 650 7000
+F 0 "MK2" H 750 7051 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 750 6960 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 650 7000 50  0001 C CNN
+F 3 "" H 650 7000 50  0001 C CNN
+	1    650  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReadOut_BartingtonMag690_ReadOut_3V1-rescue:Mounting_Hole_PAD-Mechanical MK1
+U 1 1 5A6CFED2
+P 650 6700
+F 0 "MK1" H 750 6751 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 750 6660 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 650 6700 50  0001 C CNN
+F 3 "" H 650 6700 50  0001 C CNN
+	1    650  6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 4975 6325 4975
+Wire Wire Line
+	4975 5575 6375 5575
+Wire Wire Line
+	5075 6250 6450 6250
+Wire Wire Line
+	9925 1200 10000 1200
+Connection ~ 10000 1200
+Wire Wire Line
+	10000 1200 10475 1200
+Wire Wire Line
+	9500 1950 9500 1975
+Text Label 9500 1950 1    50   ~ 0
+PWR+3.3V[1]_MCU
+Text Label 9075 1500 3    50   ~ 0
+PWR+3.3V[1]_MCU
+Text Label 6775 4025 0    50   ~ 0
+PWR+3.3V[2]_MCU
+Wire Wire Line
+	6575 4025 6775 4025
+Text Label 9050 3950 2    50   ~ 0
+PWR+3.3V[3]_MCU
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EC571AA
+P 9075 3950
+F 0 "#FLG0101" H 9075 4025 50  0001 C CNN
+F 1 "PWR_FLAG" V 9075 4078 50  0000 L CNN
+F 2 "" H 9075 3950 50  0001 C CNN
+F 3 "~" H 9075 3950 50  0001 C CNN
+	1    9075 3950
+	-1   0    0    1   
+$EndComp
+Connection ~ 9075 3950
+Wire Wire Line
+	9075 3950 9125 3950
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EC5773D
+P 9500 1975
+F 0 "#FLG0102" H 9500 2050 50  0001 C CNN
+F 1 "PWR_FLAG" H 9500 2148 50  0000 C CNN
+F 2 "" H 9500 1975 50  0001 C CNN
+F 3 "~" H 9500 1975 50  0001 C CNN
+	1    9500 1975
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9500 1975
+Wire Wire Line
+	9500 1975 9500 2000
+$Comp
+L dk_Shunts-Jumpers:Jumper_3_Solder12 JP11
+U 1 1 5EC598B9
+P 10225 3100
+F 0 "JP11" V 10271 3167 50  0000 L CNN
+F 1 "PWR_single_MCU" V 10180 3167 50  0001 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm" H 10275 3400 50  0001 C CNN
+F 3 "" H 10225 3100 50  0001 C CNN
+F 4 "DNI" V 10180 3167 50  0000 L CNN "DNI"
+	1    10225 3100
+	0    -1   -1   0   
+$EndComp
+Text Label 10225 2850 0    50   ~ 0
+PWR+3.3V[1]_MCU
+Text Label 10375 3100 0    50   ~ 0
+PWR+3.3V[2]_MCU
+Text Label 10225 3350 0    50   ~ 0
+PWR+3.3V[3]_MCU
+$EndSCHEMATC

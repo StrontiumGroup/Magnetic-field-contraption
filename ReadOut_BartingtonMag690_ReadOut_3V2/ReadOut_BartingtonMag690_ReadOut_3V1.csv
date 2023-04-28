@@ -1,0 +1,122 @@
+Title,High Precision Magnetic-field stabilization
+Revision,3
+Date,2020-04-25
+Generated,2020-05-15 20:52:18
+Company,RbSr
+Comment 1,To be used together with precision Analog Front end v2
+Comment 2,Software by M.Borkowski
+Comment 3,Add-on to current B-field control
+Comment 4,Author: L. Reichsöllner
+Total Parts,353
+Total Unique Parts,101
+
+
+
+Ref,Qty,Value,Footprint,DNI,Detailed description,DigiKey,
+C1 C2 ,2,330uF,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm, , ,732-8635-1-ND
+C15 C11 C4 C7 C158 C161 C164 C166 C172 C174 C176 C178 C179 C181 C182 C184 C189 C192 C193 C195 ,20,270pF,Capacitor_SMD:C_0603_1608Metric, , ,478-1180-1-ND
+C16 C175 ,2,270pF,Capacitor_SMD:C_0603_1608Metric,DNP, ,478-1180-1-ND
+C21 C19 C17 C23 C22 C14 C171 C169 C167 C163 C157 C160 C186 C185 ,14,100nF,Capacitor_SMD:C_0805_2012Metric,C7, ,732-8061-1-ND
+C20 C18 C13 C8 C170 C168 C162 C156 ,8,1uF,Capacitor_SMD:C_0805_2012Metric, , ,732-7664-1-ND
+C9 C10 C27 C32 C41 C43 C44 C50 C53 C35 C70 C76 C78 C85 C91 C88 C87 C93 C89 C74 C117 C119 C126 C132 C129 C128 C134 C130 C115 C138 C140 C147 C153 C150 C149 C155 C151 C136 ,38,100nF,Capacitor_SMD:C_0805_2012Metric, , ,732-8061-1-ND
+C3 C6 C47 C188 C191 ,5,10uF,Capacitor_SMD:C_0805_2012Metric, , ,732-7620-1-ND
+C5 C12 C159 C165 C173 C177 C180 C183 C190 C194 ,10,680pF,Capacitor_SMD:C_0603_1608Metric, , ,399-3289-1-ND
+C24 C34 C29 C46 C48 C38 C37 C187 ,8,100nF,Capacitor_SMD:C_0805_2012Metric,DNI, ,732-8061-1-ND
+C26 C28 C31 C33 C69 C71 ,6,2.2uF,Capacitor_SMD:C_0805_2012Metric, , ,399-11940-1-ND
+C25 C30 C61 C57 C54 C59 C67 C64 C68 C197 C199 ,11,10uF,Capacitor_SMD:C_1206_3216Metric, , ,732-7574-1-ND
+C40 C42 ,2,4.7uF,Capacitor_SMD:C_0805_2012Metric, , ,399-5505-1-ND
+C49 C45 C52 C51 C39 C36 C75 C77 C84 C90 C86 C92 C73 C116 C118 C125 C131 C127 C133 C114 C137 C139 C146 C152 C148 C154 C135 ,27,10uF,Capacitor_SMD:CP_Elec_4x5.8, , ,338-2131-1-ND
+C55 C58 C62 C65 ,4,2.2uF,Capacitor_SMD:C_0805_2012Metric, , ,478-5719-1-ND
+C56 C60 C63 C66 ,4,10nF,Capacitor_SMD:C_0603_1608Metric, , ,445-15925-1-ND
+C72 ,1,1uF,Capacitor_SMD:C_0805_2012Metric,DNI, , 
+C196 C198 ,2,47uF,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm, ,47µF  25V  Aluminum Electrolytic  Can,732-8823-1-ND
+C81 C122 C143 ,3,220pF,Capacitor_SMD:C_0603_1608Metric,DNI,220pF  ±5%  50V MLCC C0G  NP0  0603 (M1608),399-1066-1-ND
+C79 C120 C141 ,3,220pF,Capacitor_SMD:C_0603_1608Metric,DNI, ,399-1066-1-ND
+C80 C121 C142 ,3,10p,Capacitor_SMD:C_0603_1608Metric,DNI, ,311-1058-1-ND
+C82 C123 C144 ,3,6.2n,Capacitor_SMD:C_0603_1608Metric,DNI,6200pF  ±5%  50V MLCC  C0G  NP0  0603 (M1608),399-9977-1-ND
+C83 C124 C145 ,3,620p,Capacitor_SMD:C_0603_1608Metric, ,620pF  ±5%  50V  MLCC  C0G  NP0  0603 (M1608),0603N621J500CT
+C99 C94 C105 C100 C106 C111 ,6,10uF,Capacitor_SMD:C_0805_2012Metric, , ,490-10514-1-ND
+C98 C95 C104 C101 C107 C110 C113 ,7,1uF,Capacitor_SMD:C_0603_1608Metric, , ,311-1787-2-ND
+C97 C96 C103 C102 C108 C109 C112 ,7,100nF,Capacitor_SMD:C_0603_1608Metric, , ,732-7989-1-ND
+D1 ,1,D_Schottky,Diode_SMD:D_SOD-523, ,40V  380mA (DC)  SOD-523,ZLLS350TACT-ND
+FB2 FB1 FB3 ,3,1k,Inductor_SMD:L_0805_2012Metric, , ,A102197CT-ND
+J1 ,1,INpower,Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical, , ,WM19538-ND
+J2 ,1,MCLK_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J4 ,1,MCLK_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J5 ,1,SPI1,Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical, , ,732-2096-ND
+J3 ,1,SPI0,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical, , ,732-2095-ND
+J6 ,1,AnalogOut_DAC1,digikey-footprints:RF_SMA_RightAngle_5-1814400-1, , ,WM4088-ND
+J7 ,1,AnalogOut_DAC2,digikey-footprints:RF_SMA_RightAngle_5-1814400-1, , ,WM4088-ND
+J9 ,1,REFbuf_ADC,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J8 ,1,AnalogOut_DAC3,digikey-footprints:RF_SMA_RightAngle_5-1814400-1, , ,WM4088-ND
+J10 ,1,AIN0_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J11 ,1,AIN1_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J13 ,1,AIN3_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J12 ,1,AIN2_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J14 ,1,AIN4_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J15 ,1,GPIO_ADC32,Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical, , ,929974E-01-04-ND
+J17 J16 ,2,GPIx,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical, , ,732-5315-ND
+J18 ,1,AIN0_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J19 ,1,AIN1_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J20 ,1,AIN2_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J21 ,1,AIN3_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J22 ,1,AIN4_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J23 ,1,AIN5_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J25 ,1,AIN6_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J27 ,1,AIN7_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J28 ,1,AIN8_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J29 ,1,AIN9_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J30 ,1,AIN10_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J31 ,1,AIN11_ADC32,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J32 ,1,AIN12_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J33 ,1,AIN13_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J34 ,1,AIN14_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J36 ,1,AIN15_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J24 ,1,AIN16_ADC24,digikey-footprints:RF_SMB_jack_Vertical, , ,A102025-ND
+J26 ,1,PDSW_ADC24,Connector_Pin:Pin_D1.0mm_L10.0mm,DNP, , 
+J35 ,1,GPIO_ADC24,Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical, , ,929975E-01-04-ND
+JP1 ,1,Sel Vref,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical, , ,732-5316-ND
+JP11 ,1,PWR_single_MCU,Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm,DNI, , 
+JP2 JP5 JP8 ,3,RESET_man,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical, , ,732-5315-ND
+JP4 JP7 JP10 ,3,CLR_man,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical, , ,732-5315-ND
+JP3 JP6 JP9 ,3,LDAC_man,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical, , ,732-5315-ND
+MK3 MK4 MK2 MK1 ,4,Mounting_Hole_PAD,Mounting_Holes:MountingHole_2.7mm, , , 
+R1 R2 ,2,50R,Resistor_SMD:R_0603_1608Metric, , ,541-2655-1-ND
+R7 R5 R3 R4 R50 R51 R52 R53 R54 R56 R58 R61 R62 R63 R64 R65 R67 R68 R69 R70 ,20,10R,Resistor_SMD:R_0603_1608Metric, , ,541-2982-1-ND
+R6 R11 R24 R31 R36 R43 R55 R66 ,8,0R,Resistor_SMD:R_0603_1608Metric, , ,311-0.0GRCT-ND
+R8 R57 ,2,10R,Resistor_SMD:R_0603_1608Metric,DNP, ,541-2982-1-ND
+R10 R9 R59 R60 ,4,10k,Capacitor_SMD:C_0805_2012Metric, , ,311-10.0KCRCT-ND
+R13 R12 R23 ,3,2R,Resistor_SMD:R_0805_2012Metric,DNI, , 
+R19 ,1,100k,Resistor_SMD:R_0805_2012Metric, , ,541-4413-1-ND
+R17 ,1,0R,Resistor_SMD:R_0603_1608Metric,DNI, ,311-0.0GRCT-ND
+R20 ,1,3.3k,Resistor_SMD:R_0805_2012Metric, , ,A129755CT-ND
+R22 R21 R16 R14 ,4,47k,Resistor_SMD:R_0805_2012Metric, , ,P123852CT-ND
+R15 ,1,680R,Resistor_SMD:R_0805_2012Metric, , ,P21000CT-ND
+R18 ,1,1k,Resistor_SMD:R_0805_2012Metric, , ,541-4416-1-ND
+R25 R26 R27 R28 R37 R38 R39 R40 R44 R45 R46 R47 ,12,10k,Resistor_SMD:R_0805_2012Metric, , ,311-10.0KCRCT-ND
+R29 R41 R48 ,3,1.2k,Resistor_SMD:R_0603_1608Metric,0R,1.2k  ±1%  0.1W  0603(M1608)  Thick Film,541-1.20KHCT-ND
+R30 R42 R49 ,3,33.7k,Resistor_SMD:R_0603_1608Metric, ,33k  ±1% 0.1W  0603 (M1608)  Thick Film,541-33.0KHCT-ND
+R33 R35 R34 R32 ,4,10k,Resistor_SMD:R_0603_1608Metric, , ,311-10.0KCRCT-ND
+RN2 RN1 ,2,LT5400BIMS8E-4-PBF,Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm, , ,LT5400BIMS8E-4#PBF-ND
+RV2 ,1,10k,Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical, , ,804-1003-ND
+RV3 RV1 ,2,10k,Potentiometer_SMD:Potentiometer_Bourns_3269W_Vertical, , ,3361P-103GLFCT-ND
+U1 ,1,AD7177-2BRUZ,AD7177-2:AD7177-2BRUZ, , , 
+U3 U10 ,2,ADP7118ARDZ-3.3,ADP7118:ADP7118ARDZ, , ,ADP7118ARDZ-3.3-R7CT-ND
+U2 ,1,ADP7118ARDZ-5.0,ADP7118:ADP7118ARDZ, , ,ADP7118ARDZ-5.0-ND
+U5 ,1,ADR445BRZ,ADR445:ADR445ARZ, , ,ADR44ARZ-ND/ADR44ARZ-ND
+U7 U12 U13 U19 U20 U22 U23 ,7,AD8676,AD8676-SOIC8:AD8676ARZ, , ,AD8676BRZ-ND
+U6 U4 ,2,AD8675ARZ,AD8675-SOIC8:AD8675ARZ, , ,AD8675ARMZ-ND
+U8 ,1,LT3032-12,Package_DFN_QFN:Linear_DE14MA, , , 
+U9 ,1,LT3032-15,Package_DFN_QFN:Linear_DE14MA, , , 
+U11 U18 U21 ,3,AD5791,AD5791-TSSOP20:AD5791ARUZ, , ,AD5791BRUZ-ND
+U14 ,1,ISO7761DBQR,ISO7761-SSOP:ISO7761DBQR, , , 
+U15 ,1,ISO7741DBQR,ISO7741-SSOP:ISO7741DBQR, , ,296-48140-1-ND
+U16 ,1,74HC02,Package_SO:TSSOP-14_4.4x5mm_P0.65mm, , ,296-4515-1-ND
+U17 ,1,ISO7760DBQR,ISO7760-SSOP:ISO7760DBQR, , , 
+U24 ,1,AD7175-8BCPZ,AD7175-8:CP_40_14, , , 
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 2020-05-15 20:52:18

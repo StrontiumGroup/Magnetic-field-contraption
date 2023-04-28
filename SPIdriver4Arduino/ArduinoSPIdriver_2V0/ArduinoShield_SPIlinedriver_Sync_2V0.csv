@@ -1,0 +1,42 @@
+Title,ArduinoShield SPI-LineDriver, Synchronization2Exp
+Revision,2
+Date,2020-02-23
+Generated,2020-03-10 13:10:47
+Company,RbSr
+Comment 1,Author: Lukas Reichsöllner
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,36
+Total Unique Parts,21
+
+
+
+Ref,Qty,Value,Footprint,DigiKey,
+C3 C4 C5 C6 C1 C2 ,6,100nF,Capacitor_SMD:C_0805_2012Metric,399-1170-2-ND
+J2 ,1,Conn_02x03_Odd_Even,Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical,SAM9289-ND
+J1 ,1,ADC0,Connector_Molex:Molex_Micro-Latch_53253-0770_1x07_P2.00mm_Vertical,WM24307-ND
+J7 ,1,CLK 2MHz,Connector_Coaxial:SMA_Amphenol_132291_Vertical,ACX1976-ND
+J6 ,1,DAC1,Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical,WM3478-ND
+J3 ,1,ADC1,Connector_Molex:Molex_Micro-Latch_53253-0770_1x07_P2.00mm_Vertical,WM24307-ND
+J13 ,1,LEDDindicators,Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical,732-5394-ND
+J12 ,1,CLK EN,Connector_Coaxial:SMA_Amphenol_132291_Vertical,ACX1976-ND
+J10 ,1,DAC2,Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical,WM3478-ND
+J4 ,1,SPI Periph.5,Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical, 
+J8 J9 J11 J5 ,4,ConnDGND,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical, 
+P1 P2 P3 P4 P5 P6 ,6,CONN_01X01,Socket_Arduino_Mega:Arduino_1pin, 
+P8 ,1,Power,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, 
+P7 ,1,PWM,Socket_Arduino_Mega:Socket_Strip_Arduino_1x10, 
+P9 P11 ,2,Analog,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, 
+P10 ,1,PWM,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, 
+P12 ,1,Communication,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, 
+P13 ,1,Digital,Socket_Arduino_Mega:Socket_Strip_Arduino_2x18, 
+SW1 ,1,SW_Push,Button_Switch_SMD:SW_SPST_TL3305A,LL3301FF065QJ-ND
+U2 U3 ,2,74HC590A,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,296-17132-2-ND
+U1 ,1,SN74LVTH541DWR,Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm,296-36417-1-ND
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 2020-03-10 13:10:47
