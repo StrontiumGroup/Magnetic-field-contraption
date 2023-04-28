@@ -1,0 +1,795 @@
+EESchema Schematic File Version 4
+LIBS:AFE_1CH_2V0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "High-Precision, low noise Analog Front End"
+Date "2020-04-11"
+Rev "2"
+Comp "RbSr"
+Comment1 "3-stage design (InBuffer - Filter - ADCdriver)"
+Comment2 "see also Application Note AN1264"
+Comment3 ""
+Comment4 "Author: L. Reichsöllner"
+$EndDescr
+$Sheet
+S 6625 925  1200 375 
+U 5E8E1FE6
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "PWR+15V" I L 6625 1025 50 
+F3 "PWR-15V" I L 6625 1100 50 
+F4 "PWR+12V" O R 7825 1025 50 
+F5 "PWR-12V" O R 7825 1125 50 
+F6 "PWR+5V" O R 7825 1250 50 
+$EndSheet
+$Sheet
+S 2200 1950 925  525 
+U 5E8EEF0C
+F0 "AFE1" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "PWR+12V" I L 2200 2000 50 
+F3 "PWR-12V" I L 2200 2050 50 
+F4 "V_OCM" I L 2200 2200 50 
+F5 "+5V" I L 2200 2125 50 
+F6 "Ain+" I L 2200 2325 50 
+F7 "Ain-" I L 2200 2375 50 
+F8 "Aout+" O R 3125 2325 50 
+F9 "Aout-" O R 3125 2375 50 
+$EndSheet
+$Comp
+L power:GNDA #PWR01
+U 1 1 5E8EF8B5
+P 3650 800
+F 0 "#PWR01" H 3650 550 50  0001 C CNN
+F 1 "GNDA" V 3655 673 50  0000 R CNN
+F 2 "" H 3650 800 50  0001 C CNN
+F 3 "" H 3650 800 50  0001 C CNN
+	1    3650 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 800  3675 800 
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E8F18B4
+P 3700 800
+F 0 "#FLG01" H 3700 875 50  0001 C CNN
+F 1 "PWR_FLAG" V 3700 928 50  0000 L CNN
+F 2 "" H 3700 800 50  0001 C CNN
+F 3 "~" H 3700 800 50  0001 C CNN
+	1    3700 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4425 1000 4425 925 
+Wire Wire Line
+	4425 800  4500 800 
+Text Label 4500 1375 0    50   ~ 0
+PWR+15V
+Wire Wire Line
+	4425 1200 4425 1375
+Wire Wire Line
+	4425 1375 4500 1375
+Text Label 4500 800  0    50   ~ 0
+PWR-15V
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E8F8F9A
+P 4425 800
+F 0 "#FLG02" H 4425 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 4425 973 50  0000 C CNN
+F 2 "" H 4425 800 50  0001 C CNN
+F 3 "~" H 4425 800 50  0001 C CNN
+	1    4425 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4425 800 
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5E8F9A22
+P 4425 1375
+F 0 "#FLG04" H 4425 1450 50  0001 C CNN
+F 1 "PWR_FLAG" H 4425 1548 50  0000 C CNN
+F 2 "" H 4425 1375 50  0001 C CNN
+F 3 "~" H 4425 1375 50  0001 C CNN
+	1    4425 1375
+	-1   0    0    1   
+$EndComp
+Connection ~ 4425 1375
+Text Label 6525 1100 2    50   ~ 0
+PWR-15V
+Wire Wire Line
+	6525 1100 6625 1100
+Text Label 6525 1025 2    50   ~ 0
+PWR+15V
+Wire Wire Line
+	6525 1025 6625 1025
+Text Label 8375 1025 0    50   ~ 0
+PWR+12V
+Wire Wire Line
+	7825 1025 8075 1025
+Text Label 8375 1125 0    50   ~ 0
+PWR-12V
+Text Label 7950 1250 0    50   ~ 0
+PWR+5V
+Wire Wire Line
+	7950 1250 7825 1250
+Text Label 1750 2000 2    50   ~ 0
+PWR+12V
+Wire Wire Line
+	2200 2000 1750 2000
+Text Label 1750 2050 2    50   ~ 0
+PWR-12V
+Text Label 1750 2125 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1750 2050 2200 2050
+Wire Wire Line
+	1750 2125 2200 2125
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5E902E7C
+P 1125 1000
+F 0 "J1" H 1225 975 50  0000 L CNN
+F 1 "V_OCM" H 1225 884 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 1125 1000 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 1125 1000 50  0001 C CNN
+F 4 "A102025-ND" H 1125 1000 50  0001 C CNN "DigiKey"
+	1    1125 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR03
+U 1 1 5E905FDA
+P 1125 1200
+F 0 "#PWR03" H 1125 950 50  0001 C CNN
+F 1 "GNDA" H 1130 1027 50  0000 C CNN
+F 2 "" H 1125 1200 50  0001 C CNN
+F 3 "" H 1125 1200 50  0001 C CNN
+	1    1125 1200
+	1    0    0    -1  
+$EndComp
+Text Label 775  1000 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	775  1000 875  1000
+Text Label 2075 2200 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2075 2200 2200 2200
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5E9078C4
+P 875 1000
+F 0 "#FLG03" H 875 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 875 1173 50  0000 C CNN
+F 2 "" H 875 1000 50  0001 C CNN
+F 3 "~" H 875 1000 50  0001 C CNN
+	1    875  1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 875  1000
+Wire Wire Line
+	875  1000 925  1000
+$Comp
+L Connector:Conn_Coaxial J4
+U 1 1 5E8F4B7F
+P 1525 2225
+F 0 "J4" H 1625 2200 50  0000 L CNN
+F 1 "AnalogIN1" H 1625 2109 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1525 2225 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1525 2225 50  0001 C CNN
+F 4 "A97555-ND" H 1525 2225 50  0001 C CNN "DigiKey"
+	1    1525 2225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 2225 1725 2325
+Wire Wire Line
+	1525 2425 1875 2425
+Wire Wire Line
+	1875 2425 1875 2375
+Wire Wire Line
+	1875 2375 2200 2375
+Wire Wire Line
+	1725 2325 2200 2325
+Wire Wire Line
+	3125 2325 3225 2325
+Wire Wire Line
+	3275 2375 3275 2325
+$Sheet
+S 2175 2825 925  525 
+U 5E926F25
+F0 "AFE2" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "PWR+12V" I L 2175 2875 50 
+F3 "PWR-12V" I L 2175 2925 50 
+F4 "V_OCM" I L 2175 3075 50 
+F5 "+5V" I L 2175 3000 50 
+F6 "Ain+" I L 2175 3200 50 
+F7 "Ain-" I L 2175 3250 50 
+F8 "Aout+" O R 3100 3200 50 
+F9 "Aout-" O R 3100 3250 50 
+$EndSheet
+Text Label 1725 2875 2    50   ~ 0
+PWR+12V
+Wire Wire Line
+	2175 2875 1725 2875
+Text Label 1725 2925 2    50   ~ 0
+PWR-12V
+Text Label 1725 3000 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1725 2925 2175 2925
+Wire Wire Line
+	1725 3000 2175 3000
+Text Label 2050 3075 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2050 3075 2175 3075
+$Comp
+L Connector:Conn_Coaxial J7
+U 1 1 5E926F34
+P 1500 3100
+F 0 "J7" H 1600 3075 50  0000 L CNN
+F 1 "AnalogIN2" H 1600 2984 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1500 3100 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1500 3100 50  0001 C CNN
+F 4 "A97555-ND" H 1500 3100 50  0001 C CNN "DigiKey"
+	1    1500 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3100 1700 3200
+Wire Wire Line
+	1500 3300 1850 3300
+Wire Wire Line
+	1850 3300 1850 3250
+Wire Wire Line
+	1850 3250 2175 3250
+Wire Wire Line
+	1700 3200 2175 3200
+$Sheet
+S 2175 3675 925  525 
+U 5E92C6BC
+F0 "AFE3" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "PWR+12V" I L 2175 3725 50 
+F3 "PWR-12V" I L 2175 3775 50 
+F4 "V_OCM" I L 2175 3925 50 
+F5 "+5V" I L 2175 3850 50 
+F6 "Ain+" I L 2175 4050 50 
+F7 "Ain-" I L 2175 4100 50 
+F8 "Aout+" O R 3100 4050 50 
+F9 "Aout-" O R 3100 4100 50 
+$EndSheet
+Text Label 1725 3725 2    50   ~ 0
+PWR+12V
+Wire Wire Line
+	2175 3725 1725 3725
+Text Label 1725 3775 2    50   ~ 0
+PWR-12V
+Text Label 1725 3850 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1725 3775 2175 3775
+Wire Wire Line
+	1725 3850 2175 3850
+Text Label 2050 3925 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2050 3925 2175 3925
+$Comp
+L Connector:Conn_Coaxial J10
+U 1 1 5E92C6CB
+P 1500 3950
+F 0 "J10" H 1600 3925 50  0000 L CNN
+F 1 "AnalogIN3" H 1600 3834 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1500 3950 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1500 3950 50  0001 C CNN
+F 4 "A97555-ND" H 1500 3950 50  0001 C CNN "DigiKey"
+	1    1500 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3950 1700 4050
+Wire Wire Line
+	1500 4150 1850 4150
+Wire Wire Line
+	1850 4150 1850 4100
+Wire Wire Line
+	1850 4100 2175 4100
+Wire Wire Line
+	1700 4050 2175 4050
+$Sheet
+S 2150 4650 925  525 
+U 5E92FD57
+F0 "AFE4" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "PWR+12V" I L 2150 4700 50 
+F3 "PWR-12V" I L 2150 4750 50 
+F4 "V_OCM" I L 2150 4900 50 
+F5 "+5V" I L 2150 4825 50 
+F6 "Ain+" I L 2150 5025 50 
+F7 "Ain-" I L 2150 5075 50 
+F8 "Aout+" O R 3075 5025 50 
+F9 "Aout-" O R 3075 5075 50 
+$EndSheet
+Text Label 1700 4700 2    50   ~ 0
+PWR+12V
+Wire Wire Line
+	2150 4700 1700 4700
+Text Label 1700 4750 2    50   ~ 0
+PWR-12V
+Text Label 1700 4825 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1700 4750 2150 4750
+Wire Wire Line
+	1700 4825 2150 4825
+Text Label 2025 4900 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2025 4900 2150 4900
+$Comp
+L Connector:Conn_Coaxial J13
+U 1 1 5E92FD66
+P 1475 4925
+F 0 "J13" H 1575 4900 50  0000 L CNN
+F 1 "AnalogIN4" H 1575 4809 50  0000 L CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1475 4925 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1475 4925 50  0001 C CNN
+F 4 "A97555-ND" H 1475 4925 50  0001 C CNN "DigiKey"
+	1    1475 4925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 4925 1675 5025
+Wire Wire Line
+	1475 5125 1825 5125
+Wire Wire Line
+	1825 5125 1825 5075
+Wire Wire Line
+	1825 5075 2150 5075
+Wire Wire Line
+	1675 5025 2150 5025
+$Comp
+L Connector:Conn_Coaxial J5
+U 1 1 5E906061
+P 3475 2325
+F 0 "J5" H 3575 2300 50  0000 L CNN
+F 1 "AnalogOut1-" H 3575 2209 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3475 2325 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3475 2325 50  0001 C CNN
+F 4 "A102025-ND" H 3475 2325 50  0001 C CNN "DigiKey"
+	1    3475 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 2000 3225 2325
+Wire Wire Line
+	3225 2000 3325 2000
+Wire Wire Line
+	3125 2375 3275 2375
+$Comp
+L power:GNDA #PWR06
+U 1 1 5E91CC5E
+P 3800 2275
+F 0 "#PWR06" H 3800 2025 50  0001 C CNN
+F 1 "GNDA" H 3805 2102 50  0000 C CNN
+F 2 "" H 3800 2275 50  0001 C CNN
+F 3 "" H 3800 2275 50  0001 C CNN
+	1    3800 2275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3525 2200 3800 2200
+Wire Wire Line
+	3800 2200 3800 2275
+Wire Wire Line
+	3475 2525 3800 2525
+Wire Wire Line
+	3800 2525 3800 2275
+Connection ~ 3800 2275
+Text Label 7950 1250 0    50   ~ 0
+PWR+5V
+$Comp
+L Connector:Conn_Coaxial J6
+U 1 1 5E9537BA
+P 3500 2875
+F 0 "J6" H 3600 2850 50  0000 L CNN
+F 1 "AnalogOut2+" H 3600 2759 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3500 2875 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3500 2875 50  0001 C CNN
+F 4 "A102025-ND" H 3500 2875 50  0001 C CNN "DigiKey"
+	1    3500 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3250 3250 3200
+$Comp
+L Connector:Conn_Coaxial J8
+U 1 1 5E9537C6
+P 3450 3200
+F 0 "J8" H 3550 3175 50  0000 L CNN
+F 1 "AnalogOut2-" H 3550 3084 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3450 3200 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3450 3200 50  0001 C CNN
+F 4 "A102025-ND" H 3450 3200 50  0001 C CNN "DigiKey"
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2875 3300 2875
+Wire Wire Line
+	3100 3250 3250 3250
+$Comp
+L power:GNDA #PWR07
+U 1 1 5E9537D2
+P 3775 3150
+F 0 "#PWR07" H 3775 2900 50  0001 C CNN
+F 1 "GNDA" H 3780 2977 50  0000 C CNN
+F 2 "" H 3775 3150 50  0001 C CNN
+F 3 "" H 3775 3150 50  0001 C CNN
+	1    3775 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 3075 3775 3075
+Wire Wire Line
+	3775 3075 3775 3150
+Wire Wire Line
+	3450 3400 3775 3400
+Wire Wire Line
+	3775 3400 3775 3150
+Connection ~ 3775 3150
+$Comp
+L Connector:Conn_Coaxial J9
+U 1 1 5E960259
+P 3500 3725
+F 0 "J9" H 3600 3700 50  0000 L CNN
+F 1 "AnalogOut3+" H 3600 3609 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3500 3725 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3500 3725 50  0001 C CNN
+F 4 "A102025-ND" H 3500 3725 50  0001 C CNN "DigiKey"
+	1    3500 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4100 3250 4050
+$Comp
+L Connector:Conn_Coaxial J11
+U 1 1 5E960261
+P 3450 4050
+F 0 "J11" H 3550 4025 50  0000 L CNN
+F 1 "AnalogOut3-" H 3550 3934 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3450 4050 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3450 4050 50  0001 C CNN
+F 4 "A102025-ND" H 3450 4050 50  0001 C CNN "DigiKey"
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3725 3300 3725
+Wire Wire Line
+	3100 4100 3250 4100
+$Comp
+L power:GNDA #PWR08
+U 1 1 5E960269
+P 3775 4000
+F 0 "#PWR08" H 3775 3750 50  0001 C CNN
+F 1 "GNDA" H 3780 3827 50  0000 C CNN
+F 2 "" H 3775 4000 50  0001 C CNN
+F 3 "" H 3775 4000 50  0001 C CNN
+	1    3775 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 3925 3775 3925
+Wire Wire Line
+	3775 3925 3775 4000
+Wire Wire Line
+	3450 4250 3775 4250
+Wire Wire Line
+	3775 4250 3775 4000
+Connection ~ 3775 4000
+$Comp
+L Connector:Conn_Coaxial J12
+U 1 1 5E9654C4
+P 3475 4700
+F 0 "J12" H 3575 4675 50  0000 L CNN
+F 1 "AnalogOut4+" H 3575 4584 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3475 4700 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3475 4700 50  0001 C CNN
+F 4 "A102025-ND" H 3475 4700 50  0001 C CNN "DigiKey"
+	1    3475 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 5075 3225 5025
+$Comp
+L Connector:Conn_Coaxial J14
+U 1 1 5E9654CC
+P 3425 5025
+F 0 "J14" H 3525 5000 50  0000 L CNN
+F 1 "AnalogOut4-" H 3525 4909 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3425 5025 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3425 5025 50  0001 C CNN
+F 4 "A102025-ND" H 3425 5025 50  0001 C CNN "DigiKey"
+	1    3425 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 4700 3275 4700
+Wire Wire Line
+	3075 5075 3225 5075
+$Comp
+L power:GNDA #PWR09
+U 1 1 5E9654D4
+P 3750 4975
+F 0 "#PWR09" H 3750 4725 50  0001 C CNN
+F 1 "GNDA" H 3755 4802 50  0000 C CNN
+F 2 "" H 3750 4975 50  0001 C CNN
+F 3 "" H 3750 4975 50  0001 C CNN
+	1    3750 4975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3475 4900 3750 4900
+Wire Wire Line
+	3750 4900 3750 4975
+Wire Wire Line
+	3425 5225 3750 5225
+Wire Wire Line
+	3750 5225 3750 4975
+Connection ~ 3750 4975
+Wire Wire Line
+	3175 4700 3175 5025
+Wire Wire Line
+	3175 5025 3075 5025
+Wire Wire Line
+	3200 3725 3200 4050
+Wire Wire Line
+	3200 4050 3100 4050
+Wire Wire Line
+	3200 2875 3200 3200
+Wire Wire Line
+	3200 3200 3100 3200
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5E9178E5
+P 4125 1100
+F 0 "J2" H 4175 675 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4175 766 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 4125 1100 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/Box%20Header_IDC%20Conn%20WR-BHD.pdf" H 4125 1100 50  0001 C CNN
+F 4 "732-2098-ND" H 4125 1100 50  0001 C CNN "DigiKey"
+	1    4125 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3825 1000 3825 975 
+Wire Wire Line
+	3825 975  4375 975 
+Wire Wire Line
+	4375 975  4375 1000
+Wire Wire Line
+	4375 1000 4325 1000
+Wire Wire Line
+	4375 1000 4425 1000
+Connection ~ 4375 1000
+Wire Wire Line
+	3825 1200 3825 1175
+Wire Wire Line
+	3825 1175 4325 1175
+Wire Wire Line
+	4325 1175 4325 1200
+Wire Wire Line
+	4325 1200 4425 1200
+Connection ~ 4325 1200
+Wire Wire Line
+	4325 1300 4325 1375
+Wire Wire Line
+	4325 1375 3825 1375
+Wire Wire Line
+	3825 1375 3825 1300
+Wire Wire Line
+	4325 900  4325 825 
+Wire Wire Line
+	4325 825  3825 825 
+Wire Wire Line
+	3825 825  3825 900 
+Wire Wire Line
+	3675 800  3675 900 
+Wire Wire Line
+	3675 1300 3825 1300
+Connection ~ 3675 800 
+Wire Wire Line
+	3675 800  3700 800 
+Connection ~ 3825 1300
+Wire Wire Line
+	3825 1100 3675 1100
+Connection ~ 3675 1100
+Wire Wire Line
+	3675 1100 3675 1300
+Wire Wire Line
+	4325 1100 4325 1075
+Wire Wire Line
+	4325 1075 3825 1075
+Wire Wire Line
+	3825 1075 3825 1100
+Connection ~ 3825 1100
+Wire Wire Line
+	3825 900  3675 900 
+Connection ~ 3825 900 
+Connection ~ 3675 900 
+Wire Wire Line
+	3675 900  3675 1100
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E90DC0F
+P 10600 925
+F 0 "H2" H 10700 971 50  0000 L CNN
+F 1 "MountingHole" H 10700 880 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10600 925 50  0001 C CNN
+F 3 "~" H 10600 925 50  0001 C CNN
+	1    10600 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E90EB37
+P 10575 1375
+F 0 "H4" H 10675 1421 50  0000 L CNN
+F 1 "MountingHole" H 10675 1330 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10575 1375 50  0001 C CNN
+F 3 "~" H 10575 1375 50  0001 C CNN
+	1    10575 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E90EE91
+P 10575 1150
+F 0 "H3" H 10675 1196 50  0000 L CNN
+F 1 "MountingHole" H 10675 1105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10575 1150 50  0001 C CNN
+F 3 "~" H 10575 1150 50  0001 C CNN
+	1    10575 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E90F17E
+P 10600 725
+F 0 "H1" H 10700 771 50  0000 L CNN
+F 1 "MountingHole" H 10700 680 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10600 725 50  0001 C CNN
+F 3 "~" H 10600 725 50  0001 C CNN
+	1    10600 725 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C3
+U 1 1 5E963784
+P 4650 1200
+F 0 "C3" V 4875 1200 50  0000 C CNN
+F 1 "100uF" V 4784 1200 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4650 1200 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860040473003.pdf" H 4650 1200 50  0001 C CNN
+F 4 "732-9170-1-ND" H 4650 1200 50  0001 C CNN "DigiKey"
+	1    4650 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4425 1200 4550 1200
+Connection ~ 4425 1200
+$Comp
+L Device:CP_Small C1
+U 1 1 5E96F890
+P 4975 925
+F 0 "C1" V 4750 925 50  0000 C CNN
+F 1 "100uF" V 4841 925 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4975 925 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860040473003.pdf" H 4975 925 50  0001 C CNN
+F 4 "732-9170-1-ND" H 4975 925 50  0001 C CNN "DigiKey"
+	1    4975 925 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4425 925  4875 925 
+Connection ~ 4425 925 
+Wire Wire Line
+	4425 925  4425 800 
+$Comp
+L power:GNDA #PWR04
+U 1 1 5E9770A7
+P 5125 1200
+F 0 "#PWR04" H 5125 950 50  0001 C CNN
+F 1 "GNDA" V 5130 1073 50  0000 R CNN
+F 2 "" H 5125 1200 50  0001 C CNN
+F 3 "" H 5125 1200 50  0001 C CNN
+	1    5125 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1200 5125 1200
+Wire Wire Line
+	5075 925  5125 925 
+Wire Wire Line
+	5125 925  5125 1200
+Connection ~ 5125 1200
+$Comp
+L Device:CP_Small C2
+U 1 1 5E97ECC2
+P 8075 925
+F 0 "C2" H 8163 971 50  0000 L CNN
+F 1 "22uF" H 8163 880 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8075 925 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860040473003.pdf" H 8075 925 50  0001 C CNN
+F 4 "732-9317-1-ND" H 8075 925 50  0001 C CNN "DigiKey"
+	1    8075 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C4
+U 1 1 5E980466
+P 8325 1225
+F 0 "C4" H 8237 1179 50  0000 R CNN
+F 1 "22uF" H 8237 1270 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8325 1225 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860040473003.pdf" H 8325 1225 50  0001 C CNN
+F 4 "732-9317-1-ND" H 8325 1225 50  0001 C CNN "DigiKey"
+	1    8325 1225
+	-1   0    0    1   
+$EndComp
+Connection ~ 8075 1025
+Wire Wire Line
+	8075 1025 8375 1025
+Wire Wire Line
+	7825 1125 8325 1125
+Connection ~ 8325 1125
+Wire Wire Line
+	8325 1125 8375 1125
+$Comp
+L power:GNDA #PWR05
+U 1 1 5E99F0CA
+P 8325 1350
+F 0 "#PWR05" H 8325 1100 50  0001 C CNN
+F 1 "GNDA" V 8330 1223 50  0000 R CNN
+F 2 "" H 8325 1350 50  0001 C CNN
+F 3 "" H 8325 1350 50  0001 C CNN
+	1    8325 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 1350 8325 1325
+$Comp
+L power:GNDA #PWR02
+U 1 1 5E9A32D9
+P 8075 800
+F 0 "#PWR02" H 8075 550 50  0001 C CNN
+F 1 "GNDA" V 8080 673 50  0000 R CNN
+F 2 "" H 8075 800 50  0001 C CNN
+F 3 "" H 8075 800 50  0001 C CNN
+	1    8075 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8075 825  8075 800 
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5E904D04
+P 3525 2000
+F 0 "J3" H 3625 1975 50  0000 L CNN
+F 1 "AnalogOut1+" H 3625 1884 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3525 2000 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3525 2000 50  0001 C CNN
+F 4 "A102025-ND" H 3525 2000 50  0001 C CNN "DigiKey"
+	1    3525 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

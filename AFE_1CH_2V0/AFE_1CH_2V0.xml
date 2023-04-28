@@ -1,0 +1,2871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\Projects\AFE_1CH_2V0\AFE_1CH_2V0.sch</source>
+    <date>2020-05-04 15:21:36</date>
+    <tool>Eeschema (5.1.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>High-Precision, low noise Analog Front End</title>
+        <company>RbSr</company>
+        <rev>2</rev>
+        <date>2020-04-11</date>
+        <source>AFE_1CH_2V0.sch</source>
+        <comment number="1" value="3-stage design (InBuffer - Filter - ADCdriver)"/>
+        <comment number="2" value="see also Application Note AN1264"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Author: L. Reichsöllner"/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power/" tstamps="/5E8E1FE6/">
+      <title_block>
+        <title>High-Precision, low noise Analog Front End</title>
+        <company>RbSr</company>
+        <rev>2</rev>
+        <date>2020-04-11</date>
+        <source>Power.sch</source>
+        <comment number="1" value="3-stage design (InBuffer - Filter - ADCdriver)"/>
+        <comment number="2" value="see also Application Note AN1264"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Author: L. Reichsöllner"/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/AFE1/" tstamps="/5E8EEF0C/">
+      <title_block>
+        <title>High-Precision, low noise Analog Front End</title>
+        <company>RbSr</company>
+        <rev>2</rev>
+        <date>2020-04-11</date>
+        <source>AnalogFrontEnd.sch</source>
+        <comment number="1" value="3-stage design (InBuffer - Filter - ADCdriver)"/>
+        <comment number="2" value="see also Application Note AN1264"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Author: L. Reichsöllner"/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/AFE2/" tstamps="/5E926F25/">
+      <title_block>
+        <title>High-Precision, low noise Analog Front End</title>
+        <company>RbSr</company>
+        <rev>2</rev>
+        <date>2020-04-11</date>
+        <source>AnalogFrontEnd.sch</source>
+        <comment number="1" value="3-stage design (InBuffer - Filter - ADCdriver)"/>
+        <comment number="2" value="see also Application Note AN1264"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Author: L. Reichsöllner"/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/AFE3/" tstamps="/5E92C6BC/">
+      <title_block>
+        <title>High-Precision, low noise Analog Front End</title>
+        <company>RbSr</company>
+        <rev>2</rev>
+        <date>2020-04-11</date>
+        <source>AnalogFrontEnd.sch</source>
+        <comment number="1" value="3-stage design (InBuffer - Filter - ADCdriver)"/>
+        <comment number="2" value="see also Application Note AN1264"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Author: L. Reichsöllner"/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/AFE4/" tstamps="/5E92FD57/">
+      <title_block>
+        <title>High-Precision, low noise Analog Front End</title>
+        <company>RbSr</company>
+        <rev>2</rev>
+        <date>2020-04-11</date>
+        <source>AnalogFrontEnd.sch</source>
+        <comment number="1" value="3-stage design (InBuffer - Filter - ADCdriver)"/>
+        <comment number="2" value="see also Application Note AN1264"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Author: L. Reichsöllner"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>V_OCM</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E902E7C</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>AnalogIN1</value>
+      <footprint>Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1634612&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A97555-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E8F4B7F</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>AnalogIN2</value>
+      <footprint>Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1634612&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A97555-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E926F34</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>AnalogIN3</value>
+      <footprint>Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1634612&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A97555-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E92C6CB</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>AnalogIN4</value>
+      <footprint>Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1634612&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A97555-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E92FD66</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>AnalogOut1-</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E906061</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>AnalogOut2+</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9537BA</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>AnalogOut2-</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9537C6</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>AnalogOut3+</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E960259</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>AnalogOut3-</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E960261</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>AnalogOut4+</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9654C4</tstamp>
+    </comp>
+    <comp ref="J14">
+      <value>AnalogOut4-</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9654CC</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E90DC0F</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E90EB37</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E90EE91</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E90F17E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/860040473003.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-9170-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E963784</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/860040473003.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-9170-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E96F890</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>22uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/860040473003.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-9317-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E97ECC2</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>22uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/860040473003.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-9317-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E980466</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>AnalogOut1+</value>
+      <footprint>digikey-footprints:RF_SMB_jack_Vertical</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1337482&amp;DocType=Customer+Drawing&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="DigiKey">A102025-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E904D04</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>INpower</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/038006293_sd.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">WM19538-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC19420</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LT3032-12</value>
+      <footprint>Package_DFN_QFN:Linear_DE14MA</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/3032ff.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="LT3032-12" description="150mA, Dual Low Dropout Linear Regulator, Positive/Negative Low Noise, 12V Output, DFN-14"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E894A8A</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://datasheets.avx.com/X7RDielectric.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">478-5719-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E898D18</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://datasheets.avx.com/X7RDielectric.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">478-5719-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E899E05</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf?ref_disty=digikey</datasheet>
+      <fields>
+        <field name="DigiKey">445-15925-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E89EC1E</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf?ref_disty=digikey</datasheet>
+      <fields>
+        <field name="DigiKey">445-15925-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E89FB17</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey</datasheet>
+      <fields>
+        <field name="DigiKey">445-1434-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E8A09AE</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey</datasheet>
+      <fields>
+        <field name="DigiKey">445-1434-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E8A464B</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>ADP7104ARDZ-5.0</value>
+      <footprint>Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm_ThermalVias</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7104.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">ADP7104ARDZ-5.0-R7CT-ND</field>
+      </fields>
+      <libsource lib="ADP7104ARDZ-R7" part="ADP7104ARDZ-R7" description=""/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E8E24FD</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KBFNNNE.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1029-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E8E3812</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KBFNNNE.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1029-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5E8E1FE6/"/>
+      <tstamp>5E8E426F</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAAA0</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAAA7</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAAAE</tstamp>
+    </comp>
+    <comp ref="RN1">
+      <value>LT5400BIMS8E-4-PBF</value>
+      <footprint>Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm</footprint>
+      <datasheet>http://www.linear.com/docs/39807</datasheet>
+      <fields>
+        <field name="DigiKey">LT5400BIMS8E-4#PBF-ND</field>
+      </fields>
+      <libsource lib="LT5400BIMS8E-4#PBF" part="LT5400BIMS8E-4-PBF" description="Resistor Network, Precision"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAAD4</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DoNotPopulate">DnP</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAAEC</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAAFB</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAB1B</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>AD8422BRZ</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8422ARZ-R7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Instrumentation" part="AD8421BRZ" description="Low Power, Instumentation Amplifier, SOIC-8"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BAB28</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BABAC</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BABB3</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BABBA</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BABC1</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8BABC8</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BAV199DW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30417.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BAV199DW-FDITR-ND</field>
+      </fields>
+      <libsource lib="Diode" part="BAV199DW" description="Quad Surface Mount Low Leakage Diode, SOT-363"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E94E705</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>AD8676</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8676.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8676BRZ-REEL7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OP279" description="Dual Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8/TSSOP-8"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8F2213</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>AD8475xRMZ</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8475.pdf</datasheet>
+      <libsource lib="Amplifier_Difference" part="AD8475xRMZ" description="Precision, Selectable Gain, Fully Differential Funnel Amplifier, MSOP-10"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8F5A24</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1.78k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.78KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8F6B44</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>14k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-14.0KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8F77EA</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1.58k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.58KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8F9443</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8FB4CF</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8FBB63</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8FC1D8</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E8FC93B</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E90FC91</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E910682</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E922419</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E92311C</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E9593FF</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E95A1A4</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E9605DD</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E960EA2</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E988CA6</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE1/" tstamps="/5E8EEF0C/"/>
+      <tstamp>5E92CE54</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAAA0</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAAA7</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAAAE</tstamp>
+    </comp>
+    <comp ref="RN2">
+      <value>LT5400BIMS8E-4-PBF</value>
+      <footprint>Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm</footprint>
+      <datasheet>http://www.linear.com/docs/39807</datasheet>
+      <fields>
+        <field name="DigiKey">LT5400BIMS8E-4#PBF-ND</field>
+      </fields>
+      <libsource lib="LT5400BIMS8E-4#PBF" part="LT5400BIMS8E-4-PBF" description="Resistor Network, Precision"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAAD4</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DoNotPopulate">DnP</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAAEC</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAAFB</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAB1B</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>AD8422BRZ</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8422ARZ-R7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Instrumentation" part="AD8421BRZ" description="Low Power, Instumentation Amplifier, SOIC-8"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BAB28</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BABAC</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BABB3</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BABBA</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BABC1</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8BABC8</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>BAV199DW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30417.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BAV199DW-FDITR-ND</field>
+      </fields>
+      <libsource lib="Diode" part="BAV199DW" description="Quad Surface Mount Low Leakage Diode, SOT-363"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E94E705</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>AD8676</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8676.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8676BRZ-REEL7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OP279" description="Dual Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8/TSSOP-8"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8F2213</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>AD8475xRMZ</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8475.pdf</datasheet>
+      <libsource lib="Amplifier_Difference" part="AD8475xRMZ" description="Precision, Selectable Gain, Fully Differential Funnel Amplifier, MSOP-10"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8F5A24</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>1.78k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.78KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8F6B44</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>14k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-14.0KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8F77EA</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>1.58k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.58KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8F9443</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8FB4CF</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8FBB63</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8FC1D8</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E8FC93B</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E90FC91</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E910682</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E922419</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E92311C</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E9593FF</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E95A1A4</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E9605DD</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E960EA2</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E988CA6</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE2/" tstamps="/5E926F25/"/>
+      <tstamp>5E92CE54</tstamp>
+    </comp>
+    <comp ref="C50">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAAA0</tstamp>
+    </comp>
+    <comp ref="C48">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAAA7</tstamp>
+    </comp>
+    <comp ref="C54">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAAAE</tstamp>
+    </comp>
+    <comp ref="RN3">
+      <value>LT5400BIMS8E-4-PBF</value>
+      <footprint>Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm</footprint>
+      <datasheet>http://www.linear.com/docs/39807</datasheet>
+      <fields>
+        <field name="DigiKey">LT5400BIMS8E-4#PBF-ND</field>
+      </fields>
+      <libsource lib="LT5400BIMS8E-4#PBF" part="LT5400BIMS8E-4-PBF" description="Resistor Network, Precision"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAAD4</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DoNotPopulate">DnP</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAAEC</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAAFB</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAB1B</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>AD8422BRZ</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8422ARZ-R7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Instrumentation" part="AD8421BRZ" description="Low Power, Instumentation Amplifier, SOIC-8"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BAB28</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BABAC</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BABB3</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BABBA</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BABC1</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8BABC8</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>BAV199DW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30417.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BAV199DW-FDITR-ND</field>
+      </fields>
+      <libsource lib="Diode" part="BAV199DW" description="Quad Surface Mount Low Leakage Diode, SOT-363"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E94E705</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>AD8676</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8676.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8676BRZ-REEL7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OP279" description="Dual Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8/TSSOP-8"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8F2213</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>AD8475xRMZ</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8475.pdf</datasheet>
+      <libsource lib="Amplifier_Difference" part="AD8475xRMZ" description="Precision, Selectable Gain, Fully Differential Funnel Amplifier, MSOP-10"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8F5A24</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>1.78k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.78KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8F6B44</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>14k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-14.0KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8F77EA</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>1.58k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.58KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8F9443</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8FB4CF</tstamp>
+    </comp>
+    <comp ref="C55">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8FBB63</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8FC1D8</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E8FC93B</tstamp>
+    </comp>
+    <comp ref="C59">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E90FC91</tstamp>
+    </comp>
+    <comp ref="C57">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E910682</tstamp>
+    </comp>
+    <comp ref="C58">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E922419</tstamp>
+    </comp>
+    <comp ref="C60">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E92311C</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E9593FF</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E95A1A4</tstamp>
+    </comp>
+    <comp ref="C52">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E9605DD</tstamp>
+    </comp>
+    <comp ref="C56">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E960EA2</tstamp>
+    </comp>
+    <comp ref="C49">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E988CA6</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE3/" tstamps="/5E92C6BC/"/>
+      <tstamp>5E92CE54</tstamp>
+    </comp>
+    <comp ref="C66">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAAA0</tstamp>
+    </comp>
+    <comp ref="C64">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAAA7</tstamp>
+    </comp>
+    <comp ref="C70">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1020-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAAAE</tstamp>
+    </comp>
+    <comp ref="RN4">
+      <value>LT5400BIMS8E-4-PBF</value>
+      <footprint>Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm</footprint>
+      <datasheet>http://www.linear.com/docs/39807</datasheet>
+      <fields>
+        <field name="DigiKey">LT5400BIMS8E-4#PBF-ND</field>
+      </fields>
+      <libsource lib="LT5400BIMS8E-4#PBF" part="LT5400BIMS8E-4-PBF" description="Resistor Network, Precision"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAAD4</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DoNotPopulate">DnP</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAAEC</tstamp>
+    </comp>
+    <comp ref="C63">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAAFB</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAB1B</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>AD8422BRZ</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8422ARZ-R7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Instrumentation" part="AD8421BRZ" description="Low Power, Instumentation Amplifier, SOIC-8"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BAB28</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BABAC</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BABB3</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BABBA</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BABC1</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">311-0.0GRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8BABC8</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>BAV199DW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30417.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">BAV199DW-FDITR-ND</field>
+      </fields>
+      <libsource lib="Diode" part="BAV199DW" description="Quad Surface Mount Low Leakage Diode, SOT-363"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E94E705</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>AD8676</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8676.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">AD8676BRZ-REEL7CT-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OP279" description="Dual Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8/TSSOP-8"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8F2213</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>AD8475xRMZ</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8475.pdf</datasheet>
+      <libsource lib="Amplifier_Difference" part="AD8475xRMZ" description="Precision, Selectable Gain, Fully Differential Funnel Amplifier, MSOP-10"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8F5A24</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>1.78k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.78KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8F6B44</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>14k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-14.0KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8F77EA</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>1.58k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-1.58KCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8F9443</tstamp>
+    </comp>
+    <comp ref="C67">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B103JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1245-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8FB4CF</tstamp>
+    </comp>
+    <comp ref="C71">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8FBB63</tstamp>
+    </comp>
+    <comp ref="C62">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8FC1D8</tstamp>
+    </comp>
+    <comp ref="C69">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E8FC93B</tstamp>
+    </comp>
+    <comp ref="C75">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E90FC91</tstamp>
+    </comp>
+    <comp ref="C73">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E910682</tstamp>
+    </comp>
+    <comp ref="C74">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E922419</tstamp>
+    </comp>
+    <comp ref="C76">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E92311C</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E9593FF</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">541-5.10CCCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E95A1A4</tstamp>
+    </comp>
+    <comp ref="C68">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E9605DD</tstamp>
+    </comp>
+    <comp ref="C72">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104J5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1171-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E960EA2</tstamp>
+    </comp>
+    <comp ref="C65">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/C0805C104M5RACTU.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-1169-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E988CA6</tstamp>
+    </comp>
+    <comp ref="C61">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://api.kemet.com/component-edge/download/datasheet/EEV106M035A9BAA.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">399-6695-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/AFE4/" tstamps="/5E92FD57/"/>
+      <tstamp>5E92CE54</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ADP7104ARDZ-R7" part="ADP7104ARDZ-R7">
+      <footprints>
+        <fp>RD_8_2</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADP7104ARDZ-R7</field>
+        <field name="Footprint">RD_8_2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="power_out"/>
+        <pin num="2" name="SENS/ADJ" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="EN/UVLO" type="input"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="PG" type="openCol"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Difference" part="AD8475xRMZ">
+      <description>Precision, Selectable Gain, Fully Differential Funnel Amplifier, MSOP-10</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8475.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD8475xRMZ</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-IN0.8x" type="input"/>
+        <pin num="2" name="-IN0.4x" type="input"/>
+        <pin num="3" name="+Vs" type="power_in"/>
+        <pin num="4" name="VOCM" type="power_in"/>
+        <pin num="5" name="+" type="output"/>
+        <pin num="6" name="-" type="output"/>
+        <pin num="7" name="NC" type="NotConnected"/>
+        <pin num="8" name="-Vs" type="power_in"/>
+        <pin num="9" name="+IN0.4x" type="input"/>
+        <pin num="10" name="+IN0.8x" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Instrumentation" part="AD8422ARZ">
+      <aliases>
+        <alias>AD8422BRZ</alias>
+        <alias>AD8421ARZ</alias>
+        <alias>AD8421BRZ</alias>
+        <alias>AD8429ARZ</alias>
+        <alias>AD8429BRZ</alias>
+      </aliases>
+      <description>Low Power, Rail to Rail, Instumentation Amplifier, SOIC-8</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf</docs>
+      <footprints>
+        <fp>SOIC-8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD8422ARZ</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="input"/>
+        <pin num="2" name="Rg" type="passive"/>
+        <pin num="3" name="Rg" type="passive"/>
+        <pin num="4" name="+" type="input"/>
+        <pin num="5" name="Vs-" type="power_in"/>
+        <pin num="6" name="Ref" type="passive"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="Vs+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="OP279">
+      <description>Dual Rail-to-Rail High Output Current Operational Amplifiers, SOIC-8/TSSOP-8</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OP279</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="BAV99S">
+      <aliases>
+        <alias>BAV199DW</alias>
+      </aliases>
+      <description>High-speed switching diodes, dual series, SOT-363</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</docs>
+      <footprints>
+        <fp>SOT?363*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAV99S</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-363_SC-70-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="K2" type="passive"/>
+        <pin num="3" name="K1A2" type="passive"/>
+        <pin num="4" name="A3" type="passive"/>
+        <pin num="5" name="K4" type="passive"/>
+        <pin num="6" name="K3A4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LT5400BIMS8E-4#PBF" part="LT5400BIMS8E-4-PBF">
+      <description>Resistor Network, Precision</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/5400fc.pdf</docs>
+      <footprints>
+        <fp>MSOP-8_MS</fp>
+        <fp>MSOP-8_MS-M</fp>
+        <fp>MSOP-8_MS-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">LT5400BIMS8E-4-PBF</field>
+        <field name="Footprint">Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R1" type="passive"/>
+        <pin num="2" name="R2" type="passive"/>
+        <pin num="3" name="R3" type="passive"/>
+        <pin num="4" name="R4" type="passive"/>
+        <pin num="5" name="R4" type="passive"/>
+        <pin num="6" name="R3" type="passive"/>
+        <pin num="7" name="R2" type="passive"/>
+        <pin num="8" name="R1" type="passive"/>
+        <pin num="9" name="TP" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LT3032-5">
+      <aliases>
+        <alias>LT3032-3.3</alias>
+        <alias>LT3032-12</alias>
+        <alias>LT3032-15</alias>
+      </aliases>
+      <description>150mA, Dual Low Dropout Linear Regulator, Positive/Negative Low Noise, 5V Output, DFN-14</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/3032ff.pdf</docs>
+      <footprints>
+        <fp>Linear*DE14MA*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT3032-5</field>
+        <field name="Footprint">Package_DFN_QFN:Linear_DE14MA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUTP" type="power_out"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="BYPP" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="INN" type="power_in"/>
+        <pin num="7" name="OUTN" type="power_out"/>
+        <pin num="8" name="NC" type="NotConnected"/>
+        <pin num="9" name="INN" type="passive"/>
+        <pin num="10" name="~SHDNN" type="input"/>
+        <pin num="11" name="BYPN" type="passive"/>
+        <pin num="12" name="~SHDNP" type="input"/>
+        <pin num="13" name="NC" type="NotConnected"/>
+        <pin num="14" name="INP" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ADP7104ARDZ-R7">
+      <uri>C:/UltraLibrarian/Library/Exported/KiCad/ADP7104ARDZ-R7/ADP7104ARDZ-R7/ADP7104ARDZ-R7.lib</uri>
+    </library>
+    <library logical="Amplifier_Difference">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Amplifier_Difference.lib</uri>
+    </library>
+    <library logical="Amplifier_Instrumentation">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Amplifier_Instrumentation.lib</uri>
+    </library>
+    <library logical="Amplifier_Operational">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="LT5400BIMS8E-4#PBF">
+      <uri>C:/UltraLibrarian/Library/Exported/KiCad/LT5400BIMS8E-4#PBF/LT5400BIMS8E-4#PBF/LT5400BIMS8E-4#PBF.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/AFE3/Aout-">
+      <node ref="J11" pin="1"/>
+      <node ref="R31" pin="1"/>
+      <node ref="C52" pin="1"/>
+    </net>
+    <net code="2" name="GNDA">
+      <node ref="C5" pin="2"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U6" pin="6"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C40" pin="1"/>
+      <node ref="C36" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C58" pin="2"/>
+      <node ref="C57" pin="2"/>
+      <node ref="U2" pin="9"/>
+      <node ref="C59" pin="2"/>
+      <node ref="U2" pin="6"/>
+      <node ref="R22" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="U8" pin="2"/>
+      <node ref="R21" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="C15" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U5" pin="8"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="C19" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="C23" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C24" pin="1"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C21" pin="1"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C28" pin="1"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="U8" pin="8"/>
+      <node ref="C37" pin="1"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C41" pin="2"/>
+      <node ref="C42" pin="2"/>
+      <node ref="C44" pin="1"/>
+      <node ref="C43" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="C63" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U12" pin="6"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C61" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C68" pin="2"/>
+      <node ref="C72" pin="1"/>
+      <node ref="J11" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J12" pin="2"/>
+      <node ref="J9" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J14" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="C70" pin="2"/>
+      <node ref="C64" pin="1"/>
+      <node ref="R47" pin="1"/>
+      <node ref="U14" pin="2"/>
+      <node ref="R46" pin="1"/>
+      <node ref="R45" pin="1"/>
+      <node ref="R44" pin="1"/>
+      <node ref="C47" pin="2"/>
+      <node ref="U9" pin="6"/>
+      <node ref="C54" pin="2"/>
+      <node ref="C48" pin="1"/>
+      <node ref="U11" pin="2"/>
+      <node ref="R35" pin="1"/>
+      <node ref="C60" pin="1"/>
+      <node ref="C55" pin="2"/>
+      <node ref="C51" pin="2"/>
+      <node ref="U11" pin="8"/>
+      <node ref="C53" pin="1"/>
+      <node ref="C65" pin="2"/>
+      <node ref="C49" pin="2"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C52" pin="2"/>
+      <node ref="C56" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="C71" pin="2"/>
+      <node ref="C67" pin="2"/>
+      <node ref="U14" pin="8"/>
+      <node ref="C69" pin="1"/>
+      <node ref="R34" pin="1"/>
+      <node ref="R33" pin="1"/>
+      <node ref="R32" pin="1"/>
+      <node ref="C75" pin="2"/>
+      <node ref="C73" pin="2"/>
+      <node ref="C74" pin="2"/>
+      <node ref="C76" pin="1"/>
+    </net>
+    <net code="3" name="/AFE2/Aout-">
+      <node ref="C36" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="J8" pin="1"/>
+    </net>
+    <net code="4" name="/AFE3/Aout+">
+      <node ref="C56" pin="2"/>
+      <node ref="R36" pin="1"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="5" name="/AFE4/Aout+">
+      <node ref="C72" pin="2"/>
+      <node ref="R48" pin="1"/>
+      <node ref="J12" pin="1"/>
+    </net>
+    <net code="6" name="/AFE4/Aout-">
+      <node ref="R43" pin="1"/>
+      <node ref="J14" pin="1"/>
+      <node ref="C68" pin="1"/>
+    </net>
+    <net code="7" name="/PWR-12V">
+      <node ref="D1" pin="4"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C59" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C60" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="C55" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C44" pin="2"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U1" pin="7"/>
+      <node ref="C43" pin="1"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C28" pin="2"/>
+      <node ref="D2" pin="4"/>
+      <node ref="U7" pin="4"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C39" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C75" pin="1"/>
+      <node ref="C76" pin="2"/>
+      <node ref="U3" pin="5"/>
+      <node ref="C71" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U9" pin="5"/>
+      <node ref="U10" pin="4"/>
+      <node ref="D4" pin="1"/>
+      <node ref="D3" pin="4"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D4" pin="4"/>
+      <node ref="U13" pin="4"/>
+      <node ref="U12" pin="5"/>
+    </net>
+    <net code="8" name="/PWR+5V">
+      <node ref="C61" pin="1"/>
+      <node ref="C29" pin="1"/>
+      <node ref="C33" pin="1"/>
+      <node ref="U14" pin="3"/>
+      <node ref="C49" pin="1"/>
+      <node ref="C45" pin="1"/>
+      <node ref="U11" pin="3"/>
+      <node ref="C65" pin="1"/>
+      <node ref="U8" pin="3"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="C17" pin="1"/>
+      <node ref="C13" pin="1"/>
+    </net>
+    <net code="9" name="/V_OCM">
+      <node ref="U5" pin="4"/>
+      <node ref="U8" pin="4"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U11" pin="4"/>
+      <node ref="U14" pin="4"/>
+    </net>
+    <net code="10" name="/AFE4/Ain+">
+      <node ref="R38" pin="2"/>
+      <node ref="J13" pin="1"/>
+    </net>
+    <net code="11" name="/AFE4/Ain-">
+      <node ref="J13" pin="2"/>
+      <node ref="R37" pin="2"/>
+    </net>
+    <net code="12" name="/AFE1/Aout-">
+      <node ref="J5" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="13" name="/PWR+12V">
+      <node ref="D3" pin="2"/>
+      <node ref="U10" pin="8"/>
+      <node ref="C41" pin="1"/>
+      <node ref="D3" pin="5"/>
+      <node ref="C58" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U6" pin="8"/>
+      <node ref="U12" pin="8"/>
+      <node ref="C73" pin="1"/>
+      <node ref="C74" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="D2" pin="5"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C47" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="D1" pin="5"/>
+      <node ref="U13" pin="8"/>
+      <node ref="D1" pin="2"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C31" pin="1"/>
+      <node ref="C57" pin="1"/>
+      <node ref="C63" pin="1"/>
+      <node ref="U4" pin="8"/>
+      <node ref="U1" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="D4" pin="5"/>
+    </net>
+    <net code="14" name="/AFE2/Aout+">
+      <node ref="J6" pin="1"/>
+      <node ref="C40" pin="2"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="15" name="/PWR+15V">
+      <node ref="C3" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U2" pin="8"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="16" name="/PWR-15V">
+      <node ref="J2" pin="3"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U1" pin="6"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="17" name="/AFE1/Ain-">
+      <node ref="R1" pin="2"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="18" name="/AFE1/Ain+">
+      <node ref="J4" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="19" name="/AFE1/Aout+">
+      <node ref="C24" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="20" name="/AFE3/Ain+">
+      <node ref="R26" pin="2"/>
+      <node ref="J10" pin="1"/>
+    </net>
+    <net code="21" name="/AFE3/Ain-">
+      <node ref="R25" pin="2"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="22" name="/AFE2/Ain+">
+      <node ref="R14" pin="2"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="23" name="/AFE2/Ain-">
+      <node ref="R13" pin="2"/>
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="24" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="25" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="27" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="30" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="31" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+      <node ref="U5" pin="9"/>
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="32" name="Net-(R12-Pad2)">
+      <node ref="R12" pin="2"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="33" name="Net-(C21-Pad2)">
+      <node ref="U4" pin="5"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C21" pin="2"/>
+    </net>
+    <net code="34" name="Net-(C14-Pad1)">
+      <node ref="R6" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="35" name="Net-(C14-Pad2)">
+      <node ref="C14" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="36" name="Net-(C19-Pad1)">
+      <node ref="U4" pin="3"/>
+      <node ref="C19" pin="1"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="37" name="Net-(R4-Pad2)">
+      <node ref="U3" pin="7"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="38" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="39" name="Net-(R7-Pad2)">
+      <node ref="U5" pin="6"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="40" name="Net-(U5-Pad10)">
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="41" name="Net-(U5-Pad1)">
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="42" name="Net-(C16-Pad2)">
+      <node ref="D1" pin="3"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="RN1" pin="8"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="43" name="Net-(R3-Pad2)">
+      <node ref="U3" pin="3"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="44" name="Net-(C18-Pad2)">
+      <node ref="C22" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="RN1" pin="7"/>
+      <node ref="D1" pin="6"/>
+      <node ref="C18" pin="2"/>
+    </net>
+    <net code="45" name="Net-(R3-Pad1)">
+      <node ref="U3" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="46" name="Net-(R1-Pad1)">
+      <node ref="RN1" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="47" name="Net-(RN1-Pad9)">
+      <node ref="RN1" pin="9"/>
+    </net>
+    <net code="48" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="RN1" pin="2"/>
+    </net>
+    <net code="49" name="Net-(R11-Pad2)">
+      <node ref="R11" pin="2"/>
+      <node ref="RN1" pin="6"/>
+    </net>
+    <net code="50" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+      <node ref="RN1" pin="3"/>
+    </net>
+    <net code="51" name="Net-(R9-Pad2)">
+      <node ref="RN1" pin="4"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="52" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="RN1" pin="5"/>
+    </net>
+    <net code="53" name="Net-(U7-Pad6)">
+      <node ref="U8" pin="9"/>
+      <node ref="U7" pin="7"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="54" name="Net-(C37-Pad2)">
+      <node ref="U7" pin="5"/>
+      <node ref="R18" pin="1"/>
+      <node ref="C37" pin="2"/>
+    </net>
+    <net code="55" name="Net-(C30-Pad1)">
+      <node ref="U7" pin="1"/>
+      <node ref="U7" pin="2"/>
+      <node ref="C30" pin="1"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="56" name="Net-(C35-Pad1)">
+      <node ref="C35" pin="1"/>
+      <node ref="U7" pin="3"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="57" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2"/>
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="58" name="Net-(U8-Pad7)">
+      <node ref="U8" pin="7"/>
+    </net>
+    <net code="59" name="Net-(R19-Pad2)">
+      <node ref="R19" pin="2"/>
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="60" name="Net-(C30-Pad2)">
+      <node ref="R16" pin="1"/>
+      <node ref="C30" pin="2"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="61" name="Net-(R24-Pad2)">
+      <node ref="R24" pin="2"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="62" name="Net-(U8-Pad10)">
+      <node ref="U8" pin="10"/>
+    </net>
+    <net code="63" name="Net-(U8-Pad1)">
+      <node ref="U8" pin="1"/>
+    </net>
+    <net code="64" name="Net-(C32-Pad2)">
+      <node ref="U6" pin="1"/>
+      <node ref="RN2" pin="8"/>
+      <node ref="C34" pin="1"/>
+      <node ref="C32" pin="2"/>
+      <node ref="D2" pin="3"/>
+    </net>
+    <net code="65" name="Net-(R15-Pad2)">
+      <node ref="U6" pin="3"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="66" name="Net-(C34-Pad2)">
+      <node ref="RN2" pin="7"/>
+      <node ref="D2" pin="6"/>
+      <node ref="U6" pin="4"/>
+      <node ref="C34" pin="2"/>
+      <node ref="C38" pin="1"/>
+    </net>
+    <net code="67" name="Net-(R15-Pad1)">
+      <node ref="U6" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="68" name="Net-(RN2-Pad9)">
+      <node ref="RN2" pin="9"/>
+    </net>
+    <net code="69" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="RN2" pin="2"/>
+    </net>
+    <net code="70" name="Net-(R13-Pad1)">
+      <node ref="R13" pin="1"/>
+      <node ref="RN2" pin="1"/>
+    </net>
+    <net code="71" name="Net-(R23-Pad2)">
+      <node ref="R23" pin="2"/>
+      <node ref="RN2" pin="6"/>
+    </net>
+    <net code="72" name="Net-(R22-Pad2)">
+      <node ref="RN2" pin="5"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="73" name="Net-(R21-Pad2)">
+      <node ref="R21" pin="2"/>
+      <node ref="RN2" pin="4"/>
+    </net>
+    <net code="74" name="Net-(R20-Pad2)">
+      <node ref="R20" pin="2"/>
+      <node ref="RN2" pin="3"/>
+    </net>
+    <net code="75" name="Net-(C53-Pad2)">
+      <node ref="C53" pin="2"/>
+      <node ref="U10" pin="5"/>
+      <node ref="R30" pin="1"/>
+    </net>
+    <net code="76" name="Net-(U10-Pad6)">
+      <node ref="U11" pin="9"/>
+      <node ref="U10" pin="7"/>
+      <node ref="U10" pin="6"/>
+    </net>
+    <net code="77" name="Net-(R28-Pad2)">
+      <node ref="U9" pin="7"/>
+      <node ref="R28" pin="2"/>
+    </net>
+    <net code="78" name="Net-(C46-Pad2)">
+      <node ref="C46" pin="2"/>
+      <node ref="R28" pin="1"/>
+      <node ref="R29" pin="2"/>
+    </net>
+    <net code="79" name="Net-(C51-Pad1)">
+      <node ref="R29" pin="1"/>
+      <node ref="C51" pin="1"/>
+      <node ref="U10" pin="3"/>
+    </net>
+    <net code="80" name="Net-(U11-Pad7)">
+      <node ref="U11" pin="7"/>
+    </net>
+    <net code="81" name="Net-(R31-Pad2)">
+      <node ref="U11" pin="6"/>
+      <node ref="R31" pin="2"/>
+    </net>
+    <net code="82" name="Net-(R36-Pad2)">
+      <node ref="U11" pin="5"/>
+      <node ref="R36" pin="2"/>
+    </net>
+    <net code="83" name="Net-(C46-Pad1)">
+      <node ref="R30" pin="2"/>
+      <node ref="U10" pin="1"/>
+      <node ref="U10" pin="2"/>
+      <node ref="C46" pin="1"/>
+    </net>
+    <net code="84" name="Net-(U11-Pad10)">
+      <node ref="U11" pin="10"/>
+    </net>
+    <net code="85" name="Net-(U11-Pad1)">
+      <node ref="U11" pin="1"/>
+    </net>
+    <net code="86" name="Net-(C48-Pad2)">
+      <node ref="D3" pin="3"/>
+      <node ref="RN3" pin="8"/>
+      <node ref="U9" pin="1"/>
+      <node ref="C50" pin="1"/>
+      <node ref="C48" pin="2"/>
+    </net>
+    <net code="87" name="Net-(R27-Pad2)">
+      <node ref="R27" pin="2"/>
+      <node ref="U9" pin="3"/>
+    </net>
+    <net code="88" name="Net-(R27-Pad1)">
+      <node ref="R27" pin="1"/>
+      <node ref="U9" pin="2"/>
+    </net>
+    <net code="89" name="Net-(C50-Pad2)">
+      <node ref="D3" pin="6"/>
+      <node ref="RN3" pin="7"/>
+      <node ref="C50" pin="2"/>
+      <node ref="C54" pin="1"/>
+      <node ref="U9" pin="4"/>
+    </net>
+    <net code="90" name="Net-(R25-Pad1)">
+      <node ref="RN3" pin="1"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="91" name="Net-(RN3-Pad9)">
+      <node ref="RN3" pin="9"/>
+    </net>
+    <net code="92" name="Net-(R26-Pad1)">
+      <node ref="RN3" pin="2"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="93" name="Net-(R35-Pad2)">
+      <node ref="RN3" pin="6"/>
+      <node ref="R35" pin="2"/>
+    </net>
+    <net code="94" name="Net-(R34-Pad2)">
+      <node ref="RN3" pin="5"/>
+      <node ref="R34" pin="2"/>
+    </net>
+    <net code="95" name="Net-(R33-Pad2)">
+      <node ref="R33" pin="2"/>
+      <node ref="RN3" pin="4"/>
+    </net>
+    <net code="96" name="Net-(R32-Pad2)">
+      <node ref="RN3" pin="3"/>
+      <node ref="R32" pin="2"/>
+    </net>
+    <net code="97" name="Net-(U13-Pad6)">
+      <node ref="U13" pin="7"/>
+      <node ref="U13" pin="6"/>
+      <node ref="U14" pin="9"/>
+    </net>
+    <net code="98" name="Net-(C69-Pad2)">
+      <node ref="U13" pin="5"/>
+      <node ref="R42" pin="1"/>
+      <node ref="C69" pin="2"/>
+    </net>
+    <net code="99" name="Net-(C67-Pad1)">
+      <node ref="R41" pin="1"/>
+      <node ref="U13" pin="3"/>
+      <node ref="C67" pin="1"/>
+    </net>
+    <net code="100" name="Net-(C62-Pad2)">
+      <node ref="C62" pin="2"/>
+      <node ref="R41" pin="2"/>
+      <node ref="R40" pin="1"/>
+    </net>
+    <net code="101" name="Net-(R40-Pad2)">
+      <node ref="U12" pin="7"/>
+      <node ref="R40" pin="2"/>
+    </net>
+    <net code="102" name="Net-(U14-Pad7)">
+      <node ref="U14" pin="7"/>
+    </net>
+    <net code="103" name="Net-(R43-Pad2)">
+      <node ref="R43" pin="2"/>
+      <node ref="U14" pin="6"/>
+    </net>
+    <net code="104" name="Net-(R48-Pad2)">
+      <node ref="U14" pin="5"/>
+      <node ref="R48" pin="2"/>
+    </net>
+    <net code="105" name="Net-(C62-Pad1)">
+      <node ref="U13" pin="2"/>
+      <node ref="U13" pin="1"/>
+      <node ref="C62" pin="1"/>
+      <node ref="R42" pin="2"/>
+    </net>
+    <net code="106" name="Net-(U14-Pad10)">
+      <node ref="U14" pin="10"/>
+    </net>
+    <net code="107" name="Net-(U14-Pad1)">
+      <node ref="U14" pin="1"/>
+    </net>
+    <net code="108" name="Net-(R37-Pad1)">
+      <node ref="RN4" pin="1"/>
+      <node ref="R37" pin="1"/>
+    </net>
+    <net code="109" name="Net-(C64-Pad2)">
+      <node ref="U12" pin="1"/>
+      <node ref="C64" pin="2"/>
+      <node ref="C66" pin="1"/>
+      <node ref="D4" pin="3"/>
+      <node ref="RN4" pin="8"/>
+    </net>
+    <net code="110" name="Net-(R39-Pad2)">
+      <node ref="R39" pin="2"/>
+      <node ref="U12" pin="3"/>
+    </net>
+    <net code="111" name="Net-(C66-Pad2)">
+      <node ref="D4" pin="6"/>
+      <node ref="RN4" pin="7"/>
+      <node ref="C66" pin="2"/>
+      <node ref="U12" pin="4"/>
+      <node ref="C70" pin="1"/>
+    </net>
+    <net code="112" name="Net-(R39-Pad1)">
+      <node ref="U12" pin="2"/>
+      <node ref="R39" pin="1"/>
+    </net>
+    <net code="113" name="Net-(RN4-Pad9)">
+      <node ref="RN4" pin="9"/>
+    </net>
+    <net code="114" name="Net-(R38-Pad1)">
+      <node ref="R38" pin="1"/>
+      <node ref="RN4" pin="2"/>
+    </net>
+    <net code="115" name="Net-(R47-Pad2)">
+      <node ref="R47" pin="2"/>
+      <node ref="RN4" pin="6"/>
+    </net>
+    <net code="116" name="Net-(R46-Pad2)">
+      <node ref="R46" pin="2"/>
+      <node ref="RN4" pin="5"/>
+    </net>
+    <net code="117" name="Net-(R45-Pad2)">
+      <node ref="RN4" pin="4"/>
+      <node ref="R45" pin="2"/>
+    </net>
+    <net code="118" name="Net-(R44-Pad2)">
+      <node ref="R44" pin="2"/>
+      <node ref="RN4" pin="3"/>
+    </net>
+  </nets>
+</export>
