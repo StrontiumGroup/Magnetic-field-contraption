@@ -1,0 +1,54 @@
+Title,ArduinoShield SPI-LineDriver, Synchronization2Exp, RTC capability
+Revision,3.1
+Date,2020-08-13
+Generated,2020-08-14 17:19:43
+Company,RbSr QuSim
+Comment 1,Comment: use with A/D-D/A board
+Comment 2,Software by M. Borkowski (Arduino Due platform)
+Comment 3,project: MFC (Level 3 Magnetic field stabilization)
+Comment 4,Design by: L. Reichsöllner for RbSr QuSim (UvA)
+Total Parts,50
+Total Unique Parts,33
+
+
+
+Ref,Qty,Value,Footprint,DNI,Detailed description,DigiKey,Manufacturer/Man.PartNum.,
+C5 C7 C3 C11 C9 ,5,100nF,Capacitor_SMD:C_0603_1608Metric, ,0.1µF ±10% 25V MLCC X7R 0603 (1608 Metric),732-7989-1-ND,885012206071
+C2 C4 C6 C8 C10 ,5,1uF,Capacitor_SMD:C_0603_1608Metric, ,1µF ±10% 16V MLCC X7R 0603 (1608 Metric),732-7971-1-ND,885012206052
+C1 ,1,47uF,Capacitor_Tantalum_SMD:CP_EIA-7343-30_AVX-N, ,47µF 16V Aluminum - Polymer Capacitors 2917 (7343 Metric) 40mOhm 1000 Hrs @ 105°C,490-ECASD31C476M040KA0CT-ND,ECASD31C476M040KA0
+C13 C15 ,2,2.2uF,Capacitor_SMD:C_1210_3225Metric, ,2.2µF ±10% 100V MLCC X7R 1210 (3225 Metric),445-6098-1-ND,C3225X7R2A225K230AM
+C14 ,1,100nF,Capacitor_SMD:C_0805_2012Metric, ,0.1µF ±10% 50V MLCC X7R 0805 (2012 Metric),732-8080-1-ND,885012207098
+C12 ,1,10uF,Capacitor_SMD:C_1206_3216Metric, ,10µF ±10% 50V MLCC X5R 1206 (3216 Metric),1276-2876-1-ND,CL31A106KBHNNNE
+C16 ,1,100nF,Capacitor_SMD:C_0805_2012Metric,DNI,0.1µF ±10% 50V MLCC X7R 0805 (2012 Metric),732-8080-1-ND,885012207098
+FB1 ,1,1k,Inductor_SMD:L_0805_2012Metric, ,1 kOhms @ 100MHz 1  Ferrite Bead 0805 (2012 Metric) 350mA 300mOhm,A102197CT-ND,BMB2A1000LN2
+J3 ,1,SPI,Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical, ,6 Position Receptacle Connector  Through Hole,SAM1204-03-ND,SSQ-103-03-T-D
+J5 ,1,CLK 2MHz,Connector_Coaxial:SMA_Amphenol_132291_Vertical, ,SMA Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole Solder,ACX1976-ND,132291
+J7 ,1,CLK EN,Connector_Coaxial:SMA_Amphenol_132291_Vertical, ,SMA Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole Solder,ACX1976-ND,132291
+J2 ,1,+3V3,Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical, ,3 Position Receptacle Connector  Through Hole,SAM1213-03-ND,SSW-103-01-T-S
+J1 ,1,GND,Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical, ,3 Position Receptacle Connector  Through Hole,SAM1213-03-ND,SSW-103-01-T-S
+J4 ,1,SPIprim,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical, ,Connector Header Through Hole 16 position 0.100" (2.54mm),609-3641-ND,66506-043LF
+J6 ,1,SPI2nd,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical, ,Connector Header Through Hole 16 position 0.100" (2.54mm),609-3641-ND,66506-043LF
+J9 ,1,AutoCalibr,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical, ,Connector Header Through Hole 16 position 0.100" (2.54mm),609-3641-ND,66506-043LF
+J10 ,1,Vin,digikey-footprints:BarrelJack_Wuerth_6941xx301002, ,Power Barrel Connector Jack 2.10mm ID (0.083")  5.50mm OD (0.217") Through Hole  Right Angle,732-5930-ND,694106301002
+J8 ,1,LED,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical, ,Connector Header Through Hole 16 position 0.100" (2.54mm),609-3641-ND,66506-043LF
+J11 ,1,RTC_ADC_sync,Connector_Coaxial:SMA_Amphenol_132291_Vertical, ,SMA Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole Solder,ACX1976-ND,132291
+P1 P2 P3 P4 P5 P6 ,6,CONN_01X01,Socket_Arduino_Mega:Arduino_1pin,DNI, , , 
+P8 ,1,Power,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, ,8 Position Receptacle Connector  Through Hole,SAM11912-ND,SSQ-108-03-F-S
+P7 ,1,PWM,Socket_Arduino_Mega:Socket_Strip_Arduino_1x10, ,10 Position Receptacle Connector  Through Hole,SAM1206-10-ND,SSQ-110-03-T-S
+P9 P11 ,2,Analog,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, ,8 Position Receptacle Connector  Through Hole,SAM11912-ND,SSQ-108-03-F-S
+P10 ,1,PWM,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, ,8 Position Receptacle Connector  Through Hole,SAM11912-ND,SSQ-108-03-F-S
+P12 ,1,Communication,Socket_Arduino_Mega:Socket_Strip_Arduino_1x08, ,8 Position Receptacle Connector  Through Hole,SAM11912-ND,SSQ-108-03-F-S
+P13 ,1,Digital,Socket_Arduino_Mega:Socket_Strip_Arduino_2x18, ,36 Position Receptacle Connector  Through Hole,SAM1204-18-ND,SSQ-118-03-T-D
+R2 ,1,50R,Resistor_SMD:R_0603_1608Metric, ,50 Ohms ±2% 1.5W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film,541-2655-1-ND,RCP0603W50R0GEB
+R1 ,1,2R,Resistor_SMD:R_0805_2012Metric,DNI,2 Ohms ±1% 0.125W  1/8W Chip Resistor 0805 (2012 Metric) Moisture Resistant Thick Film,311-2.00CRCT-ND,RC0805FR-072RL
+SW1 ,1,SW_Push,digikey-footprints:WS-TASV_SwitchTactile_430471035826, ,Tactile Switch SPST-NO Top Actuated Surface Mount,430471035826,430471035826
+U4 U5 ,2,74HC590A,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm, ,Counter IC Binary Counter 1 Element 8 Bit Positive Edge 16-SOIC,296-17132-1-ND,SN74HC590ADR
+U1 ,1,SN74LVTH541DWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm, ,Buffer  Non-Inverting 1 Element 8 Bit per Element 3-State Output 20-TSSOP,296-8729-1-ND,SN74LVTH541PWR
+U2 U3 ,2,74LVC2G17,Package_TO_SOT_SMD:SOT-363_SC-70-6, ,Buffer  Non-Inverting 2 Element 1 Bit per Element Push-Pull Output SC-70-6,296-13013-1-ND,SN74LVC2G17DCKR
+U6 ,1,ADP7104ARDZ-3.3,ADP7104:RD_8_2, ,Linear Voltage Regulator IC  1 Output  500mA 8-SOIC-EP,ADP7104ARDZ-3.3-R7CT-ND,ADP7104ARDZ-3.3-R7
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 2020-08-14 17:19:43

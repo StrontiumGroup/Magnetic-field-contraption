@@ -1,0 +1,561 @@
+EESchema Schematic File Version 4
+LIBS:LEDadapter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LED indicator board"
+Date "2020-08-20"
+Rev "1.0"
+Comp "RbSr QuSim"
+Comment1 "Software by M. Borkowski (ArduinoDUE platfrom) "
+Comment2 "Design by: L. Reichsöllner for RbSr QuSim (UvA)"
+Comment3 "Project: MFC (Level 3 Magnetic field stabilization)"
+Comment4 "LED-indicator adapter for ArduinoShield"
+$EndDescr
+$Comp
+L Device:LED_Small D7
+U 1 1 5F861DAE
+P 3675 2975
+F 0 "D7" H 3675 2770 50  0000 C CNN
+F 1 "LED_err" H 3675 2861 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 2975 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060RS75000.pdf" V 3675 2975 50  0001 C CNN
+F 4 "732-4978-1-ND" H 3675 2975 50  0001 C CNN "DigiKey"
+F 5 "Red 625nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 2975 50  0001 C CNN "Detailed description"
+F 6 "150060RS75000" H 3675 2975 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 2975
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5F86358D
+P 4800 1700
+F 0 "RN1" V 4383 1700 50  0000 C CNN
+F 1 "180R" V 4474 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 5075 1700 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 4800 1700 50  0001 C CNN
+F 4 "Y7181CT-ND" H 4800 1700 50  0001 C CNN "DigiKey"
+F 5 "180 Ohm ±5% 62.5mW Power Per Element Isolated  Resistor Network/Array ±200ppm/°C 0804, Convex, Long Side Terminals" H 4800 1700 50  0001 C CNN "Detailed description"
+F 6 "EXB-28V181JX" H 4800 1700 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4800 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5F8647FD
+P 4800 2350
+F 0 "RN2" V 4383 2350 50  0000 C CNN
+F 1 "180R" V 4474 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 5075 2350 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 4800 2350 50  0001 C CNN
+F 4 "Y7181CT-ND" H 4800 2350 50  0001 C CNN "DigiKey"
+F 5 "180 Ohm ±5% 62.5mW Power Per Element Isolated  Resistor Network/Array ±200ppm/°C 0804, Convex, Long Side Terminals" H 4800 2350 50  0001 C CNN "Detailed description"
+F 6 "EXB-28V181JX" H 4800 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4800 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS541 U1
+U 1 1 5F8660B7
+P 2450 2150
+F 0 "U1" H 2450 3131 50  0000 C CNN
+F 1 "74LVTH541" H 2450 3040 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2450 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS541" H 2450 2150 50  0001 C CNN
+F 4 "296-8729-1-ND" H 2450 2150 50  0001 C CNN "DigiKey"
+F 5 "Buffer, Non-Inverting 1 Element 8 Bit per Element 3-State Output 20-TSSOP" H 2450 2150 50  0001 C CNN "Detailed description"
+	1    2450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D6
+U 1 1 5F86A664
+P 3675 2600
+F 0 "D6" H 3675 2395 50  0000 C CNN
+F 1 "LED_lock" H 3675 2486 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 2600 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" V 3675 2600 50  0001 C CNN
+F 4 "732-4980-1-ND" H 3675 2600 50  0001 C CNN "DigiKey"
+F 5 "Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 2600 50  0001 C CNN "Detailed description"
+F 6 "150060VS75000" H 3675 2600 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D5
+U 1 1 5F86B947
+P 3675 2275
+F 0 "D5" H 3675 2070 50  0000 C CNN
+F 1 "LED_cmd" H 3675 2161 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 2275 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" V 3675 2275 50  0001 C CNN
+F 4 "732-4980-1-ND" H 3675 2275 50  0001 C CNN "DigiKey"
+F 5 "Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 2275 50  0001 C CNN "Detailed description"
+F 6 "150060VS75000" H 3675 2275 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 2275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 5F86BDE0
+P 3675 1950
+F 0 "D4" H 3675 1745 50  0000 C CNN
+F 1 "LED_smpl" H 3675 1836 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 1950 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" V 3675 1950 50  0001 C CNN
+F 4 "732-4980-1-ND" H 3675 1950 50  0001 C CNN "DigiKey"
+F 5 "Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 1950 50  0001 C CNN "Detailed description"
+F 6 "150060VS75000" H 3675 1950 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 5F86C4F1
+P 3675 1600
+F 0 "D3" H 3675 1395 50  0000 C CNN
+F 1 "LED_wait" H 3675 1486 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 1600 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" V 3675 1600 50  0001 C CNN
+F 4 "732-4980-1-ND" H 3675 1600 50  0001 C CNN "DigiKey"
+F 5 "Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 1600 50  0001 C CNN "Detailed description"
+F 6 "150060VS75000" H 3675 1600 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 5F86CD0A
+P 3675 1275
+F 0 "D2" H 3675 1070 50  0000 C CNN
+F 1 "LED_usb" H 3675 1161 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 1275 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" V 3675 1275 50  0001 C CNN
+F 4 "732-4980-1-ND" H 3675 1275 50  0001 C CNN "DigiKey"
+F 5 "Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 1275 50  0001 C CNN "Detailed description"
+F 6 "150060VS75000" H 3675 1275 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 1275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J1
+U 1 1 5F86E48C
+P 1225 1950
+F 0 "J1" H 1275 2467 50  0000 C CNN
+F 1 "LED" H 1275 2376 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 1225 1950 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/66506.pdf" H 1225 1950 50  0001 C CNN
+F 4 "609-3641-ND" H 1225 1950 50  0001 C CNN "DigiKey"
+F 5 "Connector Header Through Hole 16 position 0.100\" (2.54mm)" H 1225 1950 50  0001 C CNN "Detailed description"
+F 6 "66506-043LF" H 1225 1950 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1225 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F86FEDE
+P 1525 2450
+F 0 "#PWR04" H 1525 2200 50  0001 C CNN
+F 1 "GND" H 1530 2277 50  0000 C CNN
+F 2 "" H 1525 2450 50  0001 C CNN
+F 3 "" H 1525 2450 50  0001 C CNN
+	1    1525 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1525 1750
+Wire Wire Line
+	1525 1750 1525 1850
+Connection ~ 1525 1850
+Wire Wire Line
+	1525 1850 1525 1950
+Connection ~ 1525 1950
+Wire Wire Line
+	1525 1950 1525 2050
+Connection ~ 1525 2050
+Wire Wire Line
+	1525 2050 1525 2150
+Connection ~ 1525 2150
+Wire Wire Line
+	1525 2150 1525 2250
+Connection ~ 1525 2250
+Wire Wire Line
+	1525 2250 1525 2350
+Connection ~ 1525 2350
+Wire Wire Line
+	1525 2350 1525 2450
+Wire Wire Line
+	1525 1650 1525 1750
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F87104E
+P 850 1650
+F 0 "#PWR03" H 850 1500 50  0001 C CNN
+F 1 "+3.3V" V 865 1778 50  0000 L CNN
+F 2 "" H 850 1650 50  0001 C CNN
+F 3 "" H 850 1650 50  0001 C CNN
+	1    850  1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  1650 900  1650
+Wire Wire Line
+	1025 1650 1025 1750
+Connection ~ 1025 1650
+Text Label 950  1850 2    50   ~ 0
+USB
+Wire Wire Line
+	950  1850 1025 1850
+Text Label 950  1950 2    50   ~ 0
+WAIT
+Text Label 950  2050 2    50   ~ 0
+SMPL
+Text Label 950  2150 2    50   ~ 0
+CMD
+Text Label 950  2250 2    50   ~ 0
+LOCK
+Text Label 950  2350 2    50   ~ 0
+ERR
+Wire Wire Line
+	950  1950 1025 1950
+Wire Wire Line
+	950  2050 1025 2050
+Wire Wire Line
+	950  2150 1025 2150
+Wire Wire Line
+	950  2250 1025 2250
+Wire Wire Line
+	950  2350 1025 2350
+Text Label 1900 1750 2    50   ~ 0
+USB
+Text Label 1900 1850 2    50   ~ 0
+WAIT
+Text Label 1900 1950 2    50   ~ 0
+SMPL
+Text Label 1900 2050 2    50   ~ 0
+CMD
+Text Label 1900 2150 2    50   ~ 0
+LOCK
+Text Label 1900 2250 2    50   ~ 0
+ERR
+Wire Wire Line
+	1900 1750 1950 1750
+Wire Wire Line
+	1900 1850 1950 1850
+Wire Wire Line
+	1900 1950 1950 1950
+Wire Wire Line
+	1900 2050 1950 2050
+Wire Wire Line
+	1900 2150 1950 2150
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F875073
+P 900 1650
+F 0 "#FLG01" H 900 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1823 50  0000 C CNN
+F 2 "" H 900 1650 50  0001 C CNN
+F 3 "~" H 900 1650 50  0001 C CNN
+	1    900  1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 900  1650
+Wire Wire Line
+	900  1650 1025 1650
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5F8759D3
+P 1650 1350
+F 0 "#PWR02" H 1650 1200 50  0001 C CNN
+F 1 "+3.3V" V 1665 1478 50  0000 L CNN
+F 2 "" H 1650 1350 50  0001 C CNN
+F 3 "" H 1650 1350 50  0001 C CNN
+	1    1650 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1650 1350 1700 1350
+$Comp
+L Device:C_Small C2
+U 1 1 5F876847
+P 2000 1250
+F 0 "C2" H 2092 1296 50  0000 L CNN
+F 1 "100nF" H 2092 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2000 1250 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/885012206071.pdf" H 2000 1250 50  0001 C CNN
+F 4 "732-7989-1-ND" H 2000 1250 50  0001 C CNN "DigiKey"
+F 5 "0.1µF ±10% 25V MLCC X7R 0603 (1608 Metric)" H 2000 1250 50  0001 C CNN "Detailed description"
+F 6 "885012206071" H 2000 1250 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2000 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 1350
+Wire Wire Line
+	2000 1350 2450 1350
+$Comp
+L power:GND #PWR01
+U 1 1 5F877DB3
+P 2000 1125
+F 0 "#PWR01" H 2000 875 50  0001 C CNN
+F 1 "GND" H 2005 952 50  0000 C CNN
+F 2 "" H 2000 1125 50  0001 C CNN
+F 3 "" H 2000 1125 50  0001 C CNN
+	1    2000 1125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5F8783EB
+P 1700 1250
+F 0 "C1" H 1792 1296 50  0000 L CNN
+F 1 "1uF" H 1792 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 1250 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/885012206052.pdf" H 1700 1250 50  0001 C CNN
+F 4 "732-7971-1-ND" H 1700 1250 50  0001 C CNN "DigiKey"
+F 5 "1µF ±10% 16V MLCC X7R 0603 (1608 Metric)" H 1700 1250 50  0001 C CNN "Detailed description"
+F 6 "885012206052" H 1700 1250 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1700 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 1350
+Wire Wire Line
+	1700 1350 1875 1350
+Wire Wire Line
+	1700 1150 2000 1150
+Wire Wire Line
+	2000 1150 2000 1125
+Connection ~ 2000 1150
+Wire Wire Line
+	1950 2350 1525 2350
+Wire Wire Line
+	1950 2550 1950 2650
+Wire Wire Line
+	1950 2950 2250 2950
+Connection ~ 1950 2650
+Wire Wire Line
+	1950 2650 1950 2950
+$Comp
+L power:GND #PWR06
+U 1 1 5F87ED5E
+P 1950 2950
+F 0 "#PWR06" H 1950 2700 50  0001 C CNN
+F 1 "GND" H 1955 2777 50  0000 C CNN
+F 2 "" H 1950 2950 50  0001 C CNN
+F 3 "" H 1950 2950 50  0001 C CNN
+	1    1950 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2950
+Wire Wire Line
+	2950 1650 3200 1650
+$Comp
+L Device:LED_Small D1
+U 1 1 5F883EF9
+P 3675 975
+F 0 "D1" H 3675 770 50  0000 C CNN
+F 1 "LED_pwr" H 3675 861 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3675 975 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" V 3675 975 50  0001 C CNN
+F 4 "732-4980-1-ND" H 3675 975 50  0001 C CNN "DigiKey"
+F 5 "Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric)" H 3675 975 50  0001 C CNN "Detailed description"
+F 6 "150060VS75000" H 3675 975 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3675 975 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1875 1350 1875 1650
+Wire Wire Line
+	1875 1650 1950 1650
+Connection ~ 1875 1350
+Wire Wire Line
+	1875 1350 2000 1350
+Wire Wire Line
+	3200 975  3575 975 
+Wire Wire Line
+	3200 975  3200 1650
+Wire Wire Line
+	3775 975  4525 975 
+Wire Wire Line
+	4525 975  4525 1500
+Wire Wire Line
+	4525 1500 4600 1500
+Wire Wire Line
+	5000 1500 5000 1600
+Connection ~ 5000 1600
+Wire Wire Line
+	5000 1600 5000 1700
+Connection ~ 5000 1700
+Wire Wire Line
+	5000 1700 5000 1800
+Connection ~ 5000 1800
+Wire Wire Line
+	5000 1800 5000 2150
+Wire Wire Line
+	5000 2450 5000 2650
+Wire Wire Line
+	2950 1750 3275 1750
+Wire Wire Line
+	3275 1750 3275 1275
+Wire Wire Line
+	3275 1275 3575 1275
+Wire Wire Line
+	3775 1275 4425 1275
+Wire Wire Line
+	4425 1275 4425 1600
+Wire Wire Line
+	4425 1600 4600 1600
+Wire Wire Line
+	2950 1850 3375 1850
+Wire Wire Line
+	3375 1850 3375 1600
+Wire Wire Line
+	3375 1600 3575 1600
+Wire Wire Line
+	3775 1600 4300 1600
+Wire Wire Line
+	4300 1600 4300 1700
+Wire Wire Line
+	4300 1700 4600 1700
+Wire Wire Line
+	4600 1800 4300 1800
+Wire Wire Line
+	4300 1800 4300 1950
+Wire Wire Line
+	4300 1950 3775 1950
+Wire Wire Line
+	3575 1950 2950 1950
+Wire Wire Line
+	2950 2050 3375 2050
+Wire Wire Line
+	3375 2050 3375 2275
+Wire Wire Line
+	3375 2275 3575 2275
+Wire Wire Line
+	3775 2275 4275 2275
+Wire Wire Line
+	4275 2275 4275 2150
+Wire Wire Line
+	4275 2150 4600 2150
+Wire Wire Line
+	2950 2150 3275 2150
+Wire Wire Line
+	3275 2150 3275 2600
+Wire Wire Line
+	3275 2600 3575 2600
+Wire Wire Line
+	3775 2600 4325 2600
+Wire Wire Line
+	4325 2600 4325 2250
+Wire Wire Line
+	4325 2250 4600 2250
+Wire Wire Line
+	4600 2350 4350 2350
+Wire Wire Line
+	4350 2350 4350 2975
+Wire Wire Line
+	4350 2975 3775 2975
+Wire Wire Line
+	3575 2975 3200 2975
+Wire Wire Line
+	3200 2975 3200 2250
+Wire Wire Line
+	3200 2250 2950 2250
+Wire Wire Line
+	1900 2250 1950 2250
+Wire Wire Line
+	2950 2350 2950 3075
+Wire Wire Line
+	2950 3075 4500 3075
+Wire Wire Line
+	4500 3075 4500 2450
+Wire Wire Line
+	4500 2450 4600 2450
+Wire Wire Line
+	5000 2150 5000 2250
+Connection ~ 5000 2150
+Connection ~ 5000 2450
+Connection ~ 5000 2250
+Wire Wire Line
+	5000 2250 5000 2350
+Connection ~ 5000 2350
+Wire Wire Line
+	5000 2350 5000 2450
+$Comp
+L power:GND #PWR05
+U 1 1 5F89EB53
+P 5000 2650
+F 0 "#PWR05" H 5000 2400 50  0001 C CNN
+F 1 "GND" H 5005 2477 50  0000 C CNN
+F 2 "" H 5000 2650 50  0001 C CNN
+F 3 "" H 5000 2650 50  0001 C CNN
+	1    5000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F8A1217
+P 2250 2950
+F 0 "#FLG0101" H 2250 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 3123 50  0000 C CNN
+F 2 "" H 2250 2950 50  0001 C CNN
+F 3 "~" H 2250 2950 50  0001 C CNN
+	1    2250 2950
+	-1   0    0    1   
+$EndComp
+Connection ~ 2250 2950
+Wire Wire Line
+	2250 2950 2450 2950
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F8A28F3
+P 10150 925
+F 0 "H1" H 10250 971 50  0000 L CNN
+F 1 "MountingHole" H 10250 880 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 10150 925 50  0001 C CNN
+F 3 "~" H 10150 925 50  0001 C CNN
+F 4 "-" H 10150 925 50  0001 C CNN "DigiKey"
+F 5 "Mounting Hole" H 10150 925 50  0001 C CNN "Detailed description"
+	1    10150 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F8A2C7C
+P 10150 1100
+F 0 "H2" H 10250 1146 50  0000 L CNN
+F 1 "MountingHole" H 10250 1055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 10150 1100 50  0001 C CNN
+F 3 "~" H 10150 1100 50  0001 C CNN
+F 4 "-" H 10150 1100 50  0001 C CNN "DigiKey"
+F 5 "Mounting Hole" H 10150 1100 50  0001 C CNN "Detailed description"
+	1    10150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F8A3057
+P 10150 1275
+F 0 "H3" H 10250 1321 50  0000 L CNN
+F 1 "MountingHole" H 10250 1230 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 10150 1275 50  0001 C CNN
+F 3 "~" H 10150 1275 50  0001 C CNN
+F 4 "-" H 10150 1275 50  0001 C CNN "DigiKey"
+F 5 "Mounting Hole" H 10150 1275 50  0001 C CNN "Detailed description"
+	1    10150 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F8A3314
+P 10150 1450
+F 0 "H4" H 10250 1496 50  0000 L CNN
+F 1 "MountingHole" H 10250 1405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 10150 1450 50  0001 C CNN
+F 3 "~" H 10150 1450 50  0001 C CNN
+F 4 "-" H 10150 1450 50  0001 C CNN "DigiKey"
+F 5 "Mounting Hole" H 10150 1450 50  0001 C CNN "Detailed description"
+	1    10150 1450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

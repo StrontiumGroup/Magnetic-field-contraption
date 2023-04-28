@@ -1,0 +1,34 @@
+Title,
+Revision,
+Date,
+Generated,2020-08-12 20:34:41
+Company,
+Comment 1,
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,17
+Total Unique Parts,13
+
+
+
+Ref,Qty,Value,Footprint,Detailed description,DigiKey,Manufacturer/Man.PartNum.,
+C2 ,1,100nF,Capacitor_SMD:C_0603_1608Metric,0.1µF ±10% 25V MLCC X7R 0603 (1608 Metric),732-7989-1-ND,885012206071
+C1 ,1,1uF,Capacitor_SMD:C_0603_1608Metric,1µF ±10% 16V MLCC X7R 0603 (1608 Metric),732-7971-1-ND,885012206052
+D7 ,1,LED_err,LED_SMD:LED_0603_1608Metric,Red 625nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4978-1-ND,150060RS75000
+D6 ,1,LED_lock,LED_SMD:LED_0603_1608Metric,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4980-1-ND,150060VS75000
+D5 ,1,LED_cmd,LED_SMD:LED_0603_1608Metric,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4980-1-ND,150060VS75000
+D4 ,1,LED_smpl,LED_SMD:LED_0603_1608Metric,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4980-1-ND,150060VS75000
+D3 ,1,LED_wait,LED_SMD:LED_0603_1608Metric,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4980-1-ND,150060VS75000
+D2 ,1,LED_usb,LED_SMD:LED_0603_1608Metric,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4980-1-ND,150060VS75000
+D1 ,1,LED_pwr,LED_SMD:LED_0603_1608Metric,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),732-4980-1-ND,150060VS75000
+H1 H2 H3 H4 ,4,MountingHole,MountingHole:MountingHole_2.7mm_Pad, ,-, 
+J1 ,1,LED,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical,Connector Header Through Hole 16 position 0.100" (2.54mm),609-3641-ND,66506-043LF
+RN1 RN2 ,2,180R,Resistor_SMD:R_Array_Concave_4x0402,180 Ohm ±5% 62.5mW Power Per Element Isolated  Resistor Network/Array ±200ppm/°C 0804  Convex  Long Side Terminals,Y7181CT-ND,EXB-28V181JX
+U1 ,1,74LVTH541,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,Buffer  Non-Inverting 1 Element 8 Bit per Element 3-State Output 20-TSSOP,296-8729-1-ND, 
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 2020-08-12 20:34:41
