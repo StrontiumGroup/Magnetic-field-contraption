@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Reichsoellner2018BPS}
+\bibinfo{author}{Reichsöllner, L.}
+\newblock \emph{\bibinfo{title}{Battery Power Supply}} (\bibinfo{year}{2018}).
+
+\bibitem{Mag03TAM}
+\bibinfo{author}{Instruments, B.}
+\newblock \bibinfo{title}{Mag-03 three axis magnetic field sensors}.
+\newblock \bibinfo{howpublished}{online} (\bibinfo{year}{2020}).
+\newblock
+  \urlprefix\url{https://www.bartington.com/wp-content/uploads/pdfs/operation_manuals/Mag-03_OM1004.pdf}.
+
+\bibitem{AD2020AFW}
+\bibinfo{author}{Devices, A.}
+\newblock \bibinfo{title}{Analog devices - analog filter wizard}.
+\newblock \urlprefix\url{https://tools.analog.com/en/filterwizard/}.
+
+\bibitem{AD7177Man}
+\bibinfo{title}{Ad7177-2}.
+\newblock
+  \urlprefix\url{https://www.analog.com/en/products/ad7177-2.html?doc=EVAL-AD7177-2SDZ_UG-849.pdf#product-reference}.
+
+\bibitem{AD7175Man}
+\bibinfo{author}{Devices, A.}
+\newblock \bibinfo{title}{Ad7175-8} (\bibinfo{year}{2020}).
+\newblock \urlprefix\url{https://www.analog.com/en/products/ad7175-8.html}.
+
+\bibitem{AD5791Man}
+\bibinfo{author}{Devices, A.}
+\newblock \bibinfo{title}{Ad5791} (\bibinfo{year}{2020}).
+\newblock
+  \urlprefix\url{https://www.analog.com/en/products/ad5791.html#product-overview}.
+
+\end{thebibliography}

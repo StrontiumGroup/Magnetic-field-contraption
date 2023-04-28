@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Level 1 Magnetic field control}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Level 2 Magnetic field control}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Level 3 Magnetic field control}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Hardware}{}% 5
+\BOOKMARK [1][-]{section.2.1}{AFE}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{AFE Performance Simulation}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{AFE Hardware}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Autocalibration switch}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{ArduinoDUE Shield}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{ArduinoDUE shield SPI line driver}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.2}{ArduinoDUE shield Synchronization to experimental cycle}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.3}{ArduinoDUE shield Synchronization to the ADC conversion}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.4}{Bug report ArduinoDUE shield}{section.2.3}% 14
+\BOOKMARK [1][-]{section.2.4}{A/D and D/A conversion board}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Bug report ADC/DAC board}{section.2.4}% 16
+\BOOKMARK [0][-]{chapter.3}{Software}{}% 17
+\BOOKMARK [0][-]{chapter.4}{Abbreviations}{}% 18
