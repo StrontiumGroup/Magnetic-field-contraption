@@ -1,0 +1,641 @@
+EESchema Schematic File Version 4
+LIBS:AFE_1CH_2V0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title "High-Precision, low-noise Analog Front End"
+Date "2020-09-09"
+Rev "3.1"
+Comp "RbSr QuSim"
+Comment1 "Design by: L. Reichsöllner for RbSr QuSim (UvA)"
+Comment2 "Software by M. Borkowski, ArduinoDUE platfrom"
+Comment3 "use in combination with A/D&D/A board, ArduinoShield, AutocalSwitch etc."
+Comment4 "Project: MFC (Lvl 3 Magnetic field stabilization in RbSr)"
+$EndDescr
+$Sheet
+S 2200 1950 925  525 
+U 5E8EEF0C
+F0 "AFE1" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "V_OCM" I L 2200 2200 50 
+F3 "+5V" I L 2200 2125 50 
+F4 "Ain+" I L 2200 2325 50 
+F5 "Ain-" I L 2200 2375 50 
+F6 "Aout+" O R 3125 2325 50 
+F7 "Aout-" O R 3125 2375 50 
+F8 "PWR+15V" I L 2200 2000 50 
+F9 "PWR-15V" I L 2200 2050 50 
+$EndSheet
+Text Label 6525 1100 2    50   ~ 0
+PWR-16V
+Wire Wire Line
+	6525 1100 6625 1100
+Text Label 6525 1025 2    50   ~ 0
+PWR+16V
+Wire Wire Line
+	6525 1025 6625 1025
+Text Label 8375 1025 0    50   ~ 0
+PWR+15V
+Wire Wire Line
+	7825 1025 8075 1025
+Text Label 8375 1125 0    50   ~ 0
+PWR-15V
+Text Label 7950 1250 0    50   ~ 0
+PWR+5V
+Wire Wire Line
+	7950 1250 7825 1250
+Wire Wire Line
+	2200 2000 1750 2000
+Text Label 1750 2050 2    50   ~ 0
+PWR-15V
+Wire Wire Line
+	1750 2050 2200 2050
+Wire Wire Line
+	1750 2125 2200 2125
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5E902E7C
+P 1600 900
+F 0 "J1" H 1700 875 50  0000 L CNN
+F 1 "V_OCM" H 1700 784 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 1600 900 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 1600 900 50  0001 C CNN
+F 4 "A102025-ND" H 1600 900 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 1600 900 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 1600 900 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1600 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR03
+U 1 1 5E905FDA
+P 1600 1100
+F 0 "#PWR03" H 1600 850 50  0001 C CNN
+F 1 "GNDA" H 1605 927 50  0000 C CNN
+F 2 "" H 1600 1100 50  0001 C CNN
+F 3 "" H 1600 1100 50  0001 C CNN
+	1    1600 1100
+	1    0    0    -1  
+$EndComp
+Text Label 1250 900  2    50   ~ 0
+V_OCM
+Wire Wire Line
+	1250 900  1350 900 
+Text Label 2075 2200 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2075 2200 2200 2200
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5E9078C4
+P 1350 900
+F 0 "#FLG03" H 1350 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1073 50  0000 C CNN
+F 2 "" H 1350 900 50  0001 C CNN
+F 3 "~" H 1350 900 50  0001 C CNN
+	1    1350 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 900 
+Wire Wire Line
+	1350 900  1400 900 
+Wire Wire Line
+	1725 2225 1725 2325
+Wire Wire Line
+	1875 2425 1875 2375
+Wire Wire Line
+	1875 2375 2200 2375
+Wire Wire Line
+	3125 2325 3225 2325
+Wire Wire Line
+	3275 2375 3275 2325
+$Sheet
+S 2175 2825 925  525 
+U 5E926F25
+F0 "AFE2" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "V_OCM" I L 2175 3075 50 
+F3 "+5V" I L 2175 3000 50 
+F4 "Ain+" I L 2175 3200 50 
+F5 "Ain-" I L 2175 3250 50 
+F6 "Aout+" O R 3100 3200 50 
+F7 "Aout-" O R 3100 3250 50 
+F8 "PWR+15V" I L 2175 2875 50 
+F9 "PWR-15V" I L 2175 2925 50 
+$EndSheet
+Wire Wire Line
+	2175 2875 1725 2875
+Text Label 1725 2925 2    50   ~ 0
+PWR-15V
+Text Label 1725 3000 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1725 2925 2175 2925
+Wire Wire Line
+	1725 3000 2175 3000
+Text Label 2050 3075 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2050 3075 2175 3075
+Wire Wire Line
+	1700 3100 1700 3200
+Wire Wire Line
+	1500 3300 1850 3300
+Wire Wire Line
+	1850 3300 1850 3250
+Wire Wire Line
+	1850 3250 2175 3250
+Wire Wire Line
+	1700 3200 2175 3200
+$Sheet
+S 2175 3675 925  525 
+U 5E92C6BC
+F0 "AFE3" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "V_OCM" I L 2175 3925 50 
+F3 "+5V" I L 2175 3850 50 
+F4 "Ain+" I L 2175 4050 50 
+F5 "Ain-" I L 2175 4100 50 
+F6 "Aout+" O R 3100 4050 50 
+F7 "Aout-" O R 3100 4100 50 
+F8 "PWR+15V" I L 2175 3725 50 
+F9 "PWR-15V" I L 2175 3775 50 
+$EndSheet
+Wire Wire Line
+	2175 3725 1725 3725
+Text Label 1725 3775 2    50   ~ 0
+PWR-15V
+Text Label 1725 3850 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1725 3775 2175 3775
+Wire Wire Line
+	1725 3850 2175 3850
+Text Label 2050 3925 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2050 3925 2175 3925
+Wire Wire Line
+	1700 3950 1700 4050
+Wire Wire Line
+	1500 4150 1850 4150
+Wire Wire Line
+	1850 4150 1850 4100
+Wire Wire Line
+	1850 4100 2175 4100
+Wire Wire Line
+	1700 4050 2175 4050
+$Sheet
+S 2150 4650 925  525 
+U 5E92FD57
+F0 "AFE4" 50
+F1 "AnalogFrontEnd.sch" 50
+F2 "V_OCM" I L 2150 4900 50 
+F3 "+5V" I L 2150 4825 50 
+F4 "Ain+" I L 2150 5025 50 
+F5 "Ain-" I L 2150 5075 50 
+F6 "Aout+" O R 3075 5025 50 
+F7 "Aout-" O R 3075 5075 50 
+F8 "PWR+15V" I L 2150 4700 50 
+F9 "PWR-15V" I L 2150 4750 50 
+$EndSheet
+Wire Wire Line
+	2150 4700 1700 4700
+Text Label 1700 4750 2    50   ~ 0
+PWR-15V
+Text Label 1700 4825 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1700 4750 2150 4750
+Wire Wire Line
+	1700 4825 2150 4825
+Text Label 2025 4900 2    50   ~ 0
+V_OCM
+Wire Wire Line
+	2025 4900 2150 4900
+Wire Wire Line
+	1675 4925 1675 5025
+Wire Wire Line
+	1475 5125 1825 5125
+Wire Wire Line
+	1825 5125 1825 5075
+Wire Wire Line
+	1825 5075 2150 5075
+Wire Wire Line
+	1675 5025 2150 5025
+$Comp
+L Connector:Conn_Coaxial J5
+U 1 1 5E906061
+P 3475 2325
+F 0 "J5" H 3575 2300 50  0000 L CNN
+F 1 "AnalogOut1-" H 3575 2209 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3475 2325 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3475 2325 50  0001 C CNN
+F 4 "A102025-ND" H 3475 2325 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3475 2325 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3475 2325 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3475 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 2000 3225 2325
+Wire Wire Line
+	3225 2000 3325 2000
+Wire Wire Line
+	3125 2375 3275 2375
+$Comp
+L power:GNDA #PWR06
+U 1 1 5E91CC5E
+P 3800 2275
+F 0 "#PWR06" H 3800 2025 50  0001 C CNN
+F 1 "GNDA" H 3805 2102 50  0000 C CNN
+F 2 "" H 3800 2275 50  0001 C CNN
+F 3 "" H 3800 2275 50  0001 C CNN
+	1    3800 2275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3525 2200 3800 2200
+Wire Wire Line
+	3800 2200 3800 2275
+Wire Wire Line
+	3475 2525 3800 2525
+Wire Wire Line
+	3800 2525 3800 2275
+Connection ~ 3800 2275
+Text Label 7950 1250 0    50   ~ 0
+PWR+5V
+$Comp
+L Connector:Conn_Coaxial J6
+U 1 1 5E9537BA
+P 3500 2875
+F 0 "J6" H 3600 2850 50  0000 L CNN
+F 1 "AnalogOut2+" H 3600 2759 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3500 2875 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3500 2875 50  0001 C CNN
+F 4 "A102025-ND" H 3500 2875 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3500 2875 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3500 2875 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3500 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3250 3250 3200
+$Comp
+L Connector:Conn_Coaxial J8
+U 1 1 5E9537C6
+P 3450 3200
+F 0 "J8" H 3550 3175 50  0000 L CNN
+F 1 "AnalogOut2-" H 3550 3084 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3450 3200 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3450 3200 50  0001 C CNN
+F 4 "A102025-ND" H 3450 3200 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3450 3200 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3450 3200 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2875 3300 2875
+Wire Wire Line
+	3100 3250 3250 3250
+$Comp
+L power:GNDA #PWR07
+U 1 1 5E9537D2
+P 3775 3150
+F 0 "#PWR07" H 3775 2900 50  0001 C CNN
+F 1 "GNDA" H 3780 2977 50  0000 C CNN
+F 2 "" H 3775 3150 50  0001 C CNN
+F 3 "" H 3775 3150 50  0001 C CNN
+	1    3775 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 3075 3775 3075
+Wire Wire Line
+	3775 3075 3775 3150
+Wire Wire Line
+	3450 3400 3775 3400
+Wire Wire Line
+	3775 3400 3775 3150
+Connection ~ 3775 3150
+$Comp
+L Connector:Conn_Coaxial J9
+U 1 1 5E960259
+P 3500 3725
+F 0 "J9" H 3600 3700 50  0000 L CNN
+F 1 "AnalogOut3+" H 3600 3609 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3500 3725 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3500 3725 50  0001 C CNN
+F 4 "A102025-ND" H 3500 3725 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3500 3725 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3500 3725 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3500 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4100 3250 4050
+$Comp
+L Connector:Conn_Coaxial J11
+U 1 1 5E960261
+P 3450 4050
+F 0 "J11" H 3550 4025 50  0000 L CNN
+F 1 "AnalogOut3-" H 3550 3934 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3450 4050 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3450 4050 50  0001 C CNN
+F 4 "A102025-ND" H 3450 4050 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3450 4050 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3450 4050 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3725 3300 3725
+Wire Wire Line
+	3100 4100 3250 4100
+$Comp
+L power:GNDA #PWR08
+U 1 1 5E960269
+P 3775 4000
+F 0 "#PWR08" H 3775 3750 50  0001 C CNN
+F 1 "GNDA" H 3780 3827 50  0000 C CNN
+F 2 "" H 3775 4000 50  0001 C CNN
+F 3 "" H 3775 4000 50  0001 C CNN
+	1    3775 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 3925 3775 3925
+Wire Wire Line
+	3775 3925 3775 4000
+Wire Wire Line
+	3450 4250 3775 4250
+Wire Wire Line
+	3775 4250 3775 4000
+Connection ~ 3775 4000
+$Comp
+L Connector:Conn_Coaxial J12
+U 1 1 5E9654C4
+P 3475 4700
+F 0 "J12" H 3575 4675 50  0000 L CNN
+F 1 "AnalogOut4+" H 3575 4584 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3475 4700 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3475 4700 50  0001 C CNN
+F 4 "A102025-ND" H 3475 4700 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3475 4700 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3475 4700 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3475 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 5075 3225 5025
+$Comp
+L Connector:Conn_Coaxial J14
+U 1 1 5E9654CC
+P 3425 5025
+F 0 "J14" H 3525 5000 50  0000 L CNN
+F 1 "AnalogOut4-" H 3525 4909 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3425 5025 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3425 5025 50  0001 C CNN
+F 4 "A102025-ND" H 3425 5025 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3425 5025 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3425 5025 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3425 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 4700 3275 4700
+Wire Wire Line
+	3075 5075 3225 5075
+$Comp
+L power:GNDA #PWR09
+U 1 1 5E9654D4
+P 3750 4975
+F 0 "#PWR09" H 3750 4725 50  0001 C CNN
+F 1 "GNDA" H 3755 4802 50  0000 C CNN
+F 2 "" H 3750 4975 50  0001 C CNN
+F 3 "" H 3750 4975 50  0001 C CNN
+	1    3750 4975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3475 4900 3750 4900
+Wire Wire Line
+	3750 4900 3750 4975
+Wire Wire Line
+	3425 5225 3750 5225
+Wire Wire Line
+	3750 5225 3750 4975
+Connection ~ 3750 4975
+Wire Wire Line
+	3175 4700 3175 5025
+Wire Wire Line
+	3175 5025 3075 5025
+Wire Wire Line
+	3200 3725 3200 4050
+Wire Wire Line
+	3200 4050 3100 4050
+Wire Wire Line
+	3200 2875 3200 3200
+Wire Wire Line
+	3200 3200 3100 3200
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E90EE91
+P 10575 1150
+F 0 "H3" H 10675 1196 50  0000 L CNN
+F 1 "MountingHole" H 10675 1105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10575 1150 50  0001 C CNN
+F 3 "~" H 10575 1150 50  0001 C CNN
+F 4 "Mounting Hole" H 10575 1150 50  0001 C CNN "Detailed description"
+	1    10575 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E90F17E
+P 10575 750
+F 0 "H1" H 10675 796 50  0000 L CNN
+F 1 "MountingHole" H 10675 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10575 750 50  0001 C CNN
+F 3 "~" H 10575 750 50  0001 C CNN
+F 4 "Mounting Hole" H 10575 750 50  0001 C CNN "Detailed description"
+	1    10575 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 5E97ECC2
+P 8075 925
+F 0 "C2" H 8163 971 50  0000 L CNN
+F 1 "22uF" H 8163 880 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8075 925 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860040473003.pdf" H 8075 925 50  0001 C CNN
+F 4 "732-9317-1-ND" H 8075 925 50  0001 C CNN "DigiKey"
+F 5 "22µF,±20%, 35V, Aluminum Electrolytic Radial, Can, 1.3Ohm@100kHz, 5000 Hrs @ 105°C " H 8075 925 50  0001 C CNN "Detailed description"
+F 6 "860240572002" H 8075 925 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    8075 925 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP_Small C4
+U 1 1 5E980466
+P 8325 1225
+F 0 "C4" H 8237 1179 50  0000 R CNN
+F 1 "22uF" H 8237 1270 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8325 1225 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/860040473003.pdf" H 8325 1225 50  0001 C CNN
+F 4 "732-9317-1-ND" H 8325 1225 50  0001 C CNN "DigiKey"
+F 5 "22µF,±20%, 35V, Aluminum Electrolytic Radial, Can, 1.3Ohm@100kHz, 5000 Hrs @ 105°C " H 8325 1225 50  0001 C CNN "Detailed description"
+F 6 "860240572002" H 8325 1225 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    8325 1225
+	-1   0    0    1   
+$EndComp
+Connection ~ 8075 1025
+Wire Wire Line
+	8075 1025 8375 1025
+Wire Wire Line
+	7825 1125 8325 1125
+Connection ~ 8325 1125
+Wire Wire Line
+	8325 1125 8375 1125
+$Comp
+L power:GNDA #PWR05
+U 1 1 5E99F0CA
+P 8325 1350
+F 0 "#PWR05" H 8325 1100 50  0001 C CNN
+F 1 "GNDA" V 8330 1223 50  0000 R CNN
+F 2 "" H 8325 1350 50  0001 C CNN
+F 3 "" H 8325 1350 50  0001 C CNN
+	1    8325 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 1350 8325 1325
+$Comp
+L power:GNDA #PWR02
+U 1 1 5E9A32D9
+P 8075 800
+F 0 "#PWR02" H 8075 550 50  0001 C CNN
+F 1 "GNDA" V 8080 673 50  0000 R CNN
+F 2 "" H 8075 800 50  0001 C CNN
+F 3 "" H 8075 800 50  0001 C CNN
+	1    8075 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8075 825  8075 800 
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5E904D04
+P 3525 2000
+F 0 "J3" H 3625 1975 50  0000 L CNN
+F 1 "AnalogOut1+" H 3625 1884 50  0000 L CNN
+F 2 "digikey-footprints:RF_SMB_jack_Vertical" H 3525 2000 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1337482&DocType=Customer+Drawing&DocLang=English" H 3525 2000 50  0001 C CNN
+F 4 "A102025-ND" H 3525 2000 50  0001 C CNN "DigiKey"
+F 5 "SMB Connector Jack, Male Pin 50Ohm Through Hole Solder" H 3525 2000 50  0001 C CNN "Detailed description"
+F 6 "1-1337482-0" H 3525 2000 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3525 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:Conn_Coaxial J4
+U 1 1 5EB808BF
+P 1525 2225
+F 0 "J4" H 1650 2200 50  0000 C CNN
+F 1 "AnalogIN1" H 1725 2125 50  0000 C CNN
+F 2 "digikey-footprints:BNC_JACK_hor_50OHM_PCB" H 1525 2225 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1525 2225 50  0001 C CNN
+F 4 "A97555-ND" H 1525 2225 50  0001 C CNN "DigiKey"
+F 5 "BNC Connector Jack, Female Socket 50Ohm Panel Mount, Through Hole, Right Angle Solder" H 1525 2225 50  0001 C CNN "Detailed description"
+F 6 "1-1634612-0" H 1525 2225 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1525 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:Conn_Coaxial J7
+U 1 1 5EB8AE2E
+P 1500 3100
+F 0 "J7" H 1625 3075 50  0000 C CNN
+F 1 "AnalogIN2" H 1700 3000 50  0000 C CNN
+F 2 "digikey-footprints:BNC_JACK_hor_50OHM_PCB" H 1500 3100 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1500 3100 50  0001 C CNN
+F 4 "A97555-ND" H 1500 3100 50  0001 C CNN "DigiKey"
+F 5 "BNC Connector Jack, Female Socket 50Ohm Panel Mount, Through Hole, Right Angle Solder" H 1500 3100 50  0001 C CNN "Detailed description"
+F 6 "1-1634612-0" H 1500 3100 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1500 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:Conn_Coaxial J10
+U 1 1 5EB8C141
+P 1500 3950
+F 0 "J10" H 1625 3925 50  0000 C CNN
+F 1 "AnalogIN3" H 1700 3850 50  0000 C CNN
+F 2 "digikey-footprints:BNC_JACK_hor_50OHM_PCB" H 1500 3950 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1500 3950 50  0001 C CNN
+F 4 "A97555-ND" H 1500 3950 50  0001 C CNN "DigiKey"
+F 5 "BNC Connector Jack, Female Socket 50Ohm Panel Mount, Through Hole, Right Angle Solder" H 1500 3950 50  0001 C CNN "Detailed description"
+F 6 "1-1634612-0" H 1500 3950 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1500 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:Conn_Coaxial J13
+U 1 1 5EB8CE9F
+P 1475 4925
+F 0 "J13" H 1600 4900 50  0000 C CNN
+F 1 "AnalogIN4" H 1675 4825 50  0000 C CNN
+F 2 "digikey-footprints:BNC_JACK_hor_50OHM_PCB" H 1475 4925 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1475 4925 50  0001 C CNN
+F 4 "A97555-ND" H 1475 4925 50  0001 C CNN "DigiKey"
+F 5 "BNC Connector Jack, Female Socket 50Ohm Panel Mount, Through Hole, Right Angle Solder" H 1475 4925 50  0001 C CNN "Detailed description"
+F 6 "1-1634612-0" H 1475 4925 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1475 4925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 2425 1875 2425
+Text Label 1750 2000 2    50   ~ 0
+PWR+15V
+Text Label 1725 3725 2    50   ~ 0
+PWR+15V
+Text Label 1725 2875 2    50   ~ 0
+PWR+15V
+Text Label 1700 4700 2    50   ~ 0
+PWR+15V
+Text Label 1750 2125 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	1725 2325 2200 2325
+$Sheet
+S 4650 950  1075 225 
+U 5F3A281A
+F0 "PowerCconnection1" 50
+F1 "PowerConnection.sch" 50
+F2 "PWR+16V" O R 5725 1025 50 
+F3 "PWR-16V" O R 5725 1125 50 
+$EndSheet
+Text Label 5750 1125 0    50   ~ 0
+PWR-16V
+Wire Wire Line
+	5750 1125 5725 1125
+Text Label 5750 1025 0    50   ~ 0
+PWR+16V
+Wire Wire Line
+	5725 1025 5750 1025
+$Sheet
+S 6625 925  1200 375 
+U 5E8E1FE6
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "PWR+5V" O R 7825 1250 50 
+F3 "PWR+16V" I L 6625 1025 50 
+F4 "PWR-16V" I L 6625 1100 50 
+F5 "PWR+15V" O R 7825 1025 50 
+F6 "PWR-15V" O R 7825 1125 50 
+$EndSheet
+$EndSCHEMATC

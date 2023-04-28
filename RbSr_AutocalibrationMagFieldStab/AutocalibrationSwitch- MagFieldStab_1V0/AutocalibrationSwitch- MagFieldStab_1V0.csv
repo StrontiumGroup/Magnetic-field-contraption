@@ -1,0 +1,40 @@
+Title,Auto Calibration Switch for Bfield Stabilization
+Revision,2
+Date,2020-04-01
+Generated,2020-05-11 10:24:07
+Company,Lab: RbSr
+Comment 1,Programming by M. Borkowski
+Comment 2,Author: Lukas Reichsöllner
+Comment 3,
+Comment 4,
+Total Parts,29
+Total Unique Parts,19
+
+
+
+Ref,Qty,Value,Footprint,Category,DK_Datasheet_Link,DK_Detail_Page,Description,Digi-Key,DigiKey,Family,MPN,Manufacturer,Status,
+C2 C3 ,2,3.3uF,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm, , , , , ,P19607CT-ND, , , , 
+C1 ,1,100uF,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm, , , , , ,732-9170-1-ND, , , , 
+C4 ,1,100nF,Capacitor_SMD:C_0805_2012Metric, , , , , ,732-8061-1-ND, , , , 
+D1 ,1,1N4007,digikey-footprints:DO-41,Discrete Semiconductor Products,https://www.diodes.com/assets/Datasheets/ds28002.pdf,/product-detail/en/diodes-incorporated/1N4007-T/1N4007DICT-ND/76454,DIODE GEN PURP 1KV 1A DO41,1N4007DICT-ND, ,Diodes - Rectifiers - Single,1N4007-T,Diodes Incorporated,Not For New Designs
+J1 ,1,Barrel_Jack_Switch,Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002, , , , , ,732-5930-ND, , , , 
+J2 ,1,AutoCal.,Connector_Coaxial:SMA_Molex_73251-2200_Horizontal, , , , , ,WM26450-ND, , , , 
+J4 ,1,ADC/AFE,Connector_Coaxial:SMA_Molex_73251-2200_Horizontal, , , , , ,WM26450-ND, , , , 
+J7 ,1,BfieldDrive,Connector_Coaxial:SMA_Molex_73251-2200_Horizontal, , , , , ,WM26450-ND, , , , 
+J5 ,1,DMM,Connector_Coaxial:SMA_Amphenol_132291_Vertical, , , , , ,ACX1230-ND, , , , 
+J6 ,1,DAC,Connector_Coaxial:SMA_Molex_73251-2200_Horizontal, , , , , ,WM26450-ND, , , , 
+J3 ,1,BfieldSens,Connector_Coaxial:SMA_Molex_73251-2200_Horizontal, , , , , ,WM26450-ND, , , , 
+JP2 JP1 ,2,AutoCal. NormEnable,Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels, , , , , , , , , , 
+K1 ,1,G5V-2,Relay_THT:Relay_DPDT_Omron_G5V-2, , , , , ,Z2931-ND, , , , 
+MK1 MK2 MK3 MK4 ,4,Mounting_Hole,Mounting_Holes:MountingHole_3.2mm_M3_ISO7380, , , , , , , , , , 
+Q2 Q1 ,2,BSS138,Package_TO_SOT_SMD:SOT-23, , , , , ,1727-1142-1-ND, , , , 
+R3 R4 R2 ,3,330R,Resistor_SMD:R_0805_2012Metric, , , , , ,A129743CT-ND, , , , 
+R1 R5 R6 ,3,7.5k,Resistor_SMD:R_0805_2012Metric, , , , , ,P7.5KACT-ND, , , , 
+U1 ,1,uA7805,Package_TO_SOT_THT:TO-220-3_Vertical, , , , , ,296-39515-5-ND, , , , 
+U2 ,1,74LVC1G04,Package_TO_SOT_SMD:SOT-353_SC-70-5, , , , , ,296-35933-1-ND, , , , 
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 2020-05-11 10:24:07

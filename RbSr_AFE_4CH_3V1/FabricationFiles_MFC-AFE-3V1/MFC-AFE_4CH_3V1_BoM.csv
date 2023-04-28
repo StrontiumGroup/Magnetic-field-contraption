@@ -1,0 +1,94 @@
+,,,,,,,,
+Ref,Qty,Value,Footprint,DNI,Detailed description,DigiKey,DoNotPopulate,Manufacturer/Man.PartNum.
+C2 C4 ,2,22uF,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm, ,22µF ±20%  35V  Aluminum Electrolytic Radial  Can  1.3Ohm@100kHz  5000 Hrs @ 105°C ,732-9317-1-ND, ,860240572002
+C25 C42 C59 C76 ,4,10nF,Capacitor_SMD:C_0805_2012Metric, ,10nF  ±5%  50V  MLCC X7R  0805 (2012 Metric),1276-1245-1-ND, ,CL21B103JBANNNC
+C23 C29 C40 C46 C57 C63 C74 C80 ,8,1n,Capacitor_SMD:C_0805_2012Metric, ,1nF  ±10%  50V  MLCC X7R  0805 (2012 Metric),1276-1020-1-ND, ,CL21B102KBANNNC
+C20 C30 C26 C33 C24 C22 C31 C37 C47 C43 C50 C41 C39 C48 C54 C64 C60 C67 C58 C56 C65 C71 C81 C77 C84 C75 C73 C82 C92 C95 C97 C87 C86 ,33,100nF,Capacitor_SMD:C_0805_2012Metric, ,0.1µF ±10% 50V Ceramic Capacitor X7R 0805 (2012 Metric),732-8080-1-ND, ,885012207098
+C19 C21 C32 C36 C38 C49 C53 C55 C66 C70 C72 C83 ,12,10uF,Capacitor_SMD:CP_Elec_4x5.4, ,10µF  ±20%  35V  Aluminum Electrolytic Radial  Can  1.93Ohm@100kHz  2000 Hrs @ 105°C,399-6695-1-ND, ,EEV106M035A9BAA
+C28 C45 C62 C79 ,4,33nF,Capacitor_SMD:C_0805_2012Metric, ,33nF  ±5%  50V  MLCC C0G NP0  0805 (2012 Metric),445-7523-1-ND, ,C2012C0G1H333J125AA
+C27 C44 C61 C78 ,4,3.6n,Capacitor_SMD:C_0603_1608Metric, ,3.6nF  ±5%  50V  MLCC C0G NP0  0603 (1608 Metric),399-14515-1-ND, ,C0603C362J5GAC7867
+C18 C35 C52 C69 ,4,47n,Capacitor_SMD:C_0805_2012Metric, ,47nF  ±5%  25V  MLCC  C0G NP0  0805 (2012 Metric),399-8092-1-ND, ,C0805C473J3GACTU
+C17 C34 C51 C68 ,4,4.7n,Capacitor_SMD:C_0603_1608Metric, ,4.7nF  ±5%  25V  MLCC C0G NP0  0603 (1608 Metric),399-17408-1-ND, ,C0603C472J3GAC7867
+C1 C3 C98 C99 ,4,150uF,Capacitor_SMD:CP_Elec_6.3x5.8, ,150µF 20V Aluminum - Polymer Capacitors Radial  Can - SMD 23mOhm 15000 Hrs @ 105°C,565-APXJ200ARA151MF61GCT-ND, ,APXJ200ARA151MF61G
+C12 C7 ,2,10nF,Resistor_SMD:R_0603_1608Metric, ,10000pF ±5% 50V Ceramic Capacitor C0G  NP0 0603 (1608 Metric),490-9666-1-ND, ,GRM1885C1H103JA01D
+C85 C9 C13 C5 ,4,22uF,Capacitor_SMD:CP_Elec_6.3x5.7, ,22µF 35V Aluminum - Polymer Capacitors Radial  Can - SMD 50mOhm 2000 Hrs @ 105°C,399-A767EB226M1VLAE050CT-ND, ,A767EB226M1VLAE050
+C16 C8 C15 C6 ,4,10uF,Capacitor_SMD:C_1210_3225Metric, ,10µF ±10% 50V Ceramic Capacitor X7S 1210 (3225 Metric),445-4536-1-ND, ,C3225X7S1H106K250AB
+C11 ,1,47nF,Capacitor_SMD:C_0603_1608Metric, ,0.047µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric),311-1427-1-ND, ,CC0603KRX7R9BB473
+C14 C10 ,2,1uF,Capacitor_SMD:C_0805_2012Metric, ,1µF  ±10%  50V  MLCC X7R  0805 (2012 Metric),1276-1029-1-ND, ,CL21B105KBFNNNE
+C91 C90 C88 C89 ,4,1uF,Capacitor_SMD:C_0603_1608Metric, ,1µF ±10% 50V Ceramic Capacitor X5R 0603 (1608 Metric),311-1787-1-ND, ,CC0603KRX5R9BB105
+C94 C96 ,2,2.2uF,Capacitor_SMD:C_1210_3225Metric, ,2.2µF ±10% 100V MLCC X7R 1210 (3225 Metric),445-6098-1-ND, ,C3225X7R2A225K230AM
+C93 ,1,10uF,Capacitor_SMD:C_1206_3216Metric, ,10µF ±10% 50V MLCC X5R 1206 (3216 Metric),1276-2876-1-ND, ,CL31A106KBHNNNE
+D2 D3 D4 D5 ,4,BAV199DW,Package_TO_SOT_SMD:SOT-363_SC-70-6, ,Diode Array 2 Pair Series Connection Standard 85V 140mA (DC) Surface Mount 6-TSSOP  SC-88  SOT-363,BAV199DW-FDITR-ND, ,BAV199DW-7-F
+D6 D7 D8 D9 ,4,PMEG60T10ELR,Diode_SMD:D_SOD-123, ,Diode Schottky 60V 1A Surface Mount SOD-123W,1727-7807-1-ND, ,PMEG60T10ELRX
+D1 ,1,PWR_GD,LED_SMD:LED_0603_1608Metric, ,Green 571nm LED Indication - Discrete 2V 0603 (1608 Metric),160-1478-1-ND, ,LTST-S270KGKT
+FB2 FB3 ,2,600R (100MHz),Inductor_SMD:L_0603_1608Metric, ,600 Ohms @ 100MHz 1 Power  Signal Line Ferrite Bead 0603 (1608 Metric) 1A 200mOhm,MH1608-601YCT-ND, ,MH1608-601Y
+FB1 ,1,1k,Inductor_SMD:L_0805_2012Metric, ,1 kOhms @ 100MHz 1  Ferrite Bead 0805 (2012 Metric) 350mA 300mOhm,A102197CT-ND, ,BMB2A1000LN2
+H3 H1 ,2,MountingHole,MountingHole:MountingHole_2.7mm_M2.5_Pad, ,Mounting Hole, , , 
+J1 ,1,V_OCM,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J5 ,1,AnalogOut1-,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J6 ,1,AnalogOut2+,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J8 ,1,AnalogOut2-,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J9 ,1,AnalogOut3+,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J11 ,1,AnalogOut3-,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J12 ,1,AnalogOut4+,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J14 ,1,AnalogOut4-,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J3 ,1,AnalogOut1+,digikey-footprints:RF_SMB_jack_Vertical, ,SMB Connector Jack  Male Pin 50Ohm Through Hole Solder,A102025-ND, ,1-1337482-0
+J4 ,1,AnalogIN1,digikey-footprints:BNC_JACK_hor_50OHM_PCB, ,BNC Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole  Right Angle Solder,A97555-ND, ,1-1634612-0
+J7 ,1,AnalogIN2,digikey-footprints:BNC_JACK_hor_50OHM_PCB, ,BNC Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole  Right Angle Solder,A97555-ND, ,1-1634612-0
+J10 ,1,AnalogIN3,digikey-footprints:BNC_JACK_hor_50OHM_PCB, ,BNC Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole  Right Angle Solder,A97555-ND, ,1-1634612-0
+J13 ,1,AnalogIN4,digikey-footprints:BNC_JACK_hor_50OHM_PCB, ,BNC Connector Jack  Female Socket 50Ohm Panel Mount  Through Hole  Right Angle Solder,A97555-ND, ,1-1634612-0
+J2 ,1,PWRinput,Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical, ,"Connector Header Through Hole 6 position 0.100"" (2.54mm)",609-5122-ND, ,75869-331LF
+J15 ,1,"19""Rack/Backplane Conn.",DIN41612_a+c_64way_rightangle_pitch2:Socket_DIN41612-CaseC1-AC-Male-64Pin-2rows, ,96 Position Din Connector Header  Male Pins  Through Hole  Right Angle,1195-1143-ND, ,9031326921
+J16 ,1,Ext_PowerUpSeq,Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical, ,"Connector Header Through Hole 6 position 0.100"" (2.54mm)",609-5122-ND, ,75869-331LF
+JP8 ,1,RackSupply_Pos,Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical, ,"Connector Header Through Hole 2 position 0.100"" (2.54mm)",61300211121, ,61300211121
+JP3 JP2 ,2,RackSupply_GND,Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical, ,"Connector Header Through Hole 2 position 0.100"" (2.54mm)",732-5315-ND, ,61300211121
+JP1 ,1,RackSupply_Pos,Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical, ,"Connector Header Through Hole 2 position 0.100"" (2.54mm)",732-5315-ND, ,61300211121
+JP4 JP6 ,2,En_disStartSeq,Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm, ,Solder Jumper, , , 
+JP7 ,1,SEL_StartUpSeq,Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels, ,Solder Jumper, , , 
+JP5 ,1,SEL_StartUpSeq,Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels, ,Solder jumper, , , 
+L1 L2 L3 L4 ,4,6.5mH,Inductor_SMD:L_CommonMode_Wuerth_WE-SL2,DNI,6.5mH @ 10kHz 2 Line Common Mode Choke Surface Mount 18.4 kOhms @ 700kHz 400mA DCR 950mOhm,732-1488-6-ND, ,744229
+Q1 ,1,2N7002,Package_TO_SOT_SMD:SOT-23, ,N-Channel 60V 115mA (Ta) 200mW (Ta) Surface Mount SOT-23 (TO-236AB),2N7002NCT-ND, ,2N7002
+R7 R22 R37 R52 ,4,R,Resistor_SMD:R_0805_2012Metric,DNI,gain Resistor, ,DnP, 
+R3 R13 R14 R4 R18 R28 R29 R19 R33 R43 R44 R34 R48 R58 R59 R49 ,16,0R,Resistor_SMD:R_0603_1608Metric, ,0 Ohms Jumper 0.1W  1/10W Chip Resistor 0603 (1608 Metric)  Moisture Resistant Thick Film,311-0.0GRCT-ND, ,RC0603JR-070RL
+R5 R11 R10 R6 R20 R26 R25 R21 R35 R41 R40 R36 R50 R56 R55 R51 ,16,0R,Resistor_SMD:R_0603_1608Metric,DNI,0 Ohms Jumper 0.1W  1/10W Chip Resistor 0603 (1608 Metric)  Moisture Resistant Thick Film,311-0.0GRCT-ND, ,RC0603JR-070RL
+R12 R15 R27 R30 R42 R45 R57 R60 ,8,5.1R,Resistor_SMD:R_0805_2012Metric, ,5.1 Ohms  ±1%  0.125W  0805 (2012 Metric)  Automotive AEC-Q200  Thick Film,541-5.10CCCT-ND, ,CRCW08055R10FKEA
+R9 R24 R39 R54 ,4,56.2k,Resistor_SMD:R_0603_1608Metric, ,56.2 kOhms  ±0.1%  0.125W  0603 (1608 Metric)  Anti-Sulfur  Automotive AEC-Q200  Moisture Resistant  Thin Film,541-3694-1-ND, ,TNPW060356K2BEEA
+R8 R23 R38 R53 ,4,1.69k,Resistor_SMD:R_0603_1608Metric, ,1.69 kOhms  ±0.1%  0.125W  0603 (1608 Metric)  Anti-Sulfur  Automotive AEC-Q200  Moisture Resistant  Thin Film,541-3611-1-ND, ,TNPW06031K69BEEA
+R1 R16 R31 R46 ,4,1.87k,Resistor_SMD:R_0603_1608Metric, ,1.87 kOhms  ±0.1%  0.125W  0603 (1608 Metric)  Anti-Sulfur  Automotive AEC-Q200  Moisture Resistant  Thin Film,541-2003-1-ND, ,TNPW06031K87BEEA
+R2 R17 R32 R47 ,4,24.9k,Resistor_SMD:R_0603_1608Metric, ,24.9 kOhms  ±0.1%  0.125W  0603 (1608 Metric)  Anti-Sulfur  Automotive AEC-Q200  Moisture Resistant  Thin Film,TNP24.9KAACT-ND, ,TNPW060324K9BEEA
+R62 R63 R74 R66 R67 R68 R75 R69 R76 R73 ,10,10k,Resistor_SMD:R_0805_2012Metric, ,10 kOhms ±1% 0.125W  1/8W Chip Resistor 0805 (2012 Metric) Moisture Resistant Thick Film,311-10.0KCRCT-ND, ,RC0805FR-0710KL
+R64 ,1,124k,Resistor_SMD:R_0603_1608Metric, ,124 kOhms ±1% 0.1W  1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film,311-124KHRCT-ND, ,RC0603FR-07124KL
+R61 ,1,115k,Resistor_SMD:R_0603_1608Metric, ,115 kOhms ±1% 0.1W  1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film,311-115KHRCT-ND, ,RC0603FR-07115KL
+R70 R72 R77 ,3,56k,Resistor_SMD:R_0603_1608Metric, ,56 kOhms ±1% 0.1W  1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film,311-56KHRCT-ND, ,RC0603FR-0756KL
+R71 ,1,200k,Resistor_SMD:R_0603_1608Metric, ,200 kOhms ±1% 0.1W  1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film,311-200KHRCT-ND, ,RC0603FR-07200KL
+R78 ,1,2R,Resistor_SMD:R_0805_2012Metric,DNI,Snubber R,311-2.00CRCT-ND, ,RC0805FR-072RL
+R65 ,1,1k,Resistor_SMD:R_0603_1608Metric, ,1 kOhms ±1% 0.25W  1/4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200  Pulse Withstanding Thick Film,541-2788-1-ND, ,RCS06031K00FKEA
+RN1 RN2 RN3 RN4 ,4,LT5400BIMS8E-4-PBF,Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm, ,"1k Ohm ±15% 800mW Power Per Element Isolated  Resistor Network/Array ±25ppm/°C 8-TSSOP  8-MSOP (0.118""  3.00mm Width) Exposed Pad",LT5400BIMS8E-4#PBF-ND, ,LT5400BIMS8E-4#PBF
+RV2 RV1 ,2,1k,Potentiometer_SMD:Potentiometer_Bourns_3314G_Vertical, ,1 kOhms 0.25W  1/4W Gull Wing Surface Mount Trimmer Potentiometer Cermet 1 Turn Top Adjustment,3314G-102ECT-ND, ,3314G-1-102E
+U13 U7 U10 U4 ,4,AD8422BRZ,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm, ,Instrumentation Amplifier  Rail-to-Rail  8-SOIC,AD8422ARZ-R7CT-ND, ,AD8422ARZ-R7
+U5 U8 U11 U14 ,4,AD8475xRMZ,Package_SO:MSOP-10_3x3mm_P0.5mm, ,Funnel Amplifier 1 Circuit Differential  Rail-to-Rail 10-MSOP,AD8475ARMZ-ND, ,AD8475ARMZ
+U3 U6 U9 U12 ,4,ADA4622-2ARZ,ADA4622-2-SOIC:SOIC-8_3.9x4.9mm_P1.27mm, ,J-FET Amplifier 2 Circuit Rail-to-Rail 8-SOIC,ADA4622-2BRZ-R7CT-ND, ,ADA4622-2BRZ-R7
+U1 ,1,TPS7A3901,TPS7A39_WSON-DSC0010J:Texas_DSC0010J_ThermalVias, ,Linear Voltage Regulator IC  2 Output  150mA 10-WSON (3x3),296-47504-1-ND, ,TPS7A3901DSCT
+U2 ,1,ADP7104ARDZ-5.0,Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm, , Linear Voltage Regulator  1 Output  500mA  8-SOIC-EP ,ADP7104ARDZ-5.0-R7CT-ND, ,ADP7104ARDZ-5.0-R7
+U16 ,1,ADM1185ARMZ,ADM1185ARMZ:ADM1185ARMZ-1, ,Supervisor Open Drain or Open Collector 4 Channel 10-MSOP,ADM1185ARMZ-1REEL7CT-ND, ,ADM1185ARMZ-1REEL7
+U17 ,1,74LVC1G17,Package_TO_SOT_SMD:SOT-353_SC-70-5, ,Buffer  Non-Inverting 1 Element 1 Bit per Element Push-Pull Output SC-70-5,296-11934-1-ND, ,SN74LVC1G17DCKR
+U18 ,1,ADP7118ARDZ-5.0,ADP7118:ADP7118, ,Linear Voltage Regulator IC  1 Output  200mA 8-SOIC-EP,ADP7118ARDZ-5.0-ND, ,ADP7118ARDZ-5.0
+U15 ,1,ISO7720D,ISO772x:ISO7720, ,"General Purpose Digital Isolator 3000Vrms 2 Channel 100Mbps 85kV/µs CMTI 8-SOIC (0.154""  3.90mm Width)",296-51198-1-ND, ,ISO7720FDR
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git),,,,,,,,
+Generated 2020-09-09 22:26:49,,,,,,,,
+,,,,,,,,
+Title,High-Precision, low-noise Analog Front End,,,,,,
+Revision,3.1,,,,,,,
+Date,2020-09-09,,,,,,,
+Generated,2020-09-09 22:26:49,,,,,,,
+Company,RbSr QuSim,,,,,,,
+Comment 1,Design by: L. Reichsöllner for RbSr QuSim (UvA),,,,,,,
+Comment 2,Software by M. Borkowski, ArduinoDUE platfrom,,,,,,
+Comment 3,use in combination with A/D&D/A board, ArduinoShield, AutocalSwitch etc.,,,,,
+Comment 4,Project: MFC (Lvl 3 Magnetic field stabilization in RbSr),,,,,,,
+Total Parts,244,,,,,,,
+Total Unique Parts,74,,,,,,,

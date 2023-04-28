@@ -1,0 +1,805 @@
+EESchema Schematic File Version 4
+LIBS:AFE_1CH_2V0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title "High-Precision, low-noise Analog Front End"
+Date "2020-09-09"
+Rev "3.1"
+Comp "RbSr QuSim"
+Comment1 "Design by: L. Reichsöllner for RbSr QuSim (UvA)"
+Comment2 "Software by M. Borkowski, ArduinoDUE platfrom"
+Comment3 "use in combination with A/D&D/A board, ArduinoShield, AutocalSwitch etc."
+Comment4 "Project: MFC (Lvl 3 Magnetic field stabilization in RbSr)"
+$EndDescr
+Text Label 1625 3350 2    50   ~ 0
+PWR+16V
+Wire Wire Line
+	1975 1400 2425 1400
+Connection ~ 1975 1400
+Wire Wire Line
+	1975 1300 1975 1400
+Text Label 1975 1300 1    50   ~ 0
+PWR+16V
+Text Notes 2000 800  0    50   ~ 0
+do not use En_disStartSeq.\nenables this device immediatly without\nStartSequ. -> unsafe operation of downstream ICs.
+Wire Wire Line
+	3150 1750 3225 1750
+Connection ~ 3150 1750
+Wire Wire Line
+	3150 1275 3150 1750
+Wire Wire Line
+	2850 1275 2850 1400
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5F460A6E
+P 3000 1275
+F 0 "JP4" H 3000 1480 50  0000 C CNN
+F 1 "En_disStartSeq" H 3000 1389 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3000 1275 50  0001 C CNN
+F 3 "~" H 3000 1275 50  0001 C CNN
+F 4 "Solder Jumper" H 3000 1275 50  0001 C CNN "Detailed description"
+	1    3000 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR010
+U 1 1 5F45FEF4
+P 1800 1600
+F 0 "#PWR010" H 1800 1350 50  0001 C CNN
+F 1 "GNDA" H 1805 1427 50  0000 C CNN
+F 2 "" H 1800 1600 50  0001 C CNN
+F 3 "" H 1800 1600 50  0001 C CNN
+	1    1800 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR077
+U 1 1 5F45F54E
+P 3825 2750
+F 0 "#PWR077" H 3825 2500 50  0001 C CNN
+F 1 "GNDA" H 3830 2577 50  0000 C CNN
+F 2 "" H 3825 2750 50  0001 C CNN
+F 3 "" H 3825 2750 50  0001 C CNN
+	1    3825 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2450 4725 2450
+Connection ~ 4450 2450
+Wire Wire Line
+	4450 2400 4450 2450
+Wire Wire Line
+	4450 2200 4900 2200
+Connection ~ 4450 2200
+$Comp
+L Device:C_Small C12
+U 1 1 5F42B926
+P 4450 2300
+F 0 "C12" H 4542 2346 50  0000 L CNN
+F 1 "10nF" H 4542 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 2300 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 4450 2300 50  0001 C CNN
+F 4 "490-9666-1-ND" H 4450 2300 50  0001 C CNN "DigiKey"
+F 5 "10000pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)" H 4450 2300 50  0001 C CNN "Detailed description"
+F 6 "GRM1885C1H103JA01D" H 4450 2300 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4450 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4475 1600
+Wire Wire Line
+	4475 1400 4625 1400
+Connection ~ 4475 1400
+$Comp
+L Device:C_Small C7
+U 1 1 5F42AE47
+P 4475 1500
+F 0 "C7" H 4567 1546 50  0000 L CNN
+F 1 "10nF" H 4567 1455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4475 1500 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 4475 1500 50  0001 C CNN
+F 4 "490-9666-1-ND" H 4475 1500 50  0001 C CNN "DigiKey"
+F 5 "10000pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)" H 4475 1500 50  0001 C CNN "Detailed description"
+F 6 "GRM1885C1H103JA01D" H 4475 1500 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4475 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 2200 4450 2200
+Connection ~ 5275 1600
+Wire Wire Line
+	5275 1775 5275 1600
+Wire Wire Line
+	5225 1775 5275 1775
+Wire Wire Line
+	4875 1775 5025 1775
+Wire Wire Line
+	4475 1600 4425 1600
+Wire Wire Line
+	4475 1625 4475 1600
+Wire Wire Line
+	4725 1625 4475 1625
+Wire Wire Line
+	4825 1475 4875 1475
+Wire Wire Line
+	4625 1400 5275 1400
+Connection ~ 4625 1400
+Wire Wire Line
+	4425 1400 4475 1400
+Wire Wire Line
+	4625 1400 4625 1475
+$Comp
+L Device:R_Small R62
+U 1 1 5F3BC879
+P 5125 1775
+F 0 "R62" V 5321 1775 50  0000 C CNN
+F 1 "10k" V 5230 1775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5125 1775 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5125 1775 50  0001 C CNN
+F 4 "311-10.0KCRCT-ND" H 5125 1775 50  0001 C CNN "DigiKey"
+F 5 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Moisture Resistant Thick Film" H 5125 1775 50  0001 C CNN "Detailed description"
+F 6 "RC0805FR-0710KL" H 5125 1775 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    5125 1775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 1950 5050 2050
+Wire Wire Line
+	4675 1950 5050 1950
+Wire Wire Line
+	4425 1950 4475 1950
+$Comp
+L Device:R_Small R63
+U 1 1 5F3ACB80
+P 4575 1950
+F 0 "R63" V 4379 1950 50  0000 C CNN
+F 1 "10k" V 4470 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4575 1950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4575 1950 50  0001 C CNN
+F 4 "311-10.0KCRCT-ND" H 4575 1950 50  0001 C CNN "DigiKey"
+F 5 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Moisture Resistant Thick Film" H 4575 1950 50  0001 C CNN "Detailed description"
+F 6 "RC0805FR-0710KL" H 4575 1950 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4575 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 2350 5050 2350
+Wire Wire Line
+	4725 2450 5200 2450
+Connection ~ 4725 2450
+Wire Wire Line
+	4425 2450 4450 2450
+Wire Wire Line
+	4725 2350 4725 2450
+$Comp
+L Device:R_POT RV2
+U 1 1 5F39AD92
+P 5050 2200
+F 0 "RV2" H 4980 2154 50  0000 R CNN
+F 1 "1k" H 4980 2245 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3314G_Vertical" H 5050 2200 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/3314.pdf" H 5050 2200 50  0001 C CNN
+F 4 "3314G-102ECT-ND" H 5050 2200 50  0001 C CNN "DigiKey"
+F 5 "1 kOhms 0.25W, 1/4W Gull Wing Surface Mount Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 5050 2200 50  0001 C CNN "Detailed description"
+F 6 "3314G-1-102E" H 5050 2200 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    5050 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R64
+U 1 1 5F39A326
+P 4825 2350
+F 0 "R64" V 5021 2350 50  0000 C CNN
+F 1 "124k" V 4930 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4825 2350 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4825 2350 50  0001 C CNN
+F 4 "311-124KHRCT-ND" H 4825 2350 50  0001 C CNN "DigiKey"
+F 5 "124 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film" H 4825 2350 50  0001 C CNN "Detailed description"
+F 6 "RC0603FR-07124KL" H 4825 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4825 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2450 5700 2450
+Connection ~ 5200 2450
+Wire Wire Line
+	5275 1400 5650 1400
+Connection ~ 5275 1400
+$Comp
+L Device:R_Small R61
+U 1 1 5F37A7AF
+P 4725 1475
+F 0 "R61" V 4529 1475 50  0000 C CNN
+F 1 "115k" V 4620 1475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4725 1475 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4725 1475 50  0001 C CNN
+F 4 "311-115KHRCT-ND" H 4725 1475 50  0001 C CNN "DigiKey"
+F 5 "115 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film" H 4725 1475 50  0001 C CNN "Detailed description"
+F 6 "RC0603FR-07115KL" H 4725 1475 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4725 1475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5F379EB4
+P 4875 1625
+F 0 "RV1" H 4805 1579 50  0000 R CNN
+F 1 "1k" H 4805 1670 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3314G_Vertical" H 4875 1625 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/3314.pdf" H 4875 1625 50  0001 C CNN
+F 4 "3314G-102ECT-ND" H 4875 1625 50  0001 C CNN "DigiKey"
+F 5 "1 kOhms 0.25W, 1/4W Gull Wing Surface Mount Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 4875 1625 50  0001 C CNN "Detailed description"
+F 6 "3314G-1-102E" H 4875 1625 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4875 1625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 1600 6000 1600
+Connection ~ 5650 1600
+Wire Wire Line
+	5275 1600 5650 1600
+$Comp
+L power:GNDA #PWR011
+U 1 1 5F364459
+P 6125 1600
+F 0 "#PWR011" H 6125 1350 50  0001 C CNN
+F 1 "GNDA" H 6130 1427 50  0000 C CNN
+F 2 "" H 6125 1600 50  0001 C CNN
+F 3 "" H 6125 1600 50  0001 C CNN
+	1    6125 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 2250 6075 2250
+Connection ~ 5700 2250
+Wire Wire Line
+	5200 2250 5700 2250
+$Comp
+L power:GNDA #PWR016
+U 1 1 5F3563E7
+P 6250 2250
+F 0 "#PWR016" H 6250 2000 50  0001 C CNN
+F 1 "GNDA" H 6255 2077 50  0000 C CNN
+F 2 "" H 6250 2250 50  0001 C CNN
+F 3 "" H 6250 2250 50  0001 C CNN
+	1    6250 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP_Small C85
+U 1 1 5F34EF29
+P 5700 2350
+F 0 "C85" H 5788 2396 50  0000 L CNN
+F 1 "22uF" H 5788 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.7" H 5700 2350 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/A767EB226M1VLAE050.pdf" H 5700 2350 50  0001 C CNN
+F 4 "399-A767EB226M1VLAE050CT-ND" H 5700 2350 50  0001 C CNN "DigiKey"
+F 5 "22µF 35V Aluminum - Polymer Capacitors Radial, Can - SMD 50mOhm 2000 Hrs @ 105°C" H 5700 2350 50  0001 C CNN "Detailed description"
+F 6 "A767EB226M1VLAE050" H 5700 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5F34E6B4
+P 5200 2350
+F 0 "C16" H 5292 2396 50  0000 L CNN
+F 1 "10uF" H 5292 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5200 2350 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey" H 5200 2350 50  0001 C CNN
+F 4 "445-4536-1-ND" H 5200 2350 50  0001 C CNN "DigiKey"
+F 5 "10µF ±10% 50V Ceramic Capacitor X7S 1210 (3225 Metric)" H 5200 2350 50  0001 C CNN "Detailed description"
+F 6 "C3225X7S1H106K250AB" H 5200 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C9
+U 1 1 5F34D369
+P 5650 1500
+F 0 "C9" H 5738 1546 50  0000 L CNN
+F 1 "22uF" H 5738 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.7" H 5650 1500 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/A767EB226M1VLAE050.pdf" H 5650 1500 50  0001 C CNN
+F 4 "399-A767EB226M1VLAE050CT-ND" H 5650 1500 50  0001 C CNN "DigiKey"
+F 5 "22µF 35V Aluminum - Polymer Capacitors Radial, Can - SMD 50mOhm 2000 Hrs @ 105°C" H 5650 1500 50  0001 C CNN "Detailed description"
+F 6 "A767EB226M1VLAE050" H 5650 1500 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    5650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5F34C4D4
+P 5275 1500
+F 0 "C8" H 5367 1546 50  0000 L CNN
+F 1 "10uF" H 5367 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5275 1500 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey" H 5275 1500 50  0001 C CNN
+F 4 "445-4536-1-ND" H 5275 1500 50  0001 C CNN "DigiKey"
+F 5 "10µF ±10% 50V Ceramic Capacitor X7S 1210 (3225 Metric)" H 5275 1500 50  0001 C CNN "Detailed description"
+F 6 "C3225X7S1H106K250AB" H 5275 1500 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    5275 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2100 2850 2250
+Wire Wire Line
+	3225 1900 2850 1900
+$Comp
+L Device:C_Small C11
+U 1 1 5F33969B
+P 2850 2000
+F 0 "C11" H 2942 2046 50  0000 L CNN
+F 1 "47nF" H 2942 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2850 2000 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2850 2000 50  0001 C CNN
+F 4 "311-1427-1-ND" H 2850 2000 50  0001 C CNN "DigiKey"
+F 5 "0.047µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)" H 2850 2000 50  0001 C CNN "Detailed description"
+F 6 "CC0603KRX7R9BB473" H 2850 2000 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2850 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 2150 1400 2150
+Wire Wire Line
+	2025 1650 1400 1650
+Wire Wire Line
+	2350 1750 3150 1750
+Wire Wire Line
+	2350 1900 2350 1750
+Wire Wire Line
+	2175 1900 2350 1900
+Text HLabel 1800 2450 0    50   Input ~ 0
+PWR-16V
+Text HLabel 1800 1400 0    50   Input ~ 0
+PWR+16V
+Wire Wire Line
+	1800 2450 2425 2450
+Wire Wire Line
+	2425 1600 1800 1600
+Connection ~ 2425 1600
+Wire Wire Line
+	2850 1600 2425 1600
+Wire Wire Line
+	1775 2250 2425 2250
+Wire Wire Line
+	2850 2250 2425 2250
+Connection ~ 2850 2250
+Connection ~ 2425 2250
+Wire Wire Line
+	3225 2250 2850 2250
+Wire Wire Line
+	3225 2050 3225 2250
+$Comp
+L power:GNDA #PWR014
+U 1 1 5F302A7B
+P 1775 2250
+F 0 "#PWR014" H 1775 2000 50  0001 C CNN
+F 1 "GNDA" H 1780 2077 50  0000 C CNN
+F 2 "" H 1775 2250 50  0001 C CNN
+F 3 "" H 1775 2250 50  0001 C CNN
+	1    1775 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2425 1400 2850 1400
+Connection ~ 2850 1400
+Connection ~ 2425 1400
+Wire Wire Line
+	1800 1400 1975 1400
+Connection ~ 2425 2450
+Wire Wire Line
+	2850 2450 3225 2450
+Connection ~ 2850 2450
+Wire Wire Line
+	2425 2450 2850 2450
+$Comp
+L Device:C_Small C15
+U 1 1 5F2EBCDF
+P 2850 2350
+F 0 "C15" H 2942 2396 50  0000 L CNN
+F 1 "10uF" H 2942 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2850 2350 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey" H 2850 2350 50  0001 C CNN
+F 4 "445-4536-1-ND" H 2850 2350 50  0001 C CNN "DigiKey"
+F 5 "10µF ±10% 50V Ceramic Capacitor X7S 1210 (3225 Metric)" H 2850 2350 50  0001 C CNN "Detailed description"
+F 6 "C3225X7S1H106K250AB" H 2850 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 1400 2850 1400
+$Comp
+L Device:CP_Small C13
+U 1 1 5F2DFAA9
+P 2425 2350
+F 0 "C13" H 2513 2396 50  0000 L CNN
+F 1 "22uF" H 2513 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.7" H 2425 2350 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/A767EB226M1VLAE050.pdf" H 2425 2350 50  0001 C CNN
+F 4 "399-A767EB226M1VLAE050CT-ND" H 2425 2350 50  0001 C CNN "DigiKey"
+F 5 "22µF 35V Aluminum - Polymer Capacitors Radial, Can - SMD 50mOhm 2000 Hrs @ 105°C" H 2425 2350 50  0001 C CNN "Detailed description"
+F 6 "A767EB226M1VLAE050" H 2425 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2425 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C5
+U 1 1 5F2D8F99
+P 2425 1500
+F 0 "C5" H 2513 1546 50  0000 L CNN
+F 1 "22uF" H 2513 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.7" H 2425 1500 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/A767EB226M1VLAE050.pdf" H 2425 1500 50  0001 C CNN
+F 4 "399-A767EB226M1VLAE050CT-ND" H 2425 1500 50  0001 C CNN "DigiKey"
+F 5 "22µF 35V Aluminum - Polymer Capacitors Radial, Can - SMD 50mOhm 2000 Hrs @ 105°C" H 2425 1500 50  0001 C CNN "Detailed description"
+F 6 "A767EB226M1VLAE050" H 2425 1500 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2425 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS7A3901_WSON:TPS7A3901 U1
+U 1 1 5F2D49A1
+P 3825 1950
+F 0 "U1" H 3825 2788 60  0000 C CNN
+F 1 "TPS7A3901" H 3825 2682 60  0000 C CNN
+F 2 "TPS7A39_WSON-DSC0010J:Texas_DSC0010J_ThermalVias" H 3925 1640 60  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tps7a39" H 4225 1450 60  0001 C CNN
+F 4 "296-47504-1-ND" H 3825 1950 50  0001 C CNN "DigiKey"
+F 5 "Linear Voltage Regulator IC  2 Output  150mA 10-WSON (3x3)" H 3825 1950 50  0001 C CNN "Detailed description"
+F 6 "TPS7A3901DSCT" H 3825 1950 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3825 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 775  1450 775 
+Text Label 1450 775  0    50   ~ 0
+PWR-16V
+Wire Wire Line
+	1125 675  1450 675 
+Text Label 1450 675  0    50   ~ 0
+PWR+16V
+Text HLabel 1125 675  0    50   Input ~ 0
+PWR+16V
+Text HLabel 1125 775  0    50   Input ~ 0
+PWR-16V
+Connection ~ 3825 3700
+Text HLabel 4275 3850 2    50   Output ~ 0
+PWR+5V
+Connection ~ 3675 3500
+Wire Wire Line
+	3675 3400 3675 3500
+Wire Wire Line
+	3600 3400 3675 3400
+Wire Wire Line
+	3700 3700 3825 3700
+Connection ~ 3700 3700
+Wire Wire Line
+	3700 3875 3700 3700
+Wire Wire Line
+	2300 3650 2300 3875
+Wire Wire Line
+	1750 3600 1750 3550
+$Comp
+L power:GNDA #PWR013
+U 1 1 5E8EC0A5
+P 1750 3600
+F 0 "#PWR013" H 1750 3350 50  0001 C CNN
+F 1 "GNDA" H 1755 3427 50  0000 C CNN
+F 2 "" H 1750 3600 50  0001 C CNN
+F 3 "" H 1750 3600 50  0001 C CNN
+	1    1750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR015
+U 1 1 5E8EAB6C
+P 3825 3975
+F 0 "#PWR015" H 3825 3725 50  0001 C CNN
+F 1 "GNDA" H 3830 3802 50  0000 C CNN
+F 2 "" H 3825 3975 50  0001 C CNN
+F 3 "" H 3825 3975 50  0001 C CNN
+	1    3825 3975
+	1    0    0    -1  
+$EndComp
+Connection ~ 3675 3400
+Wire Wire Line
+	3600 3500 3675 3500
+Wire Wire Line
+	3675 3600 3600 3600
+$Comp
+L power:GNDA #PWR012
+U 1 1 5E8E7B86
+P 4025 3400
+F 0 "#PWR012" H 4025 3150 50  0001 C CNN
+F 1 "GNDA" H 4030 3227 50  0000 C CNN
+F 2 "" H 4025 3400 50  0001 C CNN
+F 3 "" H 4025 3400 50  0001 C CNN
+	1    4025 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 3450 2175 3450
+NoConn ~ 2300 3550
+Wire Wire Line
+	3600 3700 3700 3700
+Connection ~ 1750 3350
+Wire Wire Line
+	1625 3350 1750 3350
+$Comp
+L Device:C_Small C14
+U 1 1 5E8E426F
+P 3825 3800
+F 0 "C14" H 3917 3846 50  0000 L CNN
+F 1 "1uF" H 3917 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3825 3800 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KBFNNNE.jsp" H 3825 3800 50  0001 C CNN
+F 4 "1276-1029-1-ND" H 3825 3800 50  0001 C CNN "DigiKey"
+F 5 "1µF, ±10%, 50V, MLCC X7R, 0805 (2012 Metric)" H 3825 3800 50  0001 C CNN "Detailed description"
+F 6 "CL21B105KBFNNNE" H 3825 3800 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3825 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5E8E3812
+P 1750 3450
+F 0 "C10" H 1842 3496 50  0000 L CNN
+F 1 "1uF" H 1842 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1750 3450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KBFNNNE.jsp" H 1750 3450 50  0001 C CNN
+F 4 "1276-1029-1-ND" H 1750 3450 50  0001 C CNN "DigiKey"
+F 5 "1µF, ±10%, 50V, MLCC X7R, 0805 (2012 Metric)" H 1750 3450 50  0001 C CNN "Detailed description"
+F 6 "CL21B105KBFNNNE" H 1750 3450 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    1750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADP7104ARDZ-R7:ADP7104ARDZ-R7 U2
+U 1 1 5E8E24FD
+P 2300 3450
+F 0 "U2" H 2950 3857 60  0000 C CNN
+F 1 "ADP7104ARDZ-5.0" H 2950 3751 60  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 3000 3690 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7104.pdf" H 2950 3751 60  0001 C CNN
+F 4 "ADP7104ARDZ-5.0-R7CT-ND" H 2300 3450 50  0001 C CNN "DigiKey"
+F 5 " Linear Voltage Regulator, 1 Output, 500mA, 8-SOIC-EP " H 2300 3450 50  0001 C CNN "Detailed description"
+F 6 "ADP7104ARDZ-5.0-R7" H 2300 3450 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2300 3450
+	1    0    0    -1  
+$EndComp
+Text Label 6425 1375 0    50   ~ 0
+PWR+15V
+Wire Wire Line
+	5650 1400 6000 1400
+Wire Wire Line
+	6425 1400 6425 1375
+Connection ~ 5650 1400
+Text Label 1400 2150 2    50   ~ 0
+EN_analog1
+Wire Wire Line
+	1750 3350 2300 3350
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 5F439106
+P 2025 3125
+F 0 "JP6" H 2025 3330 50  0000 C CNN
+F 1 "En_disStartSeq" H 2025 3239 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2025 3125 50  0001 C CNN
+F 3 "~" H 2025 3125 50  0001 C CNN
+F 4 "Solder Jumper" H 2025 3125 50  0001 C CNN "Detailed description"
+	1    2025 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 3125 1750 3125
+Wire Wire Line
+	1750 3125 1750 3350
+Wire Wire Line
+	2175 3125 2175 3450
+Wire Wire Line
+	2175 3450 2175 4125
+Wire Wire Line
+	2175 4125 2075 4125
+Connection ~ 2175 3450
+Text Label 1925 4375 2    50   ~ 0
+EN_analog2
+Wire Wire Line
+	1775 3875 1925 3875
+Text Label 4275 3700 0    50   ~ 0
+PWR+5V
+Text Label 1400 1650 2    50   ~ 0
+EN_PWRseqExtProg1
+Text Label 1775 3875 2    50   ~ 0
+EN_PWRseqExtProg2
+Text HLabel 6425 1400 2    50   Input ~ 0
+PWR+15V
+Text HLabel 6275 2450 2    50   Input ~ 0
+PWR-15V
+Wire Wire Line
+	5700 2450 6075 2450
+Connection ~ 5700 2450
+$Comp
+L dk_Shunts-Jumpers:Jumper_3_HDR12 JP7
+U 1 1 5F6BA2E8
+P 1925 4125
+F 0 "JP7" V 1971 4192 50  0000 L CNN
+F 1 "SEL_StartUpSeq" V 1880 4192 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 1975 4425 50  0001 C CNN
+F 3 "" H 1925 4125 50  0001 C CNN
+F 4 "Solder Jumper" H 1925 4125 50  0001 C CNN "Detailed description"
+	1    1925 4125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Shunts-Jumpers:Jumper_3_Solder12 JP5
+U 1 1 5F6BB43B
+P 2025 1900
+F 0 "JP5" V 2071 1967 50  0000 L CNN
+F 1 "SEL_StartUpSeq" V 1980 1967 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 2075 2200 50  0001 C CNN
+F 3 "" H 2025 1900 50  0001 C CNN
+F 4 "Solder jumper" H 2025 1900 50  0001 C CNN "Detailed description"
+	1    2025 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5F2D7ED8
+P 2850 1500
+F 0 "C6" H 2942 1546 50  0000 L CNN
+F 1 "10uF" H 2942 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2850 1500 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey" H 2850 1500 50  0001 C CNN
+F 4 "445-4536-1-ND" H 2850 1500 50  0001 C CNN "DigiKey"
+F 5 "10µF ±10% 50V Ceramic Capacitor X7S 1210 (3225 Metric)" H 2850 1500 50  0001 C CNN "Detailed description"
+F 6 "C3225X7S1H106K250AB" H 2850 1500 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    2850 1500
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2875 4825 1350 425 
+U 5F5FA09C
+F0 "PowerUpSeq1" 50
+F1 "PowerUpSeq.sch" 50
+F2 "PWR+16V" I L 2875 4900 50 
+F3 "EN_analog1" O R 4225 4950 50 
+F4 "EN_analog2" O R 4225 5025 50 
+F5 "EN_PWRseqExtProg1" O R 4225 5125 50 
+F6 "EN_PWRseqExtProg2" O R 4225 5200 50 
+F7 "PWR+5V" I L 2875 5050 50 
+F8 "PWR+15V" I L 2875 4975 50 
+$EndSheet
+Text Label 4350 5025 0    50   ~ 0
+EN_analog2
+Text Label 4350 4950 0    50   ~ 0
+EN_analog1
+Wire Wire Line
+	4225 4950 4350 4950
+Wire Wire Line
+	4225 5025 4350 5025
+Text Label 4350 5125 0    50   ~ 0
+EN_PWRseqExtProg1
+Text Label 4350 5200 0    50   ~ 0
+EN_PWRseqExtProg2
+Wire Wire Line
+	4350 5125 4225 5125
+Wire Wire Line
+	4225 5200 4350 5200
+Text Label 2825 4900 2    50   ~ 0
+PWR+16V
+Wire Wire Line
+	2825 4900 2875 4900
+Text Label 2825 5050 2    50   ~ 0
+PWR+5V
+Wire Wire Line
+	2825 5050 2875 5050
+Text Label 2825 4975 2    50   ~ 0
+PWR+15V
+Wire Wire Line
+	2875 4975 2825 4975
+$Comp
+L Device:D_Schottky_Small D6
+U 1 1 5F2AC4F2
+P 4275 1050
+F 0 "D6" H 4275 1255 50  0000 C CNN
+F 1 "PMEG60T10ELR" H 4275 1164 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 4275 1050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG60T10ELR.pdf" V 4275 1050 50  0001 C CNN
+F 4 "1727-7807-1-ND" H 4275 1050 50  0001 C CNN "DigiKey"
+F 5 "Diode Schottky 60V 1A Surface Mount SOD-123W" H 4275 1050 50  0001 C CNN "Detailed description"
+F 6 "PMEG60T10ELRX" H 4275 1050 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    4275 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1275 2850 1050
+Wire Wire Line
+	2850 1050 4175 1050
+Connection ~ 2850 1275
+Wire Wire Line
+	4375 1050 4475 1050
+Wire Wire Line
+	4475 1050 4475 1400
+$Comp
+L Device:D_Schottky_Small D7
+U 1 1 5F2B8221
+P 6000 1500
+F 0 "D7" V 5954 1568 50  0000 L CNN
+F 1 "PMEG60T10ELR" V 6045 1568 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 6000 1500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG60T10ELR.pdf" V 6000 1500 50  0001 C CNN
+F 4 "1727-7807-1-ND" H 6000 1500 50  0001 C CNN "DigiKey"
+F 5 "Diode Schottky 60V 1A Surface Mount SOD-123W" H 6000 1500 50  0001 C CNN "Detailed description"
+F 6 "PMEG60T10ELRX" H 6000 1500 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    6000 1500
+	0    1    1    0   
+$EndComp
+Connection ~ 6000 1400
+Wire Wire Line
+	6000 1400 6425 1400
+Connection ~ 6000 1600
+Wire Wire Line
+	6000 1600 6125 1600
+$Comp
+L Device:D_Schottky_Small D8
+U 1 1 5F2B9A88
+P 6075 2350
+F 0 "D8" V 6029 2418 50  0000 L CNN
+F 1 "PMEG60T10ELR" V 6120 2418 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 6075 2350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG60T10ELR.pdf" V 6075 2350 50  0001 C CNN
+F 4 "1727-7807-1-ND" H 6075 2350 50  0001 C CNN "DigiKey"
+F 5 "Diode Schottky 60V 1A Surface Mount SOD-123W" H 6075 2350 50  0001 C CNN "Detailed description"
+F 6 "PMEG60T10ELRX" H 6075 2350 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    6075 2350
+	0    1    1    0   
+$EndComp
+Connection ~ 6075 2250
+Wire Wire Line
+	6075 2250 6250 2250
+Connection ~ 6075 2450
+Wire Wire Line
+	6075 2450 6275 2450
+$Comp
+L Device:D_Schottky_Small D9
+U 1 1 5F2BAE25
+P 3450 2875
+F 0 "D9" H 3450 2670 50  0000 C CNN
+F 1 "PMEG60T10ELR" H 3450 2761 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 3450 2875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG60T10ELR.pdf" V 3450 2875 50  0001 C CNN
+F 4 "1727-7807-1-ND" H 3450 2875 50  0001 C CNN "DigiKey"
+F 5 "Diode Schottky 60V 1A Surface Mount SOD-123W" H 3450 2875 50  0001 C CNN "Detailed description"
+F 6 "PMEG60T10ELRX" H 3450 2875 50  0001 C CNN "Manufacturer/Man.PartNum."
+	1    3450 2875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 2450 2850 2875
+Wire Wire Line
+	2850 2875 3350 2875
+Wire Wire Line
+	3550 2875 4450 2875
+Wire Wire Line
+	4450 2875 4450 2450
+Wire Wire Line
+	3675 3500 3675 3600
+Wire Wire Line
+	2300 3875 3700 3875
+Wire Wire Line
+	3825 3700 4175 3700
+Wire Wire Line
+	4275 3850 4175 3850
+Wire Wire Line
+	4175 3850 4175 3700
+Connection ~ 4175 3700
+Wire Wire Line
+	4175 3700 4275 3700
+Wire Wire Line
+	3825 3900 3825 3975
+Wire Wire Line
+	3675 3400 4025 3400
+$EndSCHEMATC
